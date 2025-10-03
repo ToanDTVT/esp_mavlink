@@ -1,0 +1,2 @@
+source /home/qtoan/esp/project/esp_mavlink/build/bootloader/gdbinit/symbols
+source /home/qtoan/esp/project/esp_mavlink/build/bootloader/gdbinit/connect

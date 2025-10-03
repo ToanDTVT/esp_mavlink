@@ -1,0 +1,90 @@
+Command: /home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/qtoan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/qtoan/esp/project/esp_mavlink/build/esp_mavlink.elf /home/qtoan/esp/project/esp_mavlink/build/bootloader/bootloader.elf -m '/home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/qtoan/esp/esp-idf/tools/idf.py'
+R (186)�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  1 2025 21:58:03[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bda0h ( 48544) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bdc8 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e1c8 vaddr=40080000 size=01e50h (  7760) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17478h ( 95352) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=000374a0 vaddr=40081e50 size=0c200h ( 49664) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=000436a8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (175) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (175) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     esp_mavlink[0m
+[0;32mI (199) app_init: App version:      1[0m
+[0;32mI (202) app_init: Compile time:     Oct  1 2025 23:53:56[0m
+[0;32mI (207) app_init: ELF file SHA256:  a66047b43...[0m
+[0;32mI (212) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (216) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (219) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (223) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (228) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (234) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFB31C8 len 0002CE38 (179 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (255) heap_init: At 4008E050 len 00011FB0 (71 KiB): IRAM[0m
+[0;33mW (261) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (277) spi_flash: flash io: dio[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+Hello world!
+This is esp32 chip with 2 CPU core(s), WiFi/BTBLE, silicon revision v3.1, 4MB external flash
+Minimum free heap size: 300284 bytes
+Restarting in 10 seconds...
+Restarting in 9 seconds...
+Restarting in 8 seconds...
+Restarting in 7 seconds...
+Restarting in 6 seconds...
+Restarting in 5 seconds...
+Restarting in 4 seconds...
+Restarting in 3 seconds...
+Restarting in 2 seconds...
+Restarting in 1 seconds...
+Restarting in 0 seconds...
+Restarting now.
+This is a test function from global component.
+This is a test function from control_pixhawk component.
+[0;32mI (11300) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 00 01 01 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 19 57 
+[0;32mI (11310) control_pixhawk: Read 280 bytes[0m
+7B FB 41 23 52 53 25 B9 62 73 52 29 29 21 76 00 FF BC 68 63 5A FF 73 F3 67 A9 42 1D C7 22 FA B4 4A A6 CF FF 4B FE C8 88 FE 53 52 23 2B DE 5B CF 08 49 FD 53 52 21 E9 A7 4B DC 5A 84 43 EA F2 A1 44 0A A9 1D 56 E2 4B 04 48 DB 5A 0D 5E 42 C1 46 BF 43 86 42 F2 1C 4F 22 7A 46 42 47 42 E2 B4 E2 E9 4E 53 F3 67 29 C3 6B CF 08 4B FC 73 D2 63 AD 63 7B DE 49 43 FD 6B 78 85 C6 52 D2 A3 B9 ED 1C 47 2E FE 24 CC 94 B5 FF 43 FF 72 52 29 29 21 56 00 FF 73 53 A3 6F 4E 5B CE 29 68 FE 4B EE C8 8B FF 52 D2 A3 6D 5B 3D 53 E2 4D 00 FA 1D E2 0C FA B4 5B 86 72 FF 72 F2 E3 39 7F 7B B9 ED 56 FF 6B FA 68 8C FD 53 72 A7 39 DF BC FD 44 47 73 F2 E5 3B 4A 1D C7 0A FE B4 ED 7B 6B FF 4B 8B 5B 28 FE 53 D2 A3 BF CE 4B 12 6B BE FF 73 F2 A1 BF C7 78 CF 88 68 FE 43 EA 72 C2 84 0C E9 5C 57 E2 C1 02 0E FF EB A9 C2 29 06 B9 AE 71 6E 23 42 A8 A9 61 CE 29 29 21 56 00 17 40 
+[0;32mI (16390) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 01 01 01 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 F7 1D 
+[0;32mI (16390) control_pixhawk: Read 280 bytes[0m
+E2 43 4B 9F 42 5F 42 46 E1 6D 42 C2 42 42 FE 6B DF E9 6F FC 52 F3 A3 7F DB 6B 9A FB 6D FE 52 D3 E1 3B 52 68 EA E9 49 FD 78 FB A9 08 FC 53 53 E3 3D 76 1D 4B 04 FB 5B E2 2F 61 42 FF 73 F3 A7 FD E9 53 BD 4B 42 53 ED 89 FD 52 72 ED E9 37 5D 56 C2 CD 03 48 62 47 43 4B FB 68 4E FF 52 D3 EF 6F 6E 6B FB 09 A5 FD 78 CF 28 6A FE 73 53 A9 69 C7 72 52 29 29 21 56 00 FF 68 DE 49 EF FC 52 53 AD 7F EA 1C 66 0E FB 7B EB 21 21 5B F9 4B 1D F2 F3 EB AD 62 4B 6B EE 72 FF D2 53 AF E9 4B 4B EF 87 CF 42 EA D3 E1 80 2B E3 3D 52 E2 CD 00 4C 53 56 75 BD 7A A1 46 F9 43 C6 42 52 1D 67 2C 5A 46 42 46 42 42 6B EF 6B CD FE F2 F2 ED BF FA 7B EF 89 C7 FD D2 53 A5 39 DE 0C CD 4B FD 0C FE 8F 42 F3 D3 E5 69 EB 1C EA 26 FB 5B 7A 63 4B FF 42 FF D3 52 29 29 21 66 00 FF D2 F3 A3 EB E3 43 E2 07 42 4B EA 05 37 F3 53 ED 79 E2 1C 52 C2 43 03 0A C2 E1 C9 5B 36 D6 6E FF D3 
+[0;32mI (21470) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 02 01 01 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 C5 C2 
+[0;32mI (21470) control_pixhawk: Read 280 bytes[0m
+73 EB 6F CF 4B ED AD 9E FF 4B 5A F5 6F F2 F3 A9 2F BD 4B EF 86 96 FF D2 52 E9 AD 6A 1D 63 20 FF 7B DE 28 CA FC 4B CE A8 E9 FE F2 D2 A9 2B D7 53 E5 EE 7A D2 F3 EB BF 42 53 E8 D3 EA FF 42 EA 73 A1 00 08 E9 5D 53 42 4F 01 0C FF DB A9 C2 F9 04 F9 2C 01 FF C7 C1 8A 8C 20 42 FE 57 63 63 63 42 62 62 81 46 4E E7 43 42 D2 1C EE 04 4F 4B F7 04 42 77 0A 08 42 42 E2 53 EC E7 A7 F3 F2 E9 79 6F 6B CC 86 08 FF F3 53 AB AD C7 7B EF 88 8C FD 6B B8 CA AD FE D2 D2 E7 3D 25 1C 4F 08 FF 5B FB AB C2 43 FF D2 D2 E5 A9 DA 4B 16 4C 6B FF 5B BB EB 2B FC D3 D3 E1 BF C9 7D 53 62 87 07 F8 1D E2 0C FE 5B 73 8E 6B FF F3 73 21 2D AD 5B CE E8 CF FE 6B EE E9 63 FE D2 F3 E1 69 F6 F3 52 29 29 21 76 00 FF 53 76 CF E0 F3 D3 25 7D CF 1D 46 00 FA 53 E8 C3 8E FF 5B EF 09 ED FF D3 52 65 6B B7 4B 17 4B FB FD F3 72 65 B9 EA 48 CF 53 5A FE 43 6A B1 C2 CE 6B E3 1C 53 42 81 
+[0;32mI (26550) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 03 01 01 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 2B 88 
+[0;32mI (26550) control_pixhawk: Read 280 bytes[0m
+07 F8 52 62 80 6D 8C 68 4B 46 0A E7 63 42 D2 1C 6E 00 7A 47 43 47 42 E2 14 E7 1D EA FD D3 F3 61 6B CE 7B CE A9 E8 FE F3 73 27 39 C7 6B DF A8 0D FD 7B DE 08 0C FC D2 52 67 2F EF 1D 46 0E FA 58 E7 8E 47 FE 43 FF F2 52 29 29 21 46 00 FF F3 F3 21 79 6D 5B EE 88 E9 FC 4B AA CA CE FD D2 D3 63 39 EB 3D 53 62 85 01 0E 62 2B 80 43 52 4B 72 FF F2 D3 63 BF C3 5B E6 5A 7A FF 7B EE 08 2A FE D3 D2 61 6F E3 58 EE 88 6A FE F3 D2 63 FD 56 1C E3 08 FA 48 E6 57 52 6B 43 E3 EE FF D3 D3 67 7B 73 5B B8 5F FF F3 D2 63 EF 5A 04 A5 85 4E 43 EA 87 89 EF 2B 63 7C 53 42 C1 05 4E FF CB A8 C2 29 0B E9 2D 05 DC C6 23 07 8E 20 CE 29 29 21 76 00 BB 69 42 0C 80 36 42 57 C2 87 C3 B5 89 08 42 42 EA 4B DB 8B 62 D2 73 25 6D 4B 1D 6F 04 FF 7B C4 A1 67 6B B9 AD 63 FF F2 52 63 6F 25 7B 14 02 61 D2 D3 61 E9 5A 58 C6 7A FD FE 42 6A 31 62 8A 04 A9 3C 53 42 C1 03 4C FF EB 

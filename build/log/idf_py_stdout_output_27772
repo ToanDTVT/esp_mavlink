@@ -1,0 +1,2153 @@
+Command: /home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/qtoan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/qtoan/esp/project/esp_mavlink/build/esp_mavlink.elf /home/qtoan/esp/project/esp_mavlink/build/bootloader/bootloader.elf -m '/home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/qtoan/esp/esp-idf/tools/idf.py'
+xxxx�r��� Project nam�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  1 2025 21:58:03[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b0d8h ( 45272) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b100 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001d500 vaddr=40080000 size=02b18h ( 11032) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=169a8h ( 92584) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=000369d0 vaddr=40082b18 size=0b4d4h ( 46292) load[0m
+[0;32mI (165) esp_image: segment 5: paddr=00041eac vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (172) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (172) boot: Disabling RNG early entropy source...[0m
+[0;32mI (183) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu start user code[0m
+[0;32mI (191) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (191) app_init: Application information:[0m
+[0;32mI (191) app_init: Project name:     esp_mavlink[0m
+[0;32mI (196) app_init: App version:      1[0m
+[0;32mI (199) app_init: Compile time:     Oct  1 2025 23:53:56[0m
+[0;32mI (204) app_init: ELF file SHA256:  22d36a1b9...[0m
+[0;32mI (208) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (220) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (224) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFB2D40 len 0002D2C0 (180 KiB): DRAM[0m
+[0;32mI (241) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 4008DFEC len 00012014 (72 KiB): IRAM[0m
+[0;33mW (258) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;32mI (277) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+Hello world!
+This is esp32 chip with 2 CPU core(s), WiFi/BTBLE, silicon revision v3.1, 4MB external flash
+Minimum free heap size: 301444 bytes
+Restarting in 10 seconds...
+Restarting in 9 seconds...
+Restarting in 8 seconds...
+Restarting in 7 seconds...
+Restarting in 6 seconds...
+Restarting in 5 seconds...
+Restarting in 4 seconds...
+Restarting in 3 seconds...
+Restarting in 2 seconds...
+Restarting in 1 seconds...
+Restarting in 0 seconds...
+Restarting now.
+This is a test function from global component.
+This is a test function from control_pixhawk component.
+[0;32mI (11297) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 00 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3D 48 
+Sent HEARTBEAT message.
+[0;32mI (12307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 01 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2D C6 
+Sent HEARTBEAT message.
+[0;32mI (13307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 02 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0C 5C 
+Sent HEARTBEAT message.
+[0;32mI (14307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 03 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1C D2 
+Sent HEARTBEAT message.
+[0;32mI (15307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 04 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5F 60 
+Sent HEARTBEAT message.
+[0;32mI (16307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 05 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4F EE 
+Sent HEARTBEAT message.
+[0;32mI (17307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 06 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6E 74 
+Sent HEARTBEAT message.
+[0;32mI (18307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 07 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7E FA 
+Sent HEARTBEAT message.
+[0;32mI (19307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 08 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F9 18 
+Sent HEARTBEAT message.
+[0;32mI (20307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 09 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E9 96 
+Sent HEARTBEAT message.
+[0;32mI (21307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C8 0C 
+Sent HEARTBEAT message.
+[0;32mI (22307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D8 82 
+Sent HEARTBEAT message.
+[0;32mI (23307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9B 30 
+Sent HEARTBEAT message.
+[0;32mI (24307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8B BE 
+Sent HEARTBEAT message.
+[0;32mI (25307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AA 24 
+Sent HEARTBEAT message.
+[0;32mI (26307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BA AA 
+Sent HEARTBEAT message.
+[0;32mI (27307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 10 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B5 E9 
+Sent HEARTBEAT message.
+[0;32mI (28307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 11 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A5 67 
+Sent HEARTBEAT message.
+[0;32mI (29307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 12 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 84 FD 
+Sent HEARTBEAT message.
+[0;32mI (30307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 13 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 94 73 
+Sent HEARTBEAT message.
+[0;32mI (31307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 14 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D7 C1 
+Sent HEARTBEAT message.
+[0;32mI (32307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 15 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C7 4F 
+Sent HEARTBEAT message.
+[0;32mI (33307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 16 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E6 D5 
+Sent HEARTBEAT message.
+[0;32mI (34307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 17 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F6 5B 
+Sent HEARTBEAT message.
+[0;32mI (35307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 18 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 71 B9 
+Sent HEARTBEAT message.
+[0;32mI (36307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 19 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 61 37 
+Sent HEARTBEAT message.
+[0;32mI (37307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 40 AD 
+Sent HEARTBEAT message.
+[0;32mI (38307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 50 23 
+Sent HEARTBEAT message.
+[0;32mI (39307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 13 91 
+Sent HEARTBEAT message.
+[0;32mI (40307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 03 1F 
+Sent HEARTBEAT message.
+[0;32mI (41307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 22 85 
+Sent HEARTBEAT message.
+[0;32mI (42307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 32 0B 
+Sent HEARTBEAT message.
+[0;32mI (43307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 20 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3C 03 
+Sent HEARTBEAT message.
+[0;32mI (44307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 21 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2C 8D 
+Sent HEARTBEAT message.
+[0;32mI (45307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 22 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0D 17 
+Sent HEARTBEAT message.
+[0;32mI (46307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 23 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1D 99 
+Sent HEARTBEAT message.
+[0;32mI (47307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 24 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5E 2B 
+Sent HEARTBEAT message.
+[0;32mI (48307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 25 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4E A5 
+Sent HEARTBEAT message.
+[0;32mI (49307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 26 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6F 3F 
+Sent HEARTBEAT message.
+[0;32mI (50307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 27 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7F B1 
+Sent HEARTBEAT message.
+[0;32mI (51307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 28 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F8 53 
+Sent HEARTBEAT message.
+[0;32mI (52307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 29 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E8 DD 
+Sent HEARTBEAT message.
+[0;32mI (53307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C9 47 
+Sent HEARTBEAT message.
+[0;32mI (54307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D9 C9 
+Sent HEARTBEAT message.
+[0;32mI (55307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9A 7B 
+Sent HEARTBEAT message.
+[0;32mI (56307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8A F5 
+Sent HEARTBEAT message.
+[0;32mI (57307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AB 6F 
+Sent HEARTBEAT message.
+[0;32mI (58307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BB E1 
+Sent HEARTBEAT message.
+[0;32mI (59307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 30 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B4 A2 
+Sent HEARTBEAT message.
+[0;32mI (60307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 31 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A4 2C 
+Sent HEARTBEAT message.
+[0;32mI (61307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 32 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 85 B6 
+Sent HEARTBEAT message.
+[0;32mI (62307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 33 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 95 38 
+Sent HEARTBEAT message.
+[0;32mI (63307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 34 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D6 8A 
+Sent HEARTBEAT message.
+[0;32mI (64307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 35 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C6 04 
+Sent HEARTBEAT message.
+[0;32mI (65307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 36 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E7 9E 
+Sent HEARTBEAT message.
+[0;32mI (66307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 37 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F7 10 
+Sent HEARTBEAT message.
+[0;32mI (67307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 38 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 70 F2 
+Sent HEARTBEAT message.
+[0;32mI (68307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 39 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 60 7C 
+Sent HEARTBEAT message.
+[0;32mI (69307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 41 E6 
+Sent HEARTBEAT message.
+[0;32mI (70307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 51 68 
+Sent HEARTBEAT message.
+[0;32mI (71307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 12 DA 
+Sent HEARTBEAT message.
+[0;32mI (72307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 02 54 
+Sent HEARTBEAT message.
+[0;32mI (73307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 23 CE 
+Sent HEARTBEAT message.
+[0;32mI (74307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 33 40 
+Sent HEARTBEAT message.
+[0;32mI (75307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 40 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3F DE 
+Sent HEARTBEAT message.
+[0;32mI (76307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 41 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2F 50 
+Sent HEARTBEAT message.
+[0;32mI (77307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 42 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0E CA 
+Sent HEARTBEAT message.
+[0;32mI (78307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 43 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1E 44 
+Sent HEARTBEAT message.
+[0;32mI (79307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 44 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5D F6 
+Sent HEARTBEAT message.
+[0;32mI (80307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 45 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4D 78 
+Sent HEARTBEAT message.
+[0;32mI (81307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 46 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6C E2 
+Sent HEARTBEAT message.
+[0;32mI (82307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 47 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7C 6C 
+Sent HEARTBEAT message.
+[0;32mI (83307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 48 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FB 8E 
+Sent HEARTBEAT message.
+[0;32mI (84307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 49 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EB 00 
+Sent HEARTBEAT message.
+[0;32mI (85307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CA 9A 
+Sent HEARTBEAT message.
+[0;32mI (86307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DA 14 
+Sent HEARTBEAT message.
+[0;32mI (87307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 99 A6 
+Sent HEARTBEAT message.
+[0;32mI (88307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 89 28 
+Sent HEARTBEAT message.
+[0;32mI (89307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A8 B2 
+Sent HEARTBEAT message.
+[0;32mI (90307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B8 3C 
+Sent HEARTBEAT message.
+[0;32mI (91307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 50 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B7 7F 
+Sent HEARTBEAT message.
+[0;32mI (92307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 51 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A7 F1 
+Sent HEARTBEAT message.
+[0;32mI (93307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 52 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 86 6B 
+Sent HEARTBEAT message.
+[0;32mI (94307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 53 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 96 E5 
+Sent HEARTBEAT message.
+[0;32mI (95307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 54 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D5 57 
+Sent HEARTBEAT message.
+[0;32mI (96307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 55 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C5 D9 
+Sent HEARTBEAT message.
+[0;32mI (97307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 56 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E4 43 
+Sent HEARTBEAT message.
+[0;32mI (98307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 57 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F4 CD 
+Sent HEARTBEAT message.
+[0;32mI (99307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 58 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 73 2F 
+Sent HEARTBEAT message.
+[0;32mI (100307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 59 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 63 A1 
+Sent HEARTBEAT message.
+[0;32mI (101307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 42 3B 
+Sent HEARTBEAT message.
+[0;32mI (102307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 52 B5 
+Sent HEARTBEAT message.
+[0;32mI (103307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 11 07 
+Sent HEARTBEAT message.
+[0;32mI (104307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 01 89 
+Sent HEARTBEAT message.
+[0;32mI (105307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 20 13 
+Sent HEARTBEAT message.
+[0;32mI (106307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 30 9D 
+Sent HEARTBEAT message.
+[0;32mI (107307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 60 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3E 95 
+Sent HEARTBEAT message.
+[0;32mI (108307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 61 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2E 1B 
+Sent HEARTBEAT message.
+[0;32mI (109307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 62 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0F 81 
+Sent HEARTBEAT message.
+[0;32mI (110307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 63 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1F 0F 
+Sent HEARTBEAT message.
+[0;32mI (111307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 64 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5C BD 
+Sent HEARTBEAT message.
+[0;32mI (112307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 65 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4C 33 
+Sent HEARTBEAT message.
+[0;32mI (113307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 66 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6D A9 
+Sent HEARTBEAT message.
+[0;32mI (114307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 67 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7D 27 
+Sent HEARTBEAT message.
+[0;32mI (115307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 68 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FA C5 
+Sent HEARTBEAT message.
+[0;32mI (116307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 69 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EA 4B 
+Sent HEARTBEAT message.
+[0;32mI (117307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CB D1 
+Sent HEARTBEAT message.
+[0;32mI (118307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DB 5F 
+Sent HEARTBEAT message.
+[0;32mI (119307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 98 ED 
+Sent HEARTBEAT message.
+[0;32mI (120307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 88 63 
+Sent HEARTBEAT message.
+[0;32mI (121307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A9 F9 
+Sent HEARTBEAT message.
+[0;32mI (122307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B9 77 
+Sent HEARTBEAT message.
+[0;32mI (123307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 70 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B6 34 
+Sent HEARTBEAT message.
+[0;32mI (124307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 71 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A6 BA 
+Sent HEARTBEAT message.
+[0;32mI (125307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 72 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 87 20 
+Sent HEARTBEAT message.
+[0;32mI (126307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 73 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 97 AE 
+Sent HEARTBEAT message.
+[0;32mI (127307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 74 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D4 1C 
+Sent HEARTBEAT message.
+[0;32mI (128307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 75 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C4 92 
+Sent HEARTBEAT message.
+[0;32mI (129307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 76 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E5 08 
+Sent HEARTBEAT message.
+[0;32mI (130307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 77 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F5 86 
+Sent HEARTBEAT message.
+[0;32mI (131307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 78 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 72 64 
+Sent HEARTBEAT message.
+[0;32mI (132307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 79 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 62 EA 
+Sent HEARTBEAT message.
+[0;32mI (133307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 43 70 
+Sent HEARTBEAT message.
+[0;32mI (134307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 53 FE 
+Sent HEARTBEAT message.
+[0;32mI (135307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 10 4C 
+Sent HEARTBEAT message.
+[0;32mI (136307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 00 C2 
+Sent HEARTBEAT message.
+[0;32mI (137307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 21 58 
+Sent HEARTBEAT message.
+[0;32mI (138307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 31 D6 
+Sent HEARTBEAT message.
+[0;32mI (139307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 80 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 28 6C 
+Sent HEARTBEAT message.
+[0;32mI (140307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 81 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 38 E2 
+Sent HEARTBEAT message.
+[0;32mI (141307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 82 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 19 78 
+Sent HEARTBEAT message.
+[0;32mI (142307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 83 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 09 F6 
+Sent HEARTBEAT message.
+[0;32mI (143307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 84 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4A 44 
+Sent HEARTBEAT message.
+[0;32mI (144307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 85 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5A CA 
+Sent HEARTBEAT message.
+[0;32mI (145307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 86 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7B 50 
+Sent HEARTBEAT message.
+[0;32mI (146307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 87 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6B DE 
+Sent HEARTBEAT message.
+[0;32mI (147307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 88 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EC 3C 
+Sent HEARTBEAT message.
+[0;32mI (148307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 89 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FC B2 
+Sent HEARTBEAT message.
+[0;32mI (149307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DD 28 
+Sent HEARTBEAT message.
+[0;32mI (150307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CD A6 
+Sent HEARTBEAT message.
+[0;32mI (151307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8E 14 
+Sent HEARTBEAT message.
+[0;32mI (152307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9E 9A 
+Sent HEARTBEAT message.
+[0;32mI (153307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BF 00 
+Sent HEARTBEAT message.
+[0;32mI (154307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AF 8E 
+Sent HEARTBEAT message.
+[0;32mI (155307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 90 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A0 CD 
+Sent HEARTBEAT message.
+[0;32mI (156307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 91 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B0 43 
+Sent HEARTBEAT message.
+[0;32mI (157307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 92 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 91 D9 
+Sent HEARTBEAT message.
+[0;32mI (158307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 93 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 81 57 
+Sent HEARTBEAT message.
+[0;32mI (159307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 94 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C2 E5 
+Sent HEARTBEAT message.
+[0;32mI (160307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 95 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D2 6B 
+Sent HEARTBEAT message.
+[0;32mI (161307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 96 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F3 F1 
+Sent HEARTBEAT message.
+[0;32mI (162307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 97 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E3 7F 
+Sent HEARTBEAT message.
+[0;32mI (163307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 98 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 64 9D 
+Sent HEARTBEAT message.
+[0;32mI (164307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 99 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 74 13 
+Sent HEARTBEAT message.
+[0;32mI (165307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 55 89 
+Sent HEARTBEAT message.
+[0;32mI (166307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 45 07 
+Sent HEARTBEAT message.
+[0;32mI (167307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 06 B5 
+Sent HEARTBEAT message.
+[0;32mI (168307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 16 3B 
+Sent HEARTBEAT message.
+[0;32mI (169307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 37 A1 
+Sent HEARTBEAT message.
+[0;32mI (170307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 27 2F 
+Sent HEARTBEAT message.
+[0;32mI (171307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 29 27 
+Sent HEARTBEAT message.
+[0;32mI (172307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 39 A9 
+Sent HEARTBEAT message.
+[0;32mI (173307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 18 33 
+Sent HEARTBEAT message.
+[0;32mI (174307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 08 BD 
+Sent HEARTBEAT message.
+[0;32mI (175307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4B 0F 
+Sent HEARTBEAT message.
+[0;32mI (176307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5B 81 
+Sent HEARTBEAT message.
+[0;32mI (177307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7A 1B 
+Sent HEARTBEAT message.
+[0;32mI (178307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6A 95 
+Sent HEARTBEAT message.
+[0;32mI (179307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 ED 77 
+Sent HEARTBEAT message.
+[0;32mI (180307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FD F9 
+Sent HEARTBEAT message.
+[0;32mI (181307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DC 63 
+Sent HEARTBEAT message.
+[0;32mI (182307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CC ED 
+Sent HEARTBEAT message.
+[0;32mI (183307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8F 5F 
+Sent HEARTBEAT message.
+[0;32mI (184307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9F D1 
+Sent HEARTBEAT message.
+[0;32mI (185307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BE 4B 
+Sent HEARTBEAT message.
+[0;32mI (186307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AE C5 
+Sent HEARTBEAT message.
+[0;32mI (187307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A1 86 
+Sent HEARTBEAT message.
+[0;32mI (188307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B1 08 
+Sent HEARTBEAT message.
+[0;32mI (189307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 90 92 
+Sent HEARTBEAT message.
+[0;32mI (190307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 80 1C 
+Sent HEARTBEAT message.
+[0;32mI (191307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C3 AE 
+Sent HEARTBEAT message.
+[0;32mI (192307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D3 20 
+Sent HEARTBEAT message.
+[0;32mI (193307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F2 BA 
+Sent HEARTBEAT message.
+[0;32mI (194307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E2 34 
+Sent HEARTBEAT message.
+[0;32mI (195307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 65 D6 
+Sent HEARTBEAT message.
+[0;32mI (196307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 75 58 
+Sent HEARTBEAT message.
+[0;32mI (197307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 54 C2 
+Sent HEARTBEAT message.
+[0;32mI (198307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 44 4C 
+Sent HEARTBEAT message.
+[0;32mI (199307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 07 FE 
+Sent HEARTBEAT message.
+[0;32mI (200307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 17 70 
+Sent HEARTBEAT message.
+[0;32mI (201307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 36 EA 
+Sent HEARTBEAT message.
+[0;32mI (202307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 26 64 
+Sent HEARTBEAT message.
+[0;32mI (203307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2A FA 
+Sent HEARTBEAT message.
+[0;32mI (204307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3A 74 
+Sent HEARTBEAT message.
+[0;32mI (205307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1B EE 
+Sent HEARTBEAT message.
+[0;32mI (206307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0B 60 
+Sent HEARTBEAT message.
+[0;32mI (207307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 48 D2 
+Sent HEARTBEAT message.
+[0;32mI (208307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 58 5C 
+Sent HEARTBEAT message.
+[0;32mI (209307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 79 C6 
+Sent HEARTBEAT message.
+[0;32mI (210307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 69 48 
+Sent HEARTBEAT message.
+[0;32mI (211307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EE AA 
+Sent HEARTBEAT message.
+[0;32mI (212307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FE 24 
+Sent HEARTBEAT message.
+[0;32mI (213307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DF BE 
+Sent HEARTBEAT message.
+[0;32mI (214307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CF 30 
+Sent HEARTBEAT message.
+[0;32mI (215307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8C 82 
+Sent HEARTBEAT message.
+[0;32mI (216307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9C 0C 
+Sent HEARTBEAT message.
+[0;32mI (217307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BD 96 
+Sent HEARTBEAT message.
+[0;32mI (218307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AD 18 
+Sent HEARTBEAT message.
+[0;32mI (219307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A2 5B 
+Sent HEARTBEAT message.
+[0;32mI (220307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B2 D5 
+Sent HEARTBEAT message.
+[0;32mI (221307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 93 4F 
+Sent HEARTBEAT message.
+[0;32mI (222307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 83 C1 
+Sent HEARTBEAT message.
+[0;32mI (223307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C0 73 
+Sent HEARTBEAT message.
+[0;32mI (224307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D0 FD 
+Sent HEARTBEAT message.
+[0;32mI (225307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F1 67 
+Sent HEARTBEAT message.
+[0;32mI (226307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E1 E9 
+Sent HEARTBEAT message.
+[0;32mI (227307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 66 0B 
+Sent HEARTBEAT message.
+[0;32mI (228307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 76 85 
+Sent HEARTBEAT message.
+[0;32mI (229307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 57 1F 
+Sent HEARTBEAT message.
+[0;32mI (230307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 47 91 
+Sent HEARTBEAT message.
+[0;32mI (231307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 04 23 
+Sent HEARTBEAT message.
+[0;32mI (232307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 14 AD 
+Sent HEARTBEAT message.
+[0;32mI (233307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 35 37 
+Sent HEARTBEAT message.
+[0;32mI (234307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 25 B9 
+Sent HEARTBEAT message.
+[0;32mI (235307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2B B1 
+Sent HEARTBEAT message.
+[0;32mI (236307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3B 3F 
+Sent HEARTBEAT message.
+[0;32mI (237307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1A A5 
+Sent HEARTBEAT message.
+[0;32mI (238307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0A 2B 
+Sent HEARTBEAT message.
+[0;32mI (239307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 49 99 
+Sent HEARTBEAT message.
+[0;32mI (240307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 59 17 
+Sent HEARTBEAT message.
+[0;32mI (241307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 78 8D 
+Sent HEARTBEAT message.
+[0;32mI (242307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 68 03 
+Sent HEARTBEAT message.
+[0;32mI (243307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EF E1 
+Sent HEARTBEAT message.
+[0;32mI (244307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FF 6F 
+Sent HEARTBEAT message.
+[0;32mI (245307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DE F5 
+Sent HEARTBEAT message.
+[0;32mI (246307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CE 7B 
+Sent HEARTBEAT message.
+[0;32mI (247307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8D C9 
+Sent HEARTBEAT message.
+[0;32mI (248307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 ED FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9D 47 
+Sent HEARTBEAT message.
+[0;32mI (249307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BC DD 
+Sent HEARTBEAT message.
+[0;32mI (250307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AC 53 
+Sent HEARTBEAT message.
+[0;32mI (251307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A3 10 
+Sent HEARTBEAT message.
+[0;32mI (252307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B3 9E 
+Sent HEARTBEAT message.
+[0;32mI (253307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 92 04 
+Sent HEARTBEAT message.
+[0;32mI (254307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 82 8A 
+Sent HEARTBEAT message.
+[0;32mI (255307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C1 38 
+Sent HEARTBEAT message.
+[0;32mI (256307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D1 B6 
+Sent HEARTBEAT message.
+[0;32mI (257307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F0 2C 
+Sent HEARTBEAT message.
+[0;32mI (258307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E0 A2 
+Sent HEARTBEAT message.
+[0;32mI (259307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 67 40 
+Sent HEARTBEAT message.
+[0;32mI (260307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 77 CE 
+Sent HEARTBEAT message.
+[0;32mI (261307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 56 54 
+Sent HEARTBEAT message.
+[0;32mI (262307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 46 DA 
+Sent HEARTBEAT message.
+[0;32mI (263307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 05 68 
+Sent HEARTBEAT message.
+[0;32mI (264307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 15 E6 
+Sent HEARTBEAT message.
+[0;32mI (265307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 34 7C 
+Sent HEARTBEAT message.
+[0;32mI (266307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 24 F2 
+Sent HEARTBEAT message.
+[0;32mI (267307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 00 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3D 48 
+Sent HEARTBEAT message.
+[0;32mI (268307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 01 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2D C6 
+Sent HEARTBEAT message.
+[0;32mI (269307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 02 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0C 5C 
+Sent HEARTBEAT message.
+[0;32mI (270307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 03 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1C D2 
+Sent HEARTBEAT message.
+[0;32mI (271307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 04 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5F 60 
+Sent HEARTBEAT message.
+[0;32mI (272307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 05 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4F EE 
+Sent HEARTBEAT message.
+[0;32mI (273307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 06 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6E 74 
+Sent HEARTBEAT message.
+[0;32mI (274307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 07 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7E FA 
+Sent HEARTBEAT message.
+[0;32mI (275307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 08 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F9 18 
+Sent HEARTBEAT message.
+[0;32mI (276307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 09 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E9 96 
+Sent HEARTBEAT message.
+[0;32mI (277307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C8 0C 
+Sent HEARTBEAT message.
+[0;32mI (278307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D8 82 
+Sent HEARTBEAT message.
+[0;32mI (279307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9B 30 
+Sent HEARTBEAT message.
+[0;32mI (280307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8B BE 
+Sent HEARTBEAT message.
+[0;32mI (281307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AA 24 
+Sent HEARTBEAT message.
+[0;32mI (282307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BA AA 
+Sent HEARTBEAT message.
+[0;32mI (283307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 10 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B5 E9 
+Sent HEARTBEAT message.
+[0;32mI (284307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 11 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A5 67 
+Sent HEARTBEAT message.
+[0;32mI (285307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 12 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 84 FD 
+Sent HEARTBEAT message.
+[0;32mI (286307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 13 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 94 73 
+Sent HEARTBEAT message.
+[0;32mI (287307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 14 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D7 C1 
+Sent HEARTBEAT message.
+[0;32mI (288307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 15 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C7 4F 
+Sent HEARTBEAT message.
+[0;32mI (289307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 16 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E6 D5 
+Sent HEARTBEAT message.
+[0;32mI (290307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 17 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F6 5B 
+Sent HEARTBEAT message.
+[0;32mI (291307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 18 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 71 B9 
+Sent HEARTBEAT message.
+[0;32mI (292307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 19 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 61 37 
+Sent HEARTBEAT message.
+[0;32mI (293307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 40 AD 
+Sent HEARTBEAT message.
+[0;32mI (294307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 50 23 
+Sent HEARTBEAT message.
+[0;32mI (295307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 13 91 
+Sent HEARTBEAT message.
+[0;32mI (296307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 03 1F 
+Sent HEARTBEAT message.
+[0;32mI (297307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 22 85 
+Sent HEARTBEAT message.
+[0;32mI (298307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 32 0B 
+Sent HEARTBEAT message.
+[0;32mI (299307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 20 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3C 03 
+Sent HEARTBEAT message.
+[0;32mI (300307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 21 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2C 8D 
+Sent HEARTBEAT message.
+[0;32mI (301307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 22 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0D 17 
+Sent HEARTBEAT message.
+[0;32mI (302307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 23 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1D 99 
+Sent HEARTBEAT message.
+[0;32mI (303307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 24 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5E 2B 
+Sent HEARTBEAT message.
+[0;32mI (304307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 25 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4E A5 
+Sent HEARTBEAT message.
+[0;32mI (305307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 26 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6F 3F 
+Sent HEARTBEAT message.
+[0;32mI (306307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 27 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7F B1 
+Sent HEARTBEAT message.
+[0;32mI (307307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 28 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F8 53 
+Sent HEARTBEAT message.
+[0;32mI (308307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 29 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E8 DD 
+Sent HEARTBEAT message.
+[0;32mI (309307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C9 47 
+Sent HEARTBEAT message.
+[0;32mI (310307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D9 C9 
+Sent HEARTBEAT message.
+[0;32mI (311307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9A 7B 
+Sent HEARTBEAT message.
+[0;32mI (312307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8A F5 
+Sent HEARTBEAT message.
+[0;32mI (313307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AB 6F 
+Sent HEARTBEAT message.
+[0;32mI (314307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BB E1 
+Sent HEARTBEAT message.
+[0;32mI (315307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 30 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B4 A2 
+Sent HEARTBEAT message.
+[0;32mI (316307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 31 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A4 2C 
+Sent HEARTBEAT message.
+[0;32mI (317307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 32 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 85 B6 
+Sent HEARTBEAT message.
+[0;32mI (318307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 33 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 95 38 
+Sent HEARTBEAT message.
+[0;32mI (319307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 34 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D6 8A 
+Sent HEARTBEAT message.
+[0;32mI (320307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 35 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C6 04 
+Sent HEARTBEAT message.
+[0;32mI (321307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 36 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E7 9E 
+Sent HEARTBEAT message.
+[0;32mI (322307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 37 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F7 10 
+Sent HEARTBEAT message.
+[0;32mI (323307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 38 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 70 F2 
+Sent HEARTBEAT message.
+[0;32mI (324307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 39 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 60 7C 
+Sent HEARTBEAT message.
+[0;32mI (325307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 41 E6 
+Sent HEARTBEAT message.
+[0;32mI (326307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 51 68 
+Sent HEARTBEAT message.
+[0;32mI (327307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 12 DA 
+Sent HEARTBEAT message.
+[0;32mI (328307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 02 54 
+Sent HEARTBEAT message.
+[0;32mI (329307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 23 CE 
+Sent HEARTBEAT message.
+[0;32mI (330307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 33 40 
+Sent HEARTBEAT message.
+[0;32mI (331307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 40 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3F DE 
+Sent HEARTBEAT message.
+[0;32mI (332307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 41 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2F 50 
+Sent HEARTBEAT message.
+[0;32mI (333307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 42 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0E CA 
+Sent HEARTBEAT message.
+[0;32mI (334307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 43 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1E 44 
+Sent HEARTBEAT message.
+[0;32mI (335307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 44 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5D F6 
+Sent HEARTBEAT message.
+[0;32mI (336307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 45 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4D 78 
+Sent HEARTBEAT message.
+[0;32mI (337307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 46 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6C E2 
+Sent HEARTBEAT message.
+[0;32mI (338307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 47 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7C 6C 
+Sent HEARTBEAT message.
+[0;32mI (339307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 48 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FB 8E 
+Sent HEARTBEAT message.
+[0;32mI (340307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 49 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EB 00 
+Sent HEARTBEAT message.
+[0;32mI (341307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CA 9A 
+Sent HEARTBEAT message.
+[0;32mI (342307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DA 14 
+Sent HEARTBEAT message.
+[0;32mI (343307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 99 A6 
+Sent HEARTBEAT message.
+[0;32mI (344307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 89 28 
+Sent HEARTBEAT message.
+[0;32mI (345307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A8 B2 
+Sent HEARTBEAT message.
+[0;32mI (346307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B8 3C 
+Sent HEARTBEAT message.
+[0;32mI (347307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 50 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B7 7F 
+Sent HEARTBEAT message.
+[0;32mI (348307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 51 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A7 F1 
+Sent HEARTBEAT message.
+[0;32mI (349307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 52 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 86 6B 
+Sent HEARTBEAT message.
+[0;32mI (350307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 53 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 96 E5 
+Sent HEARTBEAT message.
+[0;32mI (351307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 54 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D5 57 
+Sent HEARTBEAT message.
+[0;32mI (352307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 55 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C5 D9 
+Sent HEARTBEAT message.
+[0;32mI (353307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 56 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E4 43 
+Sent HEARTBEAT message.
+[0;32mI (354307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 57 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F4 CD 
+Sent HEARTBEAT message.
+[0;32mI (355307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 58 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 73 2F 
+Sent HEARTBEAT message.
+[0;32mI (356307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 59 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 63 A1 
+Sent HEARTBEAT message.
+[0;32mI (357307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 42 3B 
+Sent HEARTBEAT message.
+[0;32mI (358307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 52 B5 
+Sent HEARTBEAT message.
+[0;32mI (359307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 11 07 
+Sent HEARTBEAT message.
+[0;32mI (360307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 01 89 
+Sent HEARTBEAT message.
+[0;32mI (361307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 20 13 
+Sent HEARTBEAT message.
+[0;32mI (362307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 30 9D 
+Sent HEARTBEAT message.
+[0;32mI (363307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 60 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3E 95 
+Sent HEARTBEAT message.
+[0;32mI (364307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 61 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2E 1B 
+Sent HEARTBEAT message.
+[0;32mI (365307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 62 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0F 81 
+Sent HEARTBEAT message.
+[0;32mI (366307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 63 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1F 0F 
+Sent HEARTBEAT message.
+[0;32mI (367307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 64 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5C BD 
+Sent HEARTBEAT message.
+[0;32mI (368307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 65 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4C 33 
+Sent HEARTBEAT message.
+[0;32mI (369307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 66 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6D A9 
+Sent HEARTBEAT message.
+[0;32mI (370307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 67 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7D 27 
+Sent HEARTBEAT message.
+[0;32mI (371307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 68 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FA C5 
+Sent HEARTBEAT message.
+[0;32mI (372307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 69 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EA 4B 
+Sent HEARTBEAT message.
+[0;32mI (373307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CB D1 
+Sent HEARTBEAT message.
+[0;32mI (374307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DB 5F 
+Sent HEARTBEAT message.
+[0;32mI (375307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 98 ED 
+Sent HEARTBEAT message.
+[0;32mI (376307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 88 63 
+Sent HEARTBEAT message.
+[0;32mI (377307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A9 F9 
+Sent HEARTBEAT message.
+[0;32mI (378307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B9 77 
+Sent HEARTBEAT message.
+[0;32mI (379307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 70 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B6 34 
+Sent HEARTBEAT message.
+[0;32mI (380307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 71 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A6 BA 
+Sent HEARTBEAT message.
+[0;32mI (381307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 72 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 87 20 
+Sent HEARTBEAT message.
+[0;32mI (382307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 73 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 97 AE 
+Sent HEARTBEAT message.
+[0;32mI (383307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 74 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D4 1C 
+Sent HEARTBEAT message.
+[0;32mI (384307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 75 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C4 92 
+Sent HEARTBEAT message.
+[0;32mI (385307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 76 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E5 08 
+Sent HEARTBEAT message.
+[0;32mI (386307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 77 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F5 86 
+Sent HEARTBEAT message.
+[0;32mI (387307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 78 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 72 64 
+Sent HEARTBEAT message.
+[0;32mI (388307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 79 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 62 EA 
+Sent HEARTBEAT message.
+[0;32mI (389307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 43 70 
+Sent HEARTBEAT message.
+[0;32mI (390307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 53 FE 
+Sent HEARTBEAT message.
+[0;32mI (391307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 10 4C 
+Sent HEARTBEAT message.
+[0;32mI (392307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 00 C2 
+Sent HEARTBEAT message.
+[0;32mI (393307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 21 58 
+Sent HEARTBEAT message.
+[0;32mI (394307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 31 D6 
+Sent HEARTBEAT message.
+[0;32mI (395307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 80 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 28 6C 
+Sent HEARTBEAT message.
+[0;32mI (396307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 81 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 38 E2 
+Sent HEARTBEAT message.
+[0;32mI (397307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 82 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 19 78 
+Sent HEARTBEAT message.
+[0;32mI (398307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 83 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 09 F6 
+Sent HEARTBEAT message.
+[0;32mI (399307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 84 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4A 44 
+Sent HEARTBEAT message.
+[0;32mI (400307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 85 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5A CA 
+Sent HEARTBEAT message.
+[0;32mI (401307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 86 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7B 50 
+Sent HEARTBEAT message.
+[0;32mI (402307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 87 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6B DE 
+Sent HEARTBEAT message.
+[0;32mI (403307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 88 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EC 3C 
+Sent HEARTBEAT message.
+[0;32mI (404307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 89 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FC B2 
+Sent HEARTBEAT message.
+[0;32mI (405307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DD 28 
+Sent HEARTBEAT message.
+[0;32mI (406307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CD A6 
+Sent HEARTBEAT message.
+[0;32mI (407307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8E 14 
+Sent HEARTBEAT message.
+[0;32mI (408307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9E 9A 
+Sent HEARTBEAT message.
+[0;32mI (409307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BF 00 
+Sent HEARTBEAT message.
+[0;32mI (410307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AF 8E 
+Sent HEARTBEAT message.
+[0;32mI (411307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 90 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A0 CD 
+Sent HEARTBEAT message.
+[0;32mI (412307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 91 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B0 43 
+Sent HEARTBEAT message.
+[0;32mI (413307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 92 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 91 D9 
+Sent HEARTBEAT message.
+[0;32mI (414307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 93 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 81 57 
+Sent HEARTBEAT message.
+[0;32mI (415307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 94 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C2 E5 
+Sent HEARTBEAT message.
+[0;32mI (416307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 95 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D2 6B 
+Sent HEARTBEAT message.
+[0;32mI (417307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 96 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F3 F1 
+Sent HEARTBEAT message.
+[0;32mI (418307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 97 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E3 7F 
+Sent HEARTBEAT message.
+[0;32mI (419307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 98 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 64 9D 
+Sent HEARTBEAT message.
+[0;32mI (420307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 99 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 74 13 
+Sent HEARTBEAT message.
+[0;32mI (421307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 55 89 
+Sent HEARTBEAT message.
+[0;32mI (422307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 45 07 
+Sent HEARTBEAT message.
+[0;32mI (423307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 06 B5 
+Sent HEARTBEAT message.
+[0;32mI (424307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 16 3B 
+Sent HEARTBEAT message.
+[0;32mI (425307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 37 A1 
+Sent HEARTBEAT message.
+[0;32mI (426307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 27 2F 
+Sent HEARTBEAT message.
+[0;32mI (427307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 29 27 
+Sent HEARTBEAT message.
+[0;32mI (428307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 39 A9 
+Sent HEARTBEAT message.
+[0;32mI (429307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 18 33 
+Sent HEARTBEAT message.
+[0;32mI (430307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 08 BD 
+Sent HEARTBEAT message.
+[0;32mI (431307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4B 0F 
+Sent HEARTBEAT message.
+[0;32mI (432307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5B 81 
+Sent HEARTBEAT message.
+[0;32mI (433307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7A 1B 
+Sent HEARTBEAT message.
+[0;32mI (434307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6A 95 
+Sent HEARTBEAT message.
+[0;32mI (435307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 ED 77 
+Sent HEARTBEAT message.
+[0;32mI (436307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FD F9 
+Sent HEARTBEAT message.
+[0;32mI (437307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DC 63 
+Sent HEARTBEAT message.
+[0;32mI (438307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CC ED 
+Sent HEARTBEAT message.
+[0;32mI (439307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8F 5F 
+Sent HEARTBEAT message.
+[0;32mI (440307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9F D1 
+Sent HEARTBEAT message.
+[0;32mI (441307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BE 4B 
+Sent HEARTBEAT message.
+[0;32mI (442307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AE C5 
+Sent HEARTBEAT message.
+[0;32mI (443307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A1 86 
+Sent HEARTBEAT message.
+[0;32mI (444307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B1 08 
+Sent HEARTBEAT message.
+[0;32mI (445307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 90 92 
+Sent HEARTBEAT message.
+[0;32mI (446307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 80 1C 
+Sent HEARTBEAT message.
+[0;32mI (447307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C3 AE 
+Sent HEARTBEAT message.
+[0;32mI (448307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D3 20 
+Sent HEARTBEAT message.
+[0;32mI (449307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F2 BA 
+Sent HEARTBEAT message.
+[0;32mI (450307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E2 34 
+Sent HEARTBEAT message.
+[0;32mI (451307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 65 D6 
+Sent HEARTBEAT message.
+[0;32mI (452307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 75 58 
+Sent HEARTBEAT message.
+[0;32mI (453307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 54 C2 
+Sent HEARTBEAT message.
+[0;32mI (454307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 44 4C 
+Sent HEARTBEAT message.
+[0;32mI (455307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 07 FE 
+Sent HEARTBEAT message.
+[0;32mI (456307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 17 70 
+Sent HEARTBEAT message.
+[0;32mI (457307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 36 EA 
+Sent HEARTBEAT message.
+[0;32mI (458307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 26 64 
+Sent HEARTBEAT message.
+[0;32mI (459307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2A FA 
+Sent HEARTBEAT message.
+[0;32mI (460307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3A 74 
+Sent HEARTBEAT message.
+[0;32mI (461307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1B EE 
+Sent HEARTBEAT message.
+[0;32mI (462307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0B 60 
+Sent HEARTBEAT message.
+[0;32mI (463307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 48 D2 
+Sent HEARTBEAT message.
+[0;32mI (464307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 58 5C 
+Sent HEARTBEAT message.
+[0;32mI (465307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 79 C6 
+Sent HEARTBEAT message.
+[0;32mI (466307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 69 48 
+Sent HEARTBEAT message.
+[0;32mI (467307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EE AA 
+Sent HEARTBEAT message.
+[0;32mI (468307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FE 24 
+Sent HEARTBEAT message.
+[0;32mI (469307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DF BE 
+Sent HEARTBEAT message.
+[0;32mI (470307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CF 30 
+Sent HEARTBEAT message.
+[0;32mI (471307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8C 82 
+Sent HEARTBEAT message.
+[0;32mI (472307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9C 0C 
+Sent HEARTBEAT message.
+[0;32mI (473307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BD 96 
+Sent HEARTBEAT message.
+[0;32mI (474307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AD 18 
+Sent HEARTBEAT message.
+[0;32mI (475307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A2 5B 
+Sent HEARTBEAT message.
+[0;32mI (476307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B2 D5 
+Sent HEARTBEAT message.
+[0;32mI (477307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 93 4F 
+Sent HEARTBEAT message.
+[0;32mI (478307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 83 C1 
+Sent HEARTBEAT message.
+[0;32mI (479307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C0 73 
+Sent HEARTBEAT message.
+[0;32mI (480307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D0 FD 
+Sent HEARTBEAT message.
+[0;32mI (481307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F1 67 
+Sent HEARTBEAT message.
+[0;32mI (482307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E1 E9 
+Sent HEARTBEAT message.
+[0;32mI (483307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 66 0B 
+Sent HEARTBEAT message.
+[0;32mI (484307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 76 85 
+Sent HEARTBEAT message.
+[0;32mI (485307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 57 1F 
+Sent HEARTBEAT message.
+[0;32mI (486307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 47 91 
+Sent HEARTBEAT message.
+[0;32mI (487307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 04 23 
+Sent HEARTBEAT message.
+[0;32mI (488307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 14 AD 
+Sent HEARTBEAT message.
+[0;32mI (489307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 35 37 
+Sent HEARTBEAT message.
+[0;32mI (490307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 DF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 25 B9 
+Sent HEARTBEAT message.
+[0;32mI (491307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2B B1 
+Sent HEARTBEAT message.
+[0;32mI (492307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3B 3F 
+Sent HEARTBEAT message.
+[0;32mI (493307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1A A5 
+Sent HEARTBEAT message.
+[0;32mI (494307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0A 2B 
+Sent HEARTBEAT message.
+[0;32mI (495307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 49 99 
+Sent HEARTBEAT message.
+[0;32mI (496307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 59 17 
+Sent HEARTBEAT message.
+[0;32mI (497307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 78 8D 
+Sent HEARTBEAT message.
+[0;32mI (498307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 68 03 
+Sent HEARTBEAT message.
+[0;32mI (499307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EF E1 
+Sent HEARTBEAT message.
+[0;32mI (500307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 E9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FF 6F 
+Sent HEARTBEAT message.
+[0;32mI (501307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DE F5 
+Sent HEARTBEAT message.
+[0;32mI (502307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CE 7B 
+Sent HEARTBEAT message.
+[0;32mI (503307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8D C9 
+Sent HEARTBEAT message.
+[0;32mI (504307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 ED FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9D 47 
+Sent HEARTBEAT message.
+[0;32mI (505307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BC DD 
+Sent HEARTBEAT message.
+[0;32mI (506307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 EF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AC 53 
+Sent HEARTBEAT message.
+[0;32mI (507307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A3 10 
+Sent HEARTBEAT message.
+[0;32mI (508307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B3 9E 
+Sent HEARTBEAT message.
+[0;32mI (509307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 92 04 
+Sent HEARTBEAT message.
+[0;32mI (510307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 82 8A 
+Sent HEARTBEAT message.
+[0;32mI (511307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C1 38 
+Sent HEARTBEAT message.
+[0;32mI (512307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D1 B6 
+Sent HEARTBEAT message.
+[0;32mI (513307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F0 2C 
+Sent HEARTBEAT message.
+[0;32mI (514307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E0 A2 
+Sent HEARTBEAT message.
+[0;32mI (515307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 67 40 
+Sent HEARTBEAT message.
+[0;32mI (516307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 F9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 77 CE 
+Sent HEARTBEAT message.
+[0;32mI (517307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 56 54 
+Sent HEARTBEAT message.
+[0;32mI (518307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 46 DA 
+Sent HEARTBEAT message.
+[0;32mI (519307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 05 68 
+Sent HEARTBEAT message.
+[0;32mI (520307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 15 E6 
+Sent HEARTBEAT message.
+[0;32mI (521307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 34 7C 
+Sent HEARTBEAT message.
+[0;32mI (522307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 FF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 24 F2 
+Sent HEARTBEAT message.
+[0;32mI (523307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 00 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3D 48 
+Sent HEARTBEAT message.
+[0;32mI (524307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 01 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2D C6 
+Sent HEARTBEAT message.
+[0;32mI (525307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 02 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0C 5C 
+Sent HEARTBEAT message.
+[0;32mI (526307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 03 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1C D2 
+Sent HEARTBEAT message.
+[0;32mI (527307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 04 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5F 60 
+Sent HEARTBEAT message.
+[0;32mI (528307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 05 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4F EE 
+Sent HEARTBEAT message.
+[0;32mI (529307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 06 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6E 74 
+Sent HEARTBEAT message.
+[0;32mI (530307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 07 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7E FA 
+Sent HEARTBEAT message.
+[0;32mI (531307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 08 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F9 18 
+Sent HEARTBEAT message.
+[0;32mI (532307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 09 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E9 96 
+Sent HEARTBEAT message.
+[0;32mI (533307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C8 0C 
+Sent HEARTBEAT message.
+[0;32mI (534307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D8 82 
+Sent HEARTBEAT message.
+[0;32mI (535307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9B 30 
+Sent HEARTBEAT message.
+[0;32mI (536307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8B BE 
+Sent HEARTBEAT message.
+[0;32mI (537307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AA 24 
+Sent HEARTBEAT message.
+[0;32mI (538307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BA AA 
+Sent HEARTBEAT message.
+[0;32mI (539307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 10 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B5 E9 
+Sent HEARTBEAT message.
+[0;32mI (540307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 11 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A5 67 
+Sent HEARTBEAT message.
+[0;32mI (541307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 12 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 84 FD 
+Sent HEARTBEAT message.
+[0;32mI (542307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 13 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 94 73 
+Sent HEARTBEAT message.
+[0;32mI (543307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 14 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D7 C1 
+Sent HEARTBEAT message.
+[0;32mI (544307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 15 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C7 4F 
+Sent HEARTBEAT message.
+[0;32mI (545307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 16 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E6 D5 
+Sent HEARTBEAT message.
+[0;32mI (546307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 17 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F6 5B 
+Sent HEARTBEAT message.
+[0;32mI (547307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 18 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 71 B9 
+Sent HEARTBEAT message.
+[0;32mI (548307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 19 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 61 37 
+Sent HEARTBEAT message.
+[0;32mI (549307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 40 AD 
+Sent HEARTBEAT message.
+[0;32mI (550307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 50 23 
+Sent HEARTBEAT message.
+[0;32mI (551307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 13 91 
+Sent HEARTBEAT message.
+[0;32mI (552307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 03 1F 
+Sent HEARTBEAT message.
+[0;32mI (553307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 22 85 
+Sent HEARTBEAT message.
+[0;32mI (554307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 32 0B 
+Sent HEARTBEAT message.
+[0;32mI (555307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 20 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3C 03 
+Sent HEARTBEAT message.
+[0;32mI (556307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 21 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2C 8D 
+Sent HEARTBEAT message.
+[0;32mI (557307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 22 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0D 17 
+Sent HEARTBEAT message.
+[0;32mI (558307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 23 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1D 99 
+Sent HEARTBEAT message.
+[0;32mI (559307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 24 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5E 2B 
+Sent HEARTBEAT message.
+[0;32mI (560307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 25 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4E A5 
+Sent HEARTBEAT message.
+[0;32mI (561307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 26 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6F 3F 
+Sent HEARTBEAT message.
+[0;32mI (562307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 27 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7F B1 
+Sent HEARTBEAT message.
+[0;32mI (563307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 28 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F8 53 
+Sent HEARTBEAT message.
+[0;32mI (564307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 29 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E8 DD 
+Sent HEARTBEAT message.
+[0;32mI (565307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C9 47 
+Sent HEARTBEAT message.
+[0;32mI (566307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D9 C9 
+Sent HEARTBEAT message.
+[0;32mI (567307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9A 7B 
+Sent HEARTBEAT message.
+[0;32mI (568307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8A F5 
+Sent HEARTBEAT message.
+[0;32mI (569307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AB 6F 
+Sent HEARTBEAT message.
+[0;32mI (570307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BB E1 
+Sent HEARTBEAT message.
+[0;32mI (571307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 30 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B4 A2 
+Sent HEARTBEAT message.
+[0;32mI (572307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 31 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A4 2C 
+Sent HEARTBEAT message.
+[0;32mI (573307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 32 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 85 B6 
+Sent HEARTBEAT message.
+[0;32mI (574307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 33 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 95 38 
+Sent HEARTBEAT message.
+[0;32mI (575307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 34 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D6 8A 
+Sent HEARTBEAT message.
+[0;32mI (576307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 35 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C6 04 
+Sent HEARTBEAT message.
+[0;32mI (577307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 36 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E7 9E 
+Sent HEARTBEAT message.
+[0;32mI (578307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 37 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F7 10 
+Sent HEARTBEAT message.
+[0;32mI (579307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 38 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 70 F2 
+Sent HEARTBEAT message.
+[0;32mI (580307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 39 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 60 7C 
+Sent HEARTBEAT message.
+[0;32mI (581307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 41 E6 
+Sent HEARTBEAT message.
+[0;32mI (582307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 51 68 
+Sent HEARTBEAT message.
+[0;32mI (583307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 12 DA 
+Sent HEARTBEAT message.
+[0;32mI (584307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 02 54 
+Sent HEARTBEAT message.
+[0;32mI (585307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 23 CE 
+Sent HEARTBEAT message.
+[0;32mI (586307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 33 40 
+Sent HEARTBEAT message.
+[0;32mI (587307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 40 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3F DE 
+Sent HEARTBEAT message.
+[0;32mI (588307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 41 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2F 50 
+Sent HEARTBEAT message.
+[0;32mI (589307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 42 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0E CA 
+Sent HEARTBEAT message.
+[0;32mI (590307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 43 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1E 44 
+Sent HEARTBEAT message.
+[0;32mI (591307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 44 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5D F6 
+Sent HEARTBEAT message.
+[0;32mI (592307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 45 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4D 78 
+Sent HEARTBEAT message.
+[0;32mI (593307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 46 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6C E2 
+Sent HEARTBEAT message.
+[0;32mI (594307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 47 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7C 6C 
+Sent HEARTBEAT message.
+[0;32mI (595307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 48 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FB 8E 
+Sent HEARTBEAT message.
+[0;32mI (596307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 49 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EB 00 
+Sent HEARTBEAT message.
+[0;32mI (597307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CA 9A 
+Sent HEARTBEAT message.
+[0;32mI (598307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DA 14 
+Sent HEARTBEAT message.
+[0;32mI (599307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 99 A6 
+Sent HEARTBEAT message.
+[0;32mI (600307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 89 28 
+Sent HEARTBEAT message.
+[0;32mI (601307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A8 B2 
+Sent HEARTBEAT message.
+[0;32mI (602307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B8 3C 
+Sent HEARTBEAT message.
+[0;32mI (603307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 50 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B7 7F 
+Sent HEARTBEAT message.
+[0;32mI (604307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 51 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A7 F1 
+Sent HEARTBEAT message.
+[0;32mI (605307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 52 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 86 6B 
+Sent HEARTBEAT message.
+[0;32mI (606307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 53 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 96 E5 
+Sent HEARTBEAT message.
+[0;32mI (607307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 54 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D5 57 
+Sent HEARTBEAT message.
+[0;32mI (608307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 55 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C5 D9 
+Sent HEARTBEAT message.
+[0;32mI (609307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 56 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E4 43 
+Sent HEARTBEAT message.
+[0;32mI (610307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 57 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F4 CD 
+Sent HEARTBEAT message.
+[0;32mI (611307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 58 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 73 2F 
+Sent HEARTBEAT message.
+[0;32mI (612307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 59 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 63 A1 
+Sent HEARTBEAT message.
+[0;32mI (613307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 42 3B 
+Sent HEARTBEAT message.
+[0;32mI (614307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 52 B5 
+Sent HEARTBEAT message.
+[0;32mI (615307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 11 07 
+Sent HEARTBEAT message.
+[0;32mI (616307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 01 89 
+Sent HEARTBEAT message.
+[0;32mI (617307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 20 13 
+Sent HEARTBEAT message.
+[0;32mI (618307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 30 9D 
+Sent HEARTBEAT message.
+[0;32mI (619307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 60 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3E 95 
+Sent HEARTBEAT message.
+[0;32mI (620307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 61 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2E 1B 
+Sent HEARTBEAT message.
+[0;32mI (621307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 62 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0F 81 
+Sent HEARTBEAT message.
+[0;32mI (622307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 63 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1F 0F 
+Sent HEARTBEAT message.
+[0;32mI (623307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 64 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5C BD 
+Sent HEARTBEAT message.
+[0;32mI (624307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 65 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4C 33 
+Sent HEARTBEAT message.
+[0;32mI (625307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 66 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6D A9 
+Sent HEARTBEAT message.
+[0;32mI (626307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 67 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7D 27 
+Sent HEARTBEAT message.
+[0;32mI (627307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 68 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FA C5 
+Sent HEARTBEAT message.
+[0;32mI (628307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 69 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EA 4B 
+Sent HEARTBEAT message.
+[0;32mI (629307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CB D1 
+Sent HEARTBEAT message.
+[0;32mI (630307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DB 5F 
+Sent HEARTBEAT message.
+[0;32mI (631307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 98 ED 
+Sent HEARTBEAT message.
+[0;32mI (632307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 88 63 
+Sent HEARTBEAT message.
+[0;32mI (633307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A9 F9 
+Sent HEARTBEAT message.
+[0;32mI (634307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B9 77 
+Sent HEARTBEAT message.
+[0;32mI (635307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 70 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B6 34 
+Sent HEARTBEAT message.
+[0;32mI (636307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 71 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A6 BA 
+Sent HEARTBEAT message.
+[0;32mI (637307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 72 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 87 20 
+Sent HEARTBEAT message.
+[0;32mI (638307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 73 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 97 AE 
+Sent HEARTBEAT message.
+[0;32mI (639307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 74 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D4 1C 
+Sent HEARTBEAT message.
+[0;32mI (640307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 75 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C4 92 
+Sent HEARTBEAT message.
+[0;32mI (641307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 76 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E5 08 
+Sent HEARTBEAT message.
+[0;32mI (642307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 77 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F5 86 
+Sent HEARTBEAT message.
+[0;32mI (643307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 78 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 72 64 
+Sent HEARTBEAT message.
+[0;32mI (644307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 79 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 62 EA 
+Sent HEARTBEAT message.
+[0;32mI (645307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 43 70 
+Sent HEARTBEAT message.
+[0;32mI (646307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 53 FE 
+Sent HEARTBEAT message.
+[0;32mI (647307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 10 4C 
+Sent HEARTBEAT message.
+[0;32mI (648307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 00 C2 
+Sent HEARTBEAT message.
+[0;32mI (649307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 21 58 
+Sent HEARTBEAT message.
+[0;32mI (650307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 31 D6 
+Sent HEARTBEAT message.
+[0;32mI (651307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 80 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 28 6C 
+Sent HEARTBEAT message.
+[0;32mI (652307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 81 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 38 E2 
+Sent HEARTBEAT message.
+[0;32mI (653307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 82 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 19 78 
+Sent HEARTBEAT message.
+[0;32mI (654307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 83 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 09 F6 
+Sent HEARTBEAT message.
+[0;32mI (655307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 84 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4A 44 
+Sent HEARTBEAT message.
+[0;32mI (656307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 85 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5A CA 
+Sent HEARTBEAT message.
+[0;32mI (657307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 86 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7B 50 
+Sent HEARTBEAT message.
+[0;32mI (658307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 87 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6B DE 
+Sent HEARTBEAT message.
+[0;32mI (659307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 88 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EC 3C 
+Sent HEARTBEAT message.
+[0;32mI (660307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 89 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FC B2 
+Sent HEARTBEAT message.
+[0;32mI (661307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DD 28 
+Sent HEARTBEAT message.
+[0;32mI (662307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CD A6 
+Sent HEARTBEAT message.
+[0;32mI (663307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8E 14 
+Sent HEARTBEAT message.
+[0;32mI (664307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9E 9A 
+Sent HEARTBEAT message.
+[0;32mI (665307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BF 00 
+Sent HEARTBEAT message.
+[0;32mI (666307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AF 8E 
+Sent HEARTBEAT message.
+[0;32mI (667307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 90 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A0 CD 
+Sent HEARTBEAT message.
+[0;32mI (668307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 91 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B0 43 
+Sent HEARTBEAT message.
+[0;32mI (669307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 92 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 91 D9 
+Sent HEARTBEAT message.
+[0;32mI (670307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 93 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 81 57 
+Sent HEARTBEAT message.
+[0;32mI (671307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 94 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C2 E5 
+Sent HEARTBEAT message.
+[0;32mI (672307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 95 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D2 6B 
+Sent HEARTBEAT message.
+[0;32mI (673307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 96 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F3 F1 
+Sent HEARTBEAT message.
+[0;32mI (674307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 97 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E3 7F 
+Sent HEARTBEAT message.
+[0;32mI (675307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 98 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 64 9D 
+Sent HEARTBEAT message.
+[0;32mI (676307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 99 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 74 13 
+Sent HEARTBEAT message.
+[0;32mI (677307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9A FF BE 00 00 00 00 00 00 00 06 08 00 04 03 55 89 
+Sent HEARTBEAT message.
+[0;32mI (678307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 45 07 
+Sent HEARTBEAT message.
+[0;32mI (679307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9C FF BE 00 00 00 00 00 00 00 06 08 00 04 03 06 B5 
+Sent HEARTBEAT message.
+[0;32mI (680307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 16 3B 
+Sent HEARTBEAT message.
+[0;32mI (681307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9E FF BE 00 00 00 00 00 00 00 06 08 00 04 03 37 A1 
+Sent HEARTBEAT message.
+[0;32mI (682307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 27 2F 
+Sent HEARTBEAT message.
+[0;32mI (683307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 29 27 
+Sent HEARTBEAT message.
+[0;32mI (684307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 39 A9 
+Sent HEARTBEAT message.
+[0;32mI (685307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 18 33 
+Sent HEARTBEAT message.
+[0;32mI (686307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 08 BD 
+Sent HEARTBEAT message.
+[0;32mI (687307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4B 0F 
+Sent HEARTBEAT message.
+[0;32mI (688307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5B 81 
+Sent HEARTBEAT message.
+[0;32mI (689307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A6 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7A 1B 
+Sent HEARTBEAT message.
+[0;32mI (690307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6A 95 
+Sent HEARTBEAT message.
+[0;32mI (691307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A8 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 ED 77 
+Sent HEARTBEAT message.
+[0;32mI (692307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FD F9 
+Sent HEARTBEAT message.
+[0;32mI (693307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AA FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DC 63 
+Sent HEARTBEAT message.
+[0;32mI (694307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CC ED 
+Sent HEARTBEAT message.
+[0;32mI (695307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AC FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8F 5F 
+Sent HEARTBEAT message.
+[0;32mI (696307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9F D1 
+Sent HEARTBEAT message.
+[0;32mI (697307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AE FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BE 4B 
+Sent HEARTBEAT message.
+[0;32mI (698307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AE C5 
+Sent HEARTBEAT message.
+[0;32mI (699307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B0 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A1 86 
+Sent HEARTBEAT message.
+[0;32mI (700307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B1 08 
+Sent HEARTBEAT message.
+[0;32mI (701307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B2 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 90 92 
+Sent HEARTBEAT message.
+[0;32mI (702307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 80 1C 
+Sent HEARTBEAT message.
+[0;32mI (703307) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B4 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C3 AE 
+Sent HEARTBEAT message.

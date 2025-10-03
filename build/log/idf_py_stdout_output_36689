@@ -1,0 +1,1515 @@
+Command: /home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/qtoan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/qtoan/esp/project/esp_mavlink/build/esp_mavlink.elf /home/qtoan/esp/project/esp_mavlink/build/bootloader/bootloader.elf -m '/home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/qtoan/esp/esp-idf/tools/idf.py'
+x�x�xht: Projec�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  1 2025 21:58:03[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bdb0h ( 48560) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bdd8 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001e1d8 vaddr=40080000 size=01e40h (  7744) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17560h ( 95584) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037588 vaddr=40081e40 size=0c210h ( 49680) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=000437a0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (175) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     esp_mavlink[0m
+[0;32mI (199) app_init: App version:      1[0m
+[0;32mI (203) app_init: Compile time:     Oct  1 2025 23:53:56[0m
+[0;32mI (208) app_init: ELF file SHA256:  630ba5ac4...[0m
+[0;32mI (212) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (216) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (220) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (224) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (228) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (234) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFB31C8 len 0002CE38 (179 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (255) heap_init: At 4008E050 len 00011FB0 (71 KiB): IRAM[0m
+[0;33mW (261) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (277) spi_flash: flash io: dio[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+Hello world!
+This is esp32 chip with 2 CPU core(s), WiFi/BTBLE, silicon revision v3.1, 4MB external flash
+Minimum free heap size: 300284 bytes
+Restarting in 10 seconds...
+Restarting in 9 seconds...
+Restarting in 8 seconds...
+Restarting in 7 seconds...
+Restarting in 6 seconds...
+Restarting in 5 seconds...
+Restarting in 4 seconds...
+Restarting in 3 seconds...
+Restarting in 2 seconds...
+Restarting in 1 seconds...
+Restarting in 0 seconds...
+Restarting now.
+This is a test function from global component.
+This is a test function from control_pixhawk component.
+[0;32mI (11300) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 00 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 DB 28 
+[0;32mI (11310) control_pixhawk: Read 280 bytes[0m
+FD 09 00 00 7D 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 74 A2 W (11310) control_pixhawk: Received message with ID 0
+FD 20 00 00 7E 01 01 8D 00 00 40 1D 97 13 00 00 00 00 27 F0 3F 41 27 F0 3F 41 5B EC EE 3E 5B EC EE 3E 00 00 C0 7F 00 00 C0 7F E8 C1 W (11340) control_pixhawk: Received message with ID 141
+FD 1C 00 00 7F 01 01 1E 00 00 DE 03 05 00 7A 60 64 BB B6 43 77 BD 96 D4 81 BF E5 E0 34 3A 00 FC A6 B7 21 54 AD 39 34 B0 W (11340) control_pixhawk: Received message with ID 30
+FD 24 00 00 80 01 01 53 00 00 DA 03 05 00 7B C7 5F 3F 00 00 00 80 00 00 00 00 DA AA F8 BE 5A 62 B9 3C 35 DF C8 3E 73 25 BA 39 6F 12 83 3A 7A 9B W (11370) control_pixhawk: Received message with ID 83
+FD 29 00 00 81 01 01 93 00 00 FF FF FF FF FF FF FF FF FF 7F FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 01 01 FF 00 00 00 00 01 0D 50 W (11380) control_pixhawk: Received message with ID 147
+FD 08 00 00 82 01 01 B4 01 00 00 00 04 03 00 00 04 03 43 C3 W (11390) control_pixhawk: Received message with ID 436
+FD 29 00 00 83 01 01 E6 00 00 2A 0C 97 13 00 00 00 00 00 00 C0 7F 00 00 C0 7F AF E1 15 3B 35 B5 E6 3B 00 00 C0 7F 00 00 C0 7F 87 2C 49 3C 2D 98 8B 3E A5 9F FE W (11410) control_pixhawk: Received message with ID 230
+FD 
+[0;32mI (11420) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 01 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2D C6 
+Sent HEARTBEAT message.
+[0;32mI (12430) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 02 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 07 BD 
+[0;32mI (12430) control_pixhawk: Read 280 bytes[0m
+02 00 00 84 01 01 F5 00 00 00 01 24 12 W (12430) control_pixhawk: Received message with ID 245
+FD 1C 00 00 85 01 01 20 00 00 DA 03 05 00 E9 08 71 3A E2 36 03 3A 5B EC EE BE EE 08 B6 39 A0 A6 27 3B 64 AB 2E 3A 21 DB W (12440) control_pixhawk: Received message with ID 32
+FD 35 00 00 86 01 01 65 32 00 00 00 00 00 00 00 00 00 27 F0 3F 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 2B DE W (12470) control_pixhawk: Received message with ID 12901
+FD 33 00 00 87 01 01 55 00 00 DA 03 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 DF D3 81 BF 00 00 00 00 3F 00 01 19 14 W (12490) control_pixhawk: Received message with ID 85
+FD 0E 00 00 88 01 01 1D 00 00 A5 03 05 00 D7 F3 7C 44 00 00 00 00 33 10 1E 47 W (12500) control_pixhawk: Received message with ID 29
+FD 24 00 00 89 01 01 01 00 00 0F 40 00 00 0F 40 01 00 3F 88 20 03 6B 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 01 B3 52 W (12520) control_pixhawk: Received message with ID 1
+FD 12 00 00 8A 01 01 4A 00 00 00 00 00 00 21 30 29 3B 27 F0 3F 41 64 AB 2E 
+[0;32mI (12540) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 03 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1C D2 
+Sent HEARTBEAT message.
+[0;32mI (13550) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 04 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 72 0B 
+[0;32mI (13550) control_pixhawk: Read 280 bytes[0m
+BA 2D 01 97 89 W (13550) control_pixhawk: Received message with ID 74
+FD 16 00 00 8B 01 01 08 00 00 3B 1E 97 13 00 00 00 00 8E 06 00 00 00 00 00 00 CE 39 00 00 3D 01 F5 04 W (13560) control_pixhawk: Received message with ID 8
+FD 20 00 00 8C 01 01 1F 00 00 02 04 05 00 57 AB 5F 3F F3 62 84 BC 00 34 D1 BC DE 94 F8 BE 95 B6 BD BA B0 FD 0C B8 98 D6 BF B8 00 88 W (13580) control_pixhawk: Received message with ID 31
+FD 1C 00 00 8D 01 01 1E 00 00 21 04 05 00 F6 4E 65 BB 1A 25 77 BD C4 D4 81 BF 98 4A 79 B7 D3 0C C5 3A 65 85 1B BA 0F C6 W (13590) control_pixhawk: Received message with ID 30
+FD 1C 00 00 8E 01 01 1E 00 00 65 04 05 00 FA 64 66 BB 4E 55 77 BD 18 D6 81 BF 73 30 0F BB 86 9B A5 BA 56 49 9E BA 13 B0 W (13610) control_pixhawk: Received message with ID 30
+FD 20 00 00 8F 01 01 1F 00 00 65 04 05 00 82 AA 5F 3F D3 B1 84 BC D8 2C D1 BC B3 97 F8 BE CD B2 B3 BA 34 FB 4D 3A E4 EC AD BA F1 D1 W (13630) control_pixhawk: Received message with ID 31
+FD 09 00 00 B7 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 3B 0F W (13640) control_pixhawk: Received message with ID 0
+FD 1C 00 00 90 01 01 1E 00 00 A4 04 05 00 A9 7D 66 BB AE 79 77 BD E1 D5 81 BF 4A 90 0A B9 78 C4 77 BA C9 29 89 3A EC 53 W (13650) control_pixhawk: Received message with ID 30
+FD 04 00 00 91 01 01 2A 00 00 00 00 
+[0;32mI (13670) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 05 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4F EE 
+Sent HEARTBEAT message.
+[0;32mI (14680) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 06 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 AE 9E 
+[0;32mI (14680) control_pixhawk: Read 280 bytes[0m
+FF FF C4 01 W (14680) control_pixhawk: Received message with ID 42
+FD 20 00 00 92 01 01 1F 00 00 C8 04 05 00 A7 AA 5F 3F 4D AC 84 BC B8 32 D1 BC 35 97 F8 BE A6 72 0B B8 4B E6 E2 3A DE 43 82 B9 04 14 W (14700) control_pixhawk: Received message with ID 31
+FD 12 00 00 93 01 01 4A 00 00 00 00 00 00 AC F8 40 3B D1 95 3E 41 F6 CA F3 BA 2D 01 6E 22 W (14710) control_pixhawk: Received message with ID 74
+FD 1C 00 00 94 01 01 1E 00 00 E7 04 05 00 2F C3 66 BB 7A 5B 77 BD E7 D3 81 BF 3E E4 1F 3A D6 FA 3C 3A D2 9B 15 3B 8F 61 W (14720) control_pixhawk: Received message with ID 30
+FD 1C 00 00 95 01 01 1E 00 00 2B 05 05 00 C1 77 65 BB 20 49 77 BD BB D3 81 BF A5 A5 9E BA 00 19 D5 37 BA 33 84 39 6B 43 W (14730) control_pixhawk: Received message with ID 30
+FD 20 00 00 96 01 01 1F 00 00 2F 05 05 00 7D AB 5F 3F D9 99 84 BC F5 2C D1 BC 43 94 F8 BE 91 3C 8E BA C2 B4 22 3A AE 00 99 B9 3B BA W (14760) control_pixhawk: Received message with ID 31
+01 1F 00 00 96 2E 05 00 06 A6 5F 3F 56 73 85 BC 26 70 D3 BC 8E A5 F8 BE 68 A3 9F 3A F1 06 5D BB 5E 65 E4 3A 74 AD FD 09 00 00 63 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 6B 6F W (14780) control_pixhawk: Received message with ID 0
+FD 20 00 00 64 01 01 8D 00 00 5D F3 3E 14 00 00 00 00 FD 
+[0;32mI (14790) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 07 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7E FA 
+Sent HEARTBEAT message.
+[0;32mI (15800) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 08 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 89 6F 
+[0;32mI (15800) control_pixhawk: Read 280 bytes[0m
+42 3F 41 FD 42 3F 41 CF 06 00 3F CF 06 00 3F 00 00 C0 7F 00 00 C0 7F C9 08 W (15800) control_pixhawk: Received message with ID 141
+FD 24 00 00 65 01 01 53 00 00 D0 2E 05 00 86 C2 5F 3F 00 00 00 80 00 00 00 00 AC BC F8 BE 02 F6 B6 3C E5 C9 CA 3E E3 2A C6 39 6F 12 83 3A A9 4D W (15830) control_pixhawk: Received message with ID 83
+FD 02 00 00 66 01 01 F5 00 00 00 01 53 5C W (15830) control_pixhawk: Received message with ID 245
+FD 1C 00 00 67 01 01 20 00 00 D0 2E 05 00 D3 03 87 3A B5 A1 A9 BA CF 06 00 BF 1F 70 BA 3A 61 77 FD BA 59 4E 25 BB 80 A5 W (15840) control_pixhawk: Received message with ID 32
+FD 35 00 00 68 01 01 65 32 00 00 00 00 00 00 00 00 00 FD 42 3F 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 35 A7 W (15870) control_pixhawk: Received message with ID 12901
+FD 0E 00 00 69 01 01 1D 00 00 A1 2E 05 00 AE F7 7C 44 00 00 00 00 34 10 BC 15 W (15880) control_pixhawk: Received message with ID 29
+FD 24 00 00 6A 01 01 01 00 00 0F 40 00 00 0F 40 01 00 3F 88 20 03 6B 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 01 5F 0B W (15900) control_pixhawk: Received message with ID 1
+FD 1C 00 00 6B 01 01 1E 00 00 D5 2E 05 00 
+[0;32mI (15910) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 09 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E9 96 
+Sent HEARTBEAT message.
+[0;32mI (16920) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 0A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 55 FA 
+[0;32mI (16920) control_pixhawk: Read 280 bytes[0m
+9B 63 BE BB 74 A9 39 B2 41 C2 3A FE D0 DA 39 A5 31 FD 1C 00 00 A0 01 01 1E 00 00 03 33 05 00 62 0E 67 BB C6 BE 79 BD FD D9 81 BF ED 25 96 38 E5 3C 5B BB B5 1E DE 3A AC 2A FD 1C 00 00 A1 01 01 1E 00 00 42 33 05 00 6E 12 65 BB BF DA 79 BD 9C DA 81 BF AE 76 D1 B9 96 62 82 BA 2E 75 9A 3A B1 F6 W (16950) control_pixhawk: Received message with ID 30
+FD 20 00 00 A2 01 01 1F 00 00 46 33 05 00 2A A8 5F 3F 9B F2 85 BC A2 61 D3 BC A1 9D F8 BE BF A0 F9 BA 92 00 E0 B9 16 E1 AE 3A 1F 07 W (16960) control_pixhawk: Received message with ID 31
+FD 0A 00 00 A3 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 8A 0D ✅ DISARM/ARM command accepted!
+FD 09 00 00 CF FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 74 23 W (16980) control_pixhawk: Received message with ID 0
+FD 1C 00 00 A4 01 01 1E 00 00 85 33 05 00 EA 26 64 BB 9D E0 79 BD 02 DA 81 BF 73 3E 81 BA 2B C6 88 BB 1D B1 8A BA 5F C8 W (16990) control_pixhawk: Received message with ID 30
+00 50 A7 5F 3F 07 84 85 BC BF 96 D3 BC BE A0 F8 BE C3 32 12 3A 32 C3 7B BB 0B 07 4C 3A 5D 6A FD 12 00 00 D0 01 01 4A 00 00 00 00 00 00 F7 1F D8 3A 91 99 3F 41 47 3C 84 
+[0;32mI (17020) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D8 82 
+Sent HEARTBEAT message.
+[0;32mI (18030) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 0C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 20 4C 
+[0;32mI (18030) control_pixhawk: Read 280 bytes[0m
+3B 2D 01 C2 F6 W (18030) control_pixhawk: Received message with ID 74
+FD 0A 00 00 D1 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 33 17 ✅ DISARM/ARM command accepted!
+FD 04 00 00 D2 01 01 2A 00 00 00 00 FF FF 72 32 W (18050) control_pixhawk: Received message with ID 42
+FD 1C 00 00 D3 01 01 1E 00 00 AF 37 05 00 C0 5D 62 BB 46 C5 79 BD D1 DC 81 BF 54 EC 8A 37 17 E5 10 3B A0 6E F1 B8 94 DF W (18060) control_pixhawk: Received message with ID 30
+FD 1C 00 00 D4 01 01 1E 00 00 F2 37 05 00 AC CC 62 BB E5 16 7A BD 85 DA 81 BF 27 F0 D6 BA 1E 1F 6F BB F3 36 36 3A E6 0C W (18070) control_pixhawk: Received message with ID 30
+FD 33 00 00 D5 01 01 55 00 00 F3 37 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 85 DA 81 BF 00 00 00 00 3F 00 01 A5 2E W (18100) control_pixhawk: Received message with ID 85
+FD 20 00 00 D6 01 01 1F 00 00 F7 37 05 00 B5 A7 5F 26 A2 5F 3F AD FD 84 BC 62 B3 D2 BC 58 B4 F8 BE 43 7A 15 39 90 C0 C9 B9 BE 61 8F B9 9C 7D FD 0A 00 00 04 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 6D 2B ✅ DISARM/ARM command accepted!
+FD 1C 00 00 05 01 01 1E 00 00 1C 3C 05 00 51 CE 5D BB 3C C7 78 BD 2F E6 81 
+[0;32mI (18140) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8B BE 
+Sent HEARTBEAT message.
+[0;32mI (19150) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 0E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 FC D9 
+[0;32mI (19150) control_pixhawk: Read 280 bytes[0m
+BF F1 EB 80 39 B2 88 46 BB 0C 33 28 3A 8C 3D W (19150) control_pixhawk: Received message with ID 30
+FD 20 00 00 06 01 01 1F 00 00 40 3C 05 00 3A A2 5F 3F F8 24 85 BC CD 7C D2 BC 2A B4 F8 BE FF 31 78 BA 0C DF 7C 3B C8 10 50 BA D8 56 W (19170) control_pixhawk: Received message with ID 31
+FD 1C 00 00 07 01 01 1E 00 00 5F 3C 05 00 F5 4A 63 BB A6 9D 78 BD 9C E7 81 BF 3F 7D C5 B9 77 7E 88 3A 7C 60 A2 39 EF 25 W (19180) control_pixhawk: Received message with ID 30
+FD 24 00 00 08 01 01 53 00 00 7B 3C 05 00 73 BE 5F 3F 00 00 00 80 00 00 00 00 55 CB F8 BE E2 27 B9 3C B0 FF C9 3E 95 D6 99 39 6F 12 83 3A B3 55 W (19200) control_pixhawk: Received message with ID 83
+FD 12 00 00 09 01 01 4A 00 00 00 00 00 00 67 B2 D7 3A 2A 47 43 41 AA 13 B3 3B 2D 01 72 59 W (19210) control_pixhawk: Received message with ID 74
+FD 1C 00 00 0A 01 01 1E 00 00 A3 3C 05 00 4A 86 65 BB A6 B0 78 BD E2 E5 81 BF 3D D1 7A B9 50 28 74 39 46 10 DA 39 92 E6 W (19220) control_pixhawk: Received message with ID 30
+FD 20 00 00 0B 01 01 1F 00 00 A7 3C 05 00 01 A2 5F 3F 5E 30 85 BC 04 51 D2 BC 1D B5 F8 BE 34 01 11 3B 0E A1 82 3B 47 27 52 BB 5D B2 W (19250) control_pixhawk: Received message with ID 31
+91 39 F0 39 FD 24 00 00 32 01 01 53 00 00 62 40 05 00 8D 
+[0;32mI (19260) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 0F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BA AA 
+Sent HEARTBEAT message.
+[0;32mI (20270) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 10 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 7F A6 
+[0;32mI (20270) control_pixhawk: Read 280 bytes[0m
+BC 5F 3F 00 00 00 80 00 00 00 00 2A D2 F8 BE 9C A1 BB 3C FC EE C9 3E 0D 01 AE 39 6F 12 83 3A E5 B6 W (20270) control_pixhawk: Received message with ID 83
+FD 12 00 00 33 01 01 4A 00 00 00 00 00 00 92 BC 88 3A 52 9D 40 41 91 29 EB 3B 2D 01 CA 39 W (20290) control_pixhawk: Received message with ID 74
+FD 0A 00 00 34 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 4E 32 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 35 01 01 1E 00 00 89 40 05 00 48 AD 68 BB EB 88 78 BD 6A EA 81 BF 5D 6A 29 BA B6 33 1F BB 98 3C 67 3A 73 E9 W (20310) control_pixhawk: Received message with ID 30
+FD 20 00 00 36 01 01 1F 00 00 8E 40 05 00 CC A0 5F 3F 30 6D 85 BC FF 28 D2 BC 70 B9 F8 BE 15 99 6F B9 C6 5D DB BA E0 AE E8 B8 AF 72 W (20330) control_pixhawk: Received message with ID 31
+FD 01 00 00 37 01 01 9B 01 00 11 95 6A W (20340) control_pixhawk: Received message with ID 411
+FD 1C 00 00 38 01 01 1E 00 00 CD 40 05 00 56 1A 6B BB 52 8F 78 BD C4 E9 81 BF 31 8C 8B 3A CF 5F 96 3A 18 B6 0C BB 53 F0 W (20350) control_pixhawk: Received message with ID 30
+3A 04 79 FD 0A 00 00 66 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 35 39 ✅ DISARM/ARM command accepted!
+FD 20 00 00 67 01 01 1F 00 00 D7 44 05 00 4A A3 5F 3F 0A 57 86 BC 42 0E D2 BC 13 B0 F8 BE 10 56 1D 
+[0;32mI (20380) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 11 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A5 67 
+Sent HEARTBEAT message.
+[0;32mI (21390) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 12 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 A3 33 
+[0;32mI (21390) control_pixhawk: Read 280 bytes[0m
+BA 18 5D 2E 39 AF 28 50 BA 38 BF W (21390) control_pixhawk: Received message with ID 31
+FD 1C 00 00 68 01 01 1E 00 00 F6 44 05 00 BE 70 74 BB 3F 00 79 BD 44 E3 81 BF 4F C5 BC 39 CE 3E 37 BA FC 0B 11 BB 71 46 W (21400) control_pixhawk: Received message with ID 30
+FD 33 00 00 69 01 01 55 00 00 F2 44 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 60 E3 81 BF 00 00 00 00 3F 00 01 21 BD W (21430) control_pixhawk: Received message with ID 85
+FD 1C 00 00 6A 01 01 1E 00 00 3E 45 05 00 F8 B9 75 BB D5 0D 79 BD C2 E3 81 BF A0 2C 47 3A E9 98 8E BA A7 1C 4B BA 6D 2D W (21440) control_pixhawk: Received message with ID 30
+FD 20 00 00 6B 01 01 1F 00 00 3E 45 05 00 62 A3 5F 3F 35 69 86 BC 78 2F D2 BC 9A AF F8 BE F8 93 75 38 69 60 12 BB 42 52 C0 B9 73 AB W (21460) control_pixhawk: Received message with ID 31
+FD 12 00 00 6C 01 01 4A 00 00 00 00 00 00 41 45 5A 3A 27 F0 3F 41 71 1F CA 3B 2D 01 B5 E8 W (21470) control_pixhawk: Received message with ID 74
+01 1E 00 00 9E 48 05 00 00 A2 75 BB 11 5C 79 BD 7A DD 81 BF 13 C7 82 3A 19 7D 00 3B 40 2B 50 BA EF FC FD 20 00 00 91 01 01 1F 00 00 C2 48 05 00 78 A6 5F 3F 
+[0;32mI (21500) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 13 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 94 73 
+Sent HEARTBEAT message.
+[0;32mI (22510) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 14 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 D6 85 
+[0;32mI (22510) control_pixhawk: Read 280 bytes[0m
+B1 91 86 BC 38 71 D2 BC 2F A4 F8 BE 06 07 54 B9 09 B0 35 3A 55 51 B9 39 08 A2 W (22510) control_pixhawk: Received message with ID 31
+FD 1C 00 00 92 01 01 1E 00 00 E1 48 05 00 E8 FE 75 BB 9A 36 79 BD F8 DC 81 BF B3 5F BA B9 24 BC 52 39 2A C6 35 BB A6 41 W (22530) control_pixhawk: Received message with ID 30
+FD 1C 00 00 93 01 01 1E 00 00 20 49 05 00 28 22 79 BB 0D 48 79 BD 44 DD 81 BF D5 0D EA BA 4A 6C CE BA 8A 2B EA 39 D3 46 W (22540) control_pixhawk: Received message with ID 30
+FD 20 00 00 94 01 01 1F 00 00 24 49 05 00 C8 A5 5F 3F 51 B0 86 BC A9 34 D2 BC C7 A6 F8 BE 99 E6 91 BA 30 FD BF B8 68 43 03 BB C6 4B W (22570) control_pixhawk: Received message with ID 31
+FD 0A 00 00 95 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 8B 74 ✅ DISARM/ARM command accepted!
+FD 12 00 00 96 01 01 4A 00 00 00 00 00 00 9B DC CD B9 1D 13 FD 20 00 00 C7 01 01 1F 00 00 72 4D 05 00 A9 A5 5F 3F F2 75 85 BC 19 D1 D1 BC 34 A8 F8 BE 18 DB BC B9 DF FA DC BA 2C 82 06 3A 94 68 FD 0A 00 00 C8 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 A5 8F ✅ DISARM/ARM command accepted!
+FD 1C 00 00 C9 01 01 1E 00 00 92 4D 05 00 00 00 68 BB C5 F8 77 BD 
+[0;32mI (22610) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 15 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C7 4F 
+Sent HEARTBEAT message.
+[0;32mI (23620) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 16 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 0A 10 
+[0;32mI (23620) control_pixhawk: Read 280 bytes[0m
+66 E1 81 BF F6 45 B3 3A 5E A3 2D 3B 87 00 D7 BA FE 89 W (23620) control_pixhawk: Received message with ID 30
+FD 1C 00 00 CA 01 01 1E 00 00 D1 4D 05 00 0E B6 64 BB 0A 96 77 BD D8 E1 81 BF FA 5A AB 3A 64 6B 24 BB B4 8B A9 3A 6B 97 W (23630) control_pixhawk: Received message with ID 30
+FD 20 00 00 CB 01 01 1F 00 00 D5 4D 05 00 F7 A4 5F 3F 08 C1 84 BC 65 7D D1 BC 60 AB F8 BE B8 6A D9 39 FB 2F FB BA 70 B0 FE 38 18 A1 W (23660) control_pixhawk: Received message with ID 31
+FD 09 00 00 CC 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 F8 E2 W (23660) control_pixhawk: Received message with ID 0
+FD 20 00 00 CD 01 01 8D 00 00 25 08 B9 14 00 00 00 00 40 96 41 41 40 96 41 41 E0 FE 03 3F E0 FE 03 3F 00 00 C0 7F 00 00 C0 7F AD EC W (23690) control_pixhawk: Received message with ID 141
+FD 1C 00 00 CE 01 01 1E 00 00 14 4E 05 00 8B 8A 5F BB 0E 9A 77 BD 44 E3 81 BF 3E E5 E7 3A BE F3 39 BB 30 00 B9 38 C6 09 W (23690) control_pixhawk: Received message with ID 30
+FD 24 00 00 CF 01 01 53 00 00 14 4E 05 00 00 BE 48 C0 E3 B9 F4 08 33 BB 60 26 B9 37 F2 16 FD 0A 00 00 F6 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 DC 76 FD 09 00 00 F7 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 94 C2 W (23720) control_pixhawk: Received message with ID 0
+
+[0;32mI (23730) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 17 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F6 5B 
+Sent HEARTBEAT message.
+[0;32mI (24740) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 18 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 2D E1 
+[0;32mI (24740) control_pixhawk: Read 280 bytes[0m
+FD 20 00 00 F8 01 01 8D 00 00 41 4A C8 14 00 00 00 00 91 99 3F 41 91 99 3F 41 A2 4D 04 3F A2 4D 04 3F 00 00 C0 7F 00 00 C0 7F 6C B0 W (24750) control_pixhawk: Received message with ID 141
+FD 1C 00 00 F9 01 01 1E 00 00 FA 51 05 00 81 9D 5B BB 13 DA 77 BD 28 E5 81 BF E6 E3 94 3A 64 D5 BF 3A 78 24 26 BB 47 B9 W (24760) control_pixhawk: Received message with ID 30
+FD 24 00 00 FA 01 01 53 00 00 FB 51 05 00 15 BF 5F 3F 00 00 00 80 00 00 00 00 12 C9 F8 BE 9F 44 B2 3C 54 59 C9 3E 73 08 AD 39 6F 12 83 3A 34 5C W (24790) control_pixhawk: Received message with ID 83
+FD 29 00 00 FB 01 01 93 00 00 FF FF FF FF FF FF FF FF FF 7F FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 01 01 FF 00 00 00 00 01 95 66 W (24800) control_pixhawk: Received message with ID 147
+FD 08 00 00 FC 01 01 B4 01 00 00 00 04 03 00 00 04 03 53 5E W (24810) control_pixhawk: Received message with ID 436
+FD 29 00 00 FD 01 01 E6 00 00 DA 3C C8 14 1E 00 00 28 56 05 00 CE 08 6A BB F7 C1 77 BD D1 E8 81 BF 92 9B 14 BA 95 26 06 3B 48 E4 35 B9 92 0E FD 0A 00 00 31 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 7D 62 FD 1C 00 00 32 01 
+[0;32mI (24840) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 19 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 61 37 
+Sent HEARTBEAT message.
+[0;32mI (25850) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 1A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 F1 74 
+[0;32mI (25850) control_pixhawk: Read 280 bytes[0m
+01 1E 00 00 6C 56 05 00 6A C2 6B BB 99 2F 78 BD 97 E7 81 BF CD 21 93 39 59 95 6A BB EA 73 DF 39 A3 B0 W (25850) control_pixhawk: Received message with ID 30
+FD 20 00 00 33 01 01 1F 00 00 6C 56 05 00 C9 A1 5F 3F 1F 75 85 BC C7 B8 D1 BC 3A B6 F8 BE 9A 6B 19 39 5C 89 B0 BB 00 6B 04 3B F4 01 W (25880) control_pixhawk: Received message with ID 31
+FD 09 00 00 E1 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 E2 04 W (25880) control_pixhawk: Received message with ID 0
+FD 1C 00 00 34 01 01 1E 00 00 AB 56 05 00 EE E5 6A BB A0 1F 78 BD 0D E8 81 BF 9B 7A 0B 39 EA 12 3E BB 4D 20 BE 3A 94 93 W (25890) control_pixhawk: Received message with ID 30
+FD 20 00 00 35 01 01 1F 00 00 D3 56 05 00 44 A1 5F 3F 59 4A 85 BC 6A C4 D1 BC 25 B8 F8 BE FF B7 06 3A 70 DE E0 B9 B6 C1 C6 BA 17 37 W (25920) control_pixhawk: Received message with ID 31
+FD 12 00 00 36 01 01 4A 00 00 00 00 00 00 7C AD DD 3A D4 EC 41 41 8C E6 AC 3B 2D 01 D1 D7 W (25930) control_pixhawk: Received message with ID 74
+00 E3 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 D3 10 FD 1C 00 00 65 01 01 1E 00 00 96 5A 05 00 FD 7D 77 BB 04 1A 77 BD CD EA 81 BF FE E1 64 3A CA 17 C7 39 54 2F 40 B9 E0 F7 W (25950) control_pixhawk: Received message with ID 30
+FD 0A 00 00 66 01 01 4D 00 
+[0;32mI (25960) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 50 23 
+Sent HEARTBEAT message.
+[0;32mI (26970) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 1C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 84 C2 
+[0;32mI (26970) control_pixhawk: Read 280 bytes[0m
+00 90 01 00 00 00 00 00 00 01 C8 35 39 ✅ DISARM/ARM command accepted!
+FD 20 00 00 67 01 01 1F 00 00 BA 5A 05 00 84 A0 5F 3F 8A BA 85 BC 83 4C D0 BC D7 BB F8 BE 56 FC 47 3A 1D BA 23 BA 65 9B 77 BA FF 5C W (26990) control_pixhawk: Received message with ID 31
+FD 12 00 00 68 01 01 4A 00 00 00 00 00 00 95 5D DC 3A D4 EC 41 41 45 E6 8B 3B 2D 01 2F AF W (27000) control_pixhawk: Received message with ID 74
+FD 1C 00 00 69 01 01 1E 00 00 D9 5A 05 00 41 43 7C BB C1 44 77 BD D6 E9 81 BF 97 9B 47 BB B1 C5 14 BB 0C 3A 06 3B 6F 73 W (27010) control_pixhawk: Received message with ID 30
+FD 04 00 00 6A 01 01 2A 00 00 00 00 FF FF 0C 8F W (27020) control_pixhawk: Received message with ID 42
+FD 1C 00 00 6B 01 01 1E 00 00 18 5B 05 00 66 D3 78 BB 86 77 77 BD 8A E9 81 BF 77 C0 6A 39 D2 F9 EB BA B0 2A 80 3A FD AE W (27030) control_pixhawk: Received message with ID 30
+FD 20 00 00 6C 01 01 1F 00 00 21 5B 05 00 03 A1 5F 3F 69 D2 85 BC 08 B8 D0 BC AF B9 F8 BE 74 70 9D B9 86 6D DB BA 9F 34 2D BA 7C 33 W (27060) control_pixhawk: Received message with ID 31
+B9 CC 1B FD 04 00 00 93 01 01 2A 00 00 00 00 FF FF E6 AA W (27060) control_pixhawk: Received message with ID 42
+FD 0A 00 00 94 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 84 64 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 95 01 01 1E 00 00 03 5F 
+[0;32mI (27090) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 03 1F 
+Sent HEARTBEAT message.
+[0;32mI (28100) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 1E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 58 57 
+[0;32mI (28100) control_pixhawk: Read 280 bytes[0m
+05 00 AD FF 6E BB 4D 7A 77 BD 65 E7 81 BF 05 88 C3 3A 34 83 39 BA 3B 8C 09 BA 9C 91 W (28100) control_pixhawk: Received message with ID 30
+FD 33 00 00 96 01 01 55 00 00 04 5F 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 65 E7 81 BF 00 00 00 00 3F 00 01 30 B5 W (28130) control_pixhawk: Received message with ID 85
+FD 20 00 00 97 01 01 1F 00 00 07 5F 05 00 D6 A1 5F 3F A8 3F 85 BC 8D 0D D1 BC BA B6 F8 BE 41 36 18 3B 5B 7C 8C 3A 42 44 E9 BA 68 8A W (28150) control_pixhawk: Received message with ID 31
+FD 1C 00 00 98 01 01 1E 00 00 46 5F 05 00 91 8B 6E BB F3 BA 77 BD 20 E6 81 BF 9E D5 29 BA 3A A1 EA BA 20 BB 1F B8 02 67 W (28150) control_pixhawk: Received message with ID 30
+FD 20 00 00 99 01 01 1F 00 00 6A 5F 05 00 47 A2 5F 3F 9A 54 85 BC 19 52 D1 BC E3 B4 F8 BE E8 B1 43 39 76 88 BD BA 6E 63 A1 BA 7E 1F W (28180) control_pixhawk: Received message with ID 31
+E6 BA 94 56 FD 20 00 00 C4 01 01 1F 00 00 ED 62 05 00 08 A4 5F 3F 69 D3 83 BC CE 41 D1 BC 69 AF F8 BE CF EF B1 BA 40 69 B3 3A F0 1F B3 B8 12 18 W (28200) control_pixhawk: Received message with ID 31
+FD 1C 00 00 C5 01 01 1E 00 00 2C 63 05 
+[0;32mI (28210) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 1F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 32 0B 
+Sent HEARTBEAT message.
+[0;32mI (29220) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 20 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 82 3D 
+[0;32mI (29220) control_pixhawk: Read 280 bytes[0m
+00 9A 7E 5A BB C9 06 77 BD 77 E3 81 BF 69 6C 9E 3A 60 89 46 BB F8 1F E2 38 AA D1 W (29220) control_pixhawk: Received message with ID 30
+FD 20 00 00 C6 01 01 1F 00 00 50 63 05 00 A4 A4 5F 3F C0 F8 83 BC 54 52 D1 BC 1B AD F8 BE 2A 5B 84 B9 E0 25 0D B8 7C CB E8 3A F7 5E W (29250) control_pixhawk: Received message with ID 31
+FD 0A 00 00 C7 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 F0 7F ✅ DISARM/ARM command accepted!
+FD 1C 00 00 C8 01 01 1E 00 00 70 63 05 00 77 C8 57 BB 4A 0F 77 BD 81 E2 81 BF 33 07 6A 3A 57 B5 04 3A 2F 0E 53 BA 66 48 W (29260) control_pixhawk: Received message with ID 30
+FD 24 00 00 C9 01 01 53 00 00 8C 63 05 00 FE BF 5F 3F 00 00 00 80 00 00 00 00 CB C5 F8 BE C5 4A AF 3C 24 8D C8 3E B0 5A 7C 39 6F 12 83 3A 40 C3 W (29290) control_pixhawk: Received message with ID 83
+FD 12 00 00 CA 01 01 4A 00 00 00 00 00 00 84 45 12 3B D4 EC 41 41 A7 DC 8B 3B 2D 01 BC 3D W (29290) control_pixhawk: Received message with ID 74
+CF 25 39 46 40 FD 0A 00 00 F8 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 86 96 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 F9 01 01 1E 00 00 DD 67 05 00 28 4E 51 BB 32 B3 76 BD E6 EA 81 BF 59 67 7F 3A F6 49 F9 BA FF 60 21 BB 01 53 W (29320) control_pixhawk: Received message with ID 30
+FD 20 
+[0;32mI (29330) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 21 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2C 8D 
+Sent HEARTBEAT message.
+[0;32mI (30340) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 22 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 5E A8 
+[0;32mI (30340) control_pixhawk: Read 280 bytes[0m
+00 00 FA 01 01 1F 00 00 01 68 05 00 3A A0 5F 3F A6 69 83 BC F0 89 D1 BC 17 BD F8 BE B9 D1 2D 3A 0D 5F 8A BB 04 ED 84 B9 44 EE W (30340) control_pixhawk: Received message with ID 31
+FD 1C 00 00 FB 01 01 1E 00 00 20 68 05 00 58 02 50 BB BB 0F 77 BD BE EB 81 BF 0C D7 6C 38 57 7B 3A 3A 15 B7 57 3A 25 78 W (30360) control_pixhawk: Received message with ID 30
+FD 1C 00 00 FC 01 01 1E 00 00 64 68 05 00 E6 2F 51 BB D6 00 77 BD 63 EC 81 BF 81 47 71 3A D3 5F 35 3B 9C 22 E4 BA 7C 54 W (30380) control_pixhawk: Received message with ID 30
+FD 20 00 00 FD 01 01 1F 00 00 68 68 05 00 08 A0 5F 3F C0 5E 83 BC 8E 6A D1 BC EE BD F8 BE 28 34 E5 3A 0C AD 6E 3B 76 EF CA BA 43 81 W (30400) control_pixhawk: Received message with ID 31
+FD 12 00 00 FE 01 01 4A 00 00 00 00 00 00 0C 8E 17 3B 40 96 41 41 EC D1 51 3B 2D 01 46 A4 W (30410) control_pixhawk: Received message with ID 74
+BC 85 19 D2 BC EB BC F8 BE 3A 56 04 3A AF 3D 2F BB 35 E7 22 3A 9E 92 FD 1C 00 00 26 01 01 1E 00 00 C8 6B 05 00 5B 31 4F BB 91 A1 77 BD BD EA 81 BF 06 E8 29 BA 34 E8 CD BA 43 45 C9 3A 66 1B W (30430) control_pixhawk: Received message with ID 30
+FD 20 00 00 27 01 01 1F 00 00 EC 6B 05 00 1B A0 5F 3F 04 BC 83 
+[0;32mI (30450) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 23 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1D 99 
+Sent HEARTBEAT message.
+[0;32mI (31460) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 24 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 2B 1E 
+[0;32mI (31460) control_pixhawk: Read 280 bytes[0m
+BC D8 0A D2 BC EC BC F8 BE 1C 0D 9C B9 94 16 24 B9 40 B1 FC B9 42 E4 W (31460) control_pixhawk: Received message with ID 31
+FD 1C 00 00 28 01 01 1E 00 00 07 6C 05 00 54 62 51 BB 2B AB 77 BD 76 EB 81 BF CB E1 88 BA E4 94 E0 BA F0 D0 5E 39 8C 90 W (31470) control_pixhawk: Received message with ID 30
+FD 33 00 00 29 01 01 55 00 00 03 6C 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 DB EB 81 BF 00 00 00 00 3F 00 01 86 09 W (31500) control_pixhawk: Received message with ID 85
+FD 0A 00 00 2A 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 F5 DA ✅ DISARM/ARM command accepted!
+FD 1C 00 00 2B 01 01 1E 00 00 4A 6C 05 00 4A 72 53 BB 15 55 77 BD EC EC 81 BF 25 00 84 3A 1C CA C4 BA F9 25 AF 39 32 32 W (31520) control_pixhawk: Received message with ID 30
+FD 20 00 00 2C 01 01 1F 00 00 4F 6C 05 00 32 9F 5F 3F 74 CC 83 BC 2B C8 D1 BC 61 C0 F8 BE E5 0A C9 3A AC EB 30 BB 20 B6 2B 3A B7 78 W (31550) control_pixhawk: Received message with ID 31
+00 F5 8C E8 3A FD 42 3F 41 38 8B 8D 3B 2D 01 82 1C FD 1C 00 00 58 01 01 1E 00 00 74 70 05 00 D5 2A 5F BB 0B 4A 78 BD 2B E9 81 BF 20 49 9E BA EE 
+[0;32mI (31560) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 25 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4E A5 
+Sent HEARTBEAT message.
+[0;32mI (32580) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 26 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 F7 8B 
+[0;32mI (32580) control_pixhawk: Read 280 bytes[0m
+58 D6 39 F7 9F 20 3A 5A D5 W (32580) control_pixhawk: Received message with ID 30
+FD 0A 00 00 59 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 43 D0 ✅ DISARM/ARM command accepted!
+FD 20 00 00 5A 01 01 1F 00 00 98 70 05 00 FC A0 5F 3F 8E DD 84 BC 2F F5 D1 BC 38 B9 F8 BE 43 F5 96 B8 DA 51 D4 B9 C0 05 BF BA 3A 41 W (32610) control_pixhawk: Received message with ID 31
+FD 1C 00 00 5B 01 01 1E 00 00 B7 70 05 00 63 37 60 BB 50 17 78 BD 51 EA 81 BF 7E 23 59 39 38 05 F7 38 6C C4 89 BA 15 BC W (32620) control_pixhawk: Received message with ID 30
+FD 1C 00 00 5C 01 01 1E 00 00 FB 70 05 00 55 4D 67 BB 4D 17 78 BD F7 EA 81 BF F6 BF 48 BB A4 73 15 B9 CA 15 BF B9 75 D4 W (32630) control_pixhawk: Received message with ID 30
+FD 20 00 00 5D 01 01 1F 00 00 FF 70 05 00 76 A0 5F 3F 65 12 85 BC EF C2 D1 BC 29 BB F8 BE E2 6B 62 B9 24 F2 11 3B EE DA 74 39 40 45 W (32660) control_pixhawk: Received message with ID 31
+00 3B CB 6F BB E0 46 78 BD 99 E4 81 BF 94 83 FF BA F4 CF CD BA 21 9B 33 3B 26 F2 FD 20 00 00 88 01 01 1F 00 00 83 74 05 00 2D A3 5F 3F 1C 96 85 BC 96 92 D1 BC 4B B1 F8 BE B8 1C 99 BA D4 21 2F B9 F8 B3 C0 3A 1E 4A W (32670) control_pixhawk: Received message with ID 31
+FD 1C 00 00 89 01 01 1E 00 00 
+[0;32mI (32690) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 27 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7F B1 
+Sent HEARTBEAT message.
+[0;32mI (33700) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 28 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 D0 7A 
+[0;32mI (33700) control_pixhawk: Read 280 bytes[0m
+A2 74 05 00 FD D4 70 BB D0 3D 78 BD AA E4 81 BF D4 9B 8B BA A8 9F 17 3B D8 AB 6F BA D3 89 W (33700) control_pixhawk: Received message with ID 30
+FD 0A 00 00 8A 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 3F 8C ✅ DISARM/ARM command accepted!
+FD 1C 00 00 8B 01 01 1E 00 00 E1 74 05 00 82 0B 71 BB 36 12 78 BD 68 E4 81 BF 04 67 82 BA 25 4C 6A 3A A0 C1 68 B9 22 CC W (33730) control_pixhawk: Received message with ID 30
+FD 20 00 00 8C 01 01 1F 00 00 E5 74 05 00 11 A3 5F 3F 1D AA 85 BC A4 92 D1 BC AA B1 F8 BE 4F 3E 83 39 27 34 02 BA D0 35 A0 BA CD DC W (33750) control_pixhawk: Received message with ID 31
+FD 09 00 00 8D 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 EA FA W (33760) control_pixhawk: Received message with ID 0
+FD 20 00 00 8E 01 01 8D 00 00 7E 9F 51 15 00 00 00 00 BC 46 40 41 BC 46 40 41 F9 2F 0A 3F F9 2F 0A 3F 00 00 C0 7F 00 00 C0 7F 37 2F W (33780) control_pixhawk: Received message with ID 141
+FD 1C 00 00 8F 01 01 1E 00 00 24 75 05 00 98 94 6B BB 73 C7 77 BD 79 E8 81 BF B1 0C C3 B9 D9 8A 4B BA D3 D1 4F 3A 52 32 W (33780) control_pixhawk: Received message with ID 30
+FD 24 00 00 90 01 01 53 00 00 25 75 05 00 78 FF FF FF FF FF FF FF FF FF 00 01 01 FF 00 00 00 00 01 C2 3B FD 08 00 00 
+[0;32mI (33810) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 29 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E8 DD 
+Sent HEARTBEAT message.
+[0;32mI (34820) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 2A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 0C EF 
+[0;32mI (34820) control_pixhawk: Read 280 bytes[0m
+BA 01 01 B4 01 00 00 00 04 03 00 00 04 03 0C 7D FD 29 00 00 BB 01 01 E6 00 00 C3 D4 60 15 00 00 00 00 00 00 C0 7F 00 00 C0 7F AB 76 98 3A 42 4E CF 3B 00 00 C0 7F 00 00 C0 7F C3 5C 4D 3C 33 D1 8B 3E A5 C7 9E W (34830) control_pixhawk: Received message with ID 230
+FD 02 00 00 BC 01 01 F5 00 00 00 01 43 65 W (34850) control_pixhawk: Received message with ID 245
+FD 1C 00 00 BD 01 01 20 00 00 0B 79 05 00 8B 35 04 BA A4 DA 09 BA 86 B2 0A BF D1 86 9F BA 87 92 B5 38 80 AF 9E BB CF 7A W (34860) control_pixhawk: Received message with ID 32
+FD 35 00 00 BE 01 01 65 32 00 00 00 00 00 00 00 00 00 79 F3 3D 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 C2 8D W (34880) control_pixhawk: Received message with ID 12901
+FD 33 00 00 BF 01 01 55 00 00 0B 79 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 01 1F 00 00 7C 7D 05 00 55 9E 5F 3F AE 9E 85 BC 1A AB D0 BC 76 C3 F8 BE F0 B6 EB BA 8A B1 E3 BA 2E 98 EB BA C9 14 FD 0A 00 00 F5 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 CD 46 ✅ DISARM/ARM command accepted!
+FD 09 00 00 
+[0;32mI (34920) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D9 C9 
+Sent HEARTBEAT message.
+[0;32mI (35930) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 2C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 79 59 
+[0;32mI (35930) control_pixhawk: Read 280 bytes[0m
+F5 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 08 8D W (35930) control_pixhawk: Received message with ID 0
+FD 1C 00 00 F6 01 01 1E 00 00 BB 7D 05 00 57 C4 75 BB C8 66 77 BD CC EE 81 BF 10 9C C5 3A A2 2D 80 BB 60 3B 50 B9 BC C5 W (35940) control_pixhawk: Received message with ID 30
+FD 20 00 00 F7 01 01 1F 00 00 DF 7D 05 00 3A 9E 5F 3F EE D9 85 BC AE DA D0 BC 8D C3 F8 BE 31 42 49 3A 9E 44 28 3B 25 BF 1D BB 6C DA W (35970) control_pixhawk: Received message with ID 31
+FD 12 00 00 F8 01 01 4A 00 00 00 00 00 00 AB DE F1 3A 91 99 3F 41 DD 1D 88 3B 2D 01 21 10 W (35970) control_pixhawk: Received message with ID 74
+FD 1C 00 00 F9 01 01 1E 00 00 FF 7D 05 00 A9 38 78 BB 3E 52 77 BD 82 EF 81 BF 71 9D 07 BB 40 D2 8E 39 FD 84 9C 39 50 8D W (35990) control_pixhawk: Received message with ID 30
+FD 1C 00 00 FA 01 01 1E 00 00 42 7E 05 00 AA F6 75 BB A2 0F 77 BD EF EF 81 BF 71 B6 C0 3A 08 47 40 BA 30 40 D1 B8 72 91 W (36000) control_pixhawk: Received message with ID 30
+FD 33 00 00 FB 01 01 55 00 00 3F 7E 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 0F F0 81 BF 00 00 00 00 3F 00 01 71 C4 W (36030) control_pixhawk: Received message with ID 85
+FD 20 00 00 FC 01 
+[0;32mI (36040) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 8A F5 
+Sent HEARTBEAT message.
+[0;32mI (37050) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 2E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 A5 CC 
+[0;32mI (37050) control_pixhawk: Read 280 bytes[0m
+01 1F 00 00 47 7E 05 00 BC 9D 5F 2C D6 A6 B9 16 4A 4F 3A 49 D3 3A BA 30 D7 FD 20 00 00 27 01 01 1F 00 00 CA 81 05 00 C7 9A 5F 3F 1E 3A 86 BC E8 D4 D0 BC C2 CF F8 BE 69 DF 16 BB 20 67 F8 B9 10 F3 A2 B8 35 6D FD 12 00 00 28 01 01 4A 00 00 00 00 00 00 5B BC BB 3A 27 F0 3F 41 12 5E 9B 3B 2D 01 D3 CA W (37080) control_pixhawk: Received message with ID 74
+FD 1C 00 00 29 01 01 1E 00 00 E5 81 05 00 7B E4 7B BB F8 E4 77 BD CB F6 81 BF 45 FC D1 BA ED 5B F1 3A CD 68 02 3B 39 03 W (37080) control_pixhawk: Received message with ID 30
+FD 0A 00 00 2A 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 F5 DA ✅ DISARM/ARM command accepted!
+FD 1C 00 00 2B 01 01 1E 00 00 28 82 05 00 9E F9 7D BB E0 12 78 BD CA F4 81 BF C1 23 98 BA FB E2 8F 3A DE CA 4A BA 58 66 W (37110) control_pixhawk: Received message with ID 30
+FD 20 00 00 2C 01 01 1F 00 00 2D 82 05 00 1F 9B 5F 3F 33 73 86 BC C2 FE D0 BC 4A CE F8 BE ED D2 8B BA 61 E8 AA 3A 98 E9 41 BB 80 BD W (37130) control_pixhawk: Received message with ID 31
+1F 00 00 18 86 05 00 C4 9B 5F 3F 42 93 86 BC 80 70 D1 BC 86 CB F8 BE AF D9 81 39 AA DF 72 BB EC 6B 6A 39 
+[0;32mI (37150) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 2F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 BB E1 
+Sent HEARTBEAT message.
+[0;32mI (38160) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 30 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 26 B3 
+[0;32mI (38160) control_pixhawk: Read 280 bytes[0m
+A5 7F FD 04 00 00 57 01 01 2A 00 00 00 00 FF FF AD AB W (38160) control_pixhawk: Received message with ID 42
+FD 1C 00 00 58 01 01 1E 00 00 57 86 05 00 4C 1E 7E BB 8A A7 78 BD 6D F2 81 BF 5A 1B 1B BB 3C B4 33 B9 68 2F 92 B8 3B 76 W (38170) control_pixhawk: Received message with ID 30
+FD 0A 00 00 59 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 43 D0 ✅ DISARM/ARM command accepted!
+FD 20 00 00 5A 01 01 1F 00 00 7B 86 05 00 88 9B 5F 3F 34 B7 86 BC 16 95 D1 BC 2D CC F8 BE 14 60 A0 3A BF 4D 17 3A C3 AC 77 3A 76 41 W (38210) control_pixhawk: Received message with ID 31
+FD 1C 00 00 5B 01 01 1E 00 00 96 86 05 00 3B 11 7F BB FE D4 78 BD 0C F4 81 BF FE FE 34 39 8D 6B 47 BA 37 6C A6 BA 57 5C W (38210) control_pixhawk: Received message with ID 30
+FD 24 00 00 5C 01 01 53 00 00 B5 86 05 00 0F B8 5F 3F 00 00 00 80 00 00 00 00 53 E2 F8 BE FB 6B CC 3C 5C 14 CA 3E D1 5E 8E 39 6F 12 83 3A A6 88 W (38240) control_pixhawk: Received message with ID 83
+FD 12 00 00 5D 01 01 4A 00 00 00 00 00 00 58 8C 2E 3B 91 99 3F 41 50 58 94 3B 2D 01 B5 6E W (38250) control_pixhawk: Received message with ID 74
+4A F6 52 3B FD 42 3F 41 07 9C 40 3B 2D 01 51 2D FD 0A 00 00 8C 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 1D EC ✅ DISARM/ARM command accepted!
+
+[0;32mI (38270) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 31 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A4 2C 
+Sent HEARTBEAT message.
+[0;32mI (39280) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 32 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 FA 26 
+[0;32mI (39280) control_pixhawk: Read 280 bytes[0m
+FD 1C 00 00 8D 01 01 1E 00 00 BF 8A 05 00 9B FD 5E BB 43 71 79 BD DA F0 81 BF 4C 70 E8 BA B4 35 E1 BA 5E 27 14 BA 8D 35 W (39280) control_pixhawk: Received message with ID 30
+FD 20 00 00 8E 01 01 1F 00 00 C8 8A 05 00 EF 9C 5F 3F AC 4E 85 BC 07 1E D3 BC 92 C6 F8 BE 08 CF 80 3A 26 4D 0A 3B 5E 1E 0F BB B8 FD W (39310) control_pixhawk: Received message with ID 31
+FD 1C 00 00 8F 01 01 1E 00 00 07 8B 05 00 CE 5C 5E BB E0 37 79 BD CD F0 81 BF E9 E8 74 BA 53 48 8C 3A AC 57 08 BB 09 31 W (39320) control_pixhawk: Received message with ID 30
+FD 20 00 00 90 01 01 1F 00 00 2B 8B 05 00 DC 9C 5F 3F 4C 63 85 BC 01 04 D3 BC E7 C6 F8 BE 34 D9 AD BA F0 58 B7 B9 08 86 98 B9 12 20 W (39340) control_pixhawk: Received message with ID 31
+FD 33 00 00 91 01 01 55 00 00 46 8B 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 E9 F1 81 BF 00 00 00 00 3F 00 01 24 50 W (39360) control_pixhawk: Received message with ID 85
+FD 1C 00 00 92 01 01 1E 00 00 4B 8B 05 00 88 59 5E BB 34 66 79 BD B7 F1 81 BF 50 12 CB 3A 3F 11 07 BB 00 01 13 B9 A8 B9 W (39370) control_pixhawk: Received message with ID 30
+BD 0D EE 81 BF DC 0C 2F 3A 
+[0;32mI (39390) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 33 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 95 38 
+Sent HEARTBEAT message.
+[0;32mI (40400) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 34 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 8F 90 
+[0;32mI (40400) control_pixhawk: Read 280 bytes[0m
+F6 70 EF 3A A0 27 49 39 2F F5 FD 20 00 00 BA 01 01 1F 00 00 11 8F 05 00 E9 9E 5F 3F EF 77 84 BC 31 CB D1 BC 10 C1 F8 BE E4 E3 1A 3A 46 FB B7 BA D0 43 C1 39 B4 C5 W (40410) control_pixhawk: Received message with ID 31
+FD 0A 00 00 BB 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 13 85 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 BC 01 01 1E 00 00 31 8F 05 00 F7 F9 5D BB 2C 96 77 BD 5E ED 81 BF 8E 8B B2 3A 88 61 91 3A C0 89 04 B8 37 4E W (40430) control_pixhawk: Received message with ID 30
+FD 1C 00 00 BD 01 01 1E 00 00 70 8F 05 00 EC 09 62 BB 5D 63 77 BD 00 EF 81 BF 58 6B E9 39 5B 5F 61 BA F8 19 0B BB 8E 67 W (40450) control_pixhawk: Received message with ID 30
+FD 20 00 00 BE 01 01 1F 00 00 79 8F 05 00 A0 9E 5F 3F 31 77 84 BC 7A 51 D1 BC 77 C2 F8 BE 58 E6 CA 39 60 54 9B 3A 7C 73 0C BA 12 76 W (40470) control_pixhawk: Received message with ID 31
+01 01 1E 00 00 5B 93 05 00 EC 6A 6B BB 83 E1 76 BD 92 EE 81 BF 6A 82 4E BA 8E D0 B9 39 EE 77 E2 3A 87 33 FD 20 00 00 ED 01 01 1F 00 00 5F 93 05 00 79 9E 5F 3F 8D C7 84 BC F1 83 D0 BC 89 C3 F8 BE 2E C2 2C 3A 0E 24 A5 3A 66 02 33 3A 58 92 W (40490) control_pixhawk: Received message with ID 31
+FD 
+[0;32mI (40500) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 35 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C6 04 
+Sent HEARTBEAT message.
+[0;32mI (41520) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 36 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 53 05 
+[0;32mI (41520) control_pixhawk: Read 280 bytes[0m
+12 00 00 EE 01 01 4A 00 00 00 00 00 00 53 CF 87 3B 27 F0 3F 41 E5 6A F5 3A 2D 01 8D 00 W (41520) control_pixhawk: Received message with ID 74
+FD 0A 00 00 EF 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 4A EE ✅ DISARM/ARM command accepted!
+FD 1C 00 00 F0 01 01 1E 00 00 9E 93 05 00 CB 15 68 BB 9B C5 76 BD D2 EF 81 BF 23 3E C6 3A 92 BB FE B9 13 27 56 BB CF 1C W (41550) control_pixhawk: Received message with ID 30
+FD 20 00 00 F1 01 01 1F 00 00 C2 93 05 00 23 9F 5F 3F 71 5B 84 BC E2 7D D0 BC 60 C1 F8 BE 7A 66 30 BA C6 EC 80 B9 22 08 2E 3B 85 C7 W (41570) control_pixhawk: Received message with ID 31
+FD 1C 00 00 F2 01 01 1E 00 00 E1 93 05 00 4D 4B 65 BB BB BB 76 BD B0 EE 81 BF D2 9C 4B BA 09 F0 28 BB 80 19 FC 37 F1 39 W (41580) control_pixhawk: Received message with ID 30
+FD 1C 00 00 F3 01 01 1E 00 00 25 94 05 00 63 D5 64 BB 36 B9 76 BD 70 EF 81 BF 4B A3 C3 39 04 90 40 39 14 E8 9E B9 8E FC W (41590) control_pixhawk: Received message with ID 30
+FD 20 00 00 F4 01 01 1F 00 00 25 94 05 00 5B 9E 5F 3F E0 64 84 BC 7A A3 D0 BC 10 C4 F8 BE 45 6B B1 B9 E6 BC 97 39 A2 1D FF B9 09 E8 W (41620) control_pixhawk: Received message with ID 31
+01 4A 00 00 00 00 00 00 68 D4 34 3B BC 46 40 41 D8 B1 3B 3B 2D 
+[0;32mI (41630) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 37 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F7 10 
+Sent HEARTBEAT message.
+[0;32mI (42640) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 38 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 74 F4 
+[0;32mI (42640) control_pixhawk: Read 280 bytes[0m
+01 5F 5A FD 1C 00 00 19 01 01 1E 00 00 84 97 05 00 48 BB 66 BB E4 70 77 BD 9E E8 81 BF 79 3D 39 3A F4 A8 2B BA 8A 7C 0E 3B C6 DC W (42650) control_pixhawk: Received message with ID 30
+FD 20 00 00 1A 01 01 1F 00 00 A8 97 05 00 03 A2 5F 3F DD EE 84 BC 7E 59 D1 BC 03 B6 F8 BE E2 35 10 3B 48 70 07 39 3A A5 55 39 36 4D W (42670) control_pixhawk: Received message with ID 31
+FD 1C 00 00 1B 01 01 1E 00 00 C8 97 05 00 C6 3C 69 BB 7D 9E 77 BD A5 E6 81 BF 22 80 F3 39 52 58 46 BA 56 45 3F 3B 79 AA W (42680) control_pixhawk: Received message with ID 30
+FD 0A 00 00 1C 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 F4 A3 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 1D 01 01 1E 00 00 0B 98 05 00 D0 C0 6C BB 41 AE 77 BD D5 E5 81 BF 84 EC 05 BB 7E 8C 4D BB 6C 56 30 3A 2D 28 W (42700) control_pixhawk: Received message with ID 30
+FD 20 00 00 1E 01 01 1F 00 00 0B 98 05 00 BF A2 5F 3F C0 42 85 BC F9 40 D1 BC 49 B3 F8 BE 67 6E EF BA F2 7E 78 BA 81 3D DF BA 98 1F W (42730) control_pixhawk: Received message with ID 31
+10 44 78 BD E9 E1 81 BF D5 9D 76 BA FC CB 3F BA AE E1 28 3A 5B C5 FD 20 00 00 4C 01 01 1F 00 00 F6 9B 05 00 56 A4 5F 3F B1 7B 86 BC F3 3D D1 
+[0;32mI (42740) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 39 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 60 7C 
+Sent HEARTBEAT message.
+[0;32mI (43760) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 3A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 A8 61 
+[0;32mI (43760) control_pixhawk: Read 280 bytes[0m
+BC EB AC F8 BE B3 4E 8F BA CC 2C 1B 3A 92 F2 E8 BA 93 9B W (43760) control_pixhawk: Received message with ID 31
+FD 0A 00 00 4D 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 9E 98 ✅ DISARM/ARM command accepted!
+FD 09 00 00 4E 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 DC D2 W (43780) control_pixhawk: Received message with ID 0
+FD 20 00 00 4F 01 01 8D 00 00 00 39 EA 15 00 00 00 00 BC 46 40 41 BC 46 40 41 9E 4D 0C 3F 9E 4D 0C 3F 00 00 C0 7F 00 00 C0 7F 3F 5E W (43800) control_pixhawk: Received message with ID 141
+FD 1C 00 00 50 01 01 1E 00 00 35 9C 05 00 FB 3F 7E BB D7 DB 77 BD C8 E0 81 BF E7 C1 0B 3B D4 52 59 3B 58 05 C0 38 32 B3 W (43810) control_pixhawk: Received message with ID 30
+FD 24 00 00 51 01 01 53 00 00 35 9C 05 00 35 C1 5F 3F 00 00 00 80 00 00 00 00 6A C1 F8 BE D8 5A CE 3C C9 5A C9 3E DF 05 8A 39 6F 12 83 3A 7B 1A W (43830) control_pixhawk: Received message with ID 83
+FD 02 00 00 52 01 01 F5 00 00 00 01 1B 6B W (43840) control_pixhawk: Received message with ID 245
+FD 1C 00 00 53 01 01 20 00 00 35 9C 05 00 C0 05 84 B9 B6 03 CE B9 9E 4D 0C BF 3F 5C EF BA F0 CD A7 B9 BF C3 9D BB C0 42 W (43850) control_pixhawk: Received message with ID 32
+FD 35 00 00 54 01 01 65 32 00 00 00 00 00 00 00 00 00 BC 46 40 41 00 00 7A C4 00 00 7A C4 00 FF 
+[0;32mI (43870) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 51 68 
+Sent HEARTBEAT message.
+[0;32mI (44880) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 3C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 DD D7 
+[0;32mI (44880) control_pixhawk: Read 280 bytes[0m
+7F FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 01 1E E8 FD 12 00 00 85 01 01 4A 00 00 00 00 00 00 D9 29 99 3B 67 EC 3E 41 EB 44 1D 3B 2D 01 8E 90 FD 19 00 00 86 01 01 08 00 00 49 80 F9 15 00 00 00 00 94 06 00 00 40 00 00 00 F1 40 00 00 71 01 00 00 7B E0 A4 W (44910) control_pixhawk: Received message with ID 8
+FD 20 00 00 87 01 01 1F 00 00 44 A0 05 00 BB A4 5F 3F 78 47 86 BC 78 D2 D0 BC F1 AB F8 BE A1 64 27 BA 94 1F D1 BA D6 CF 07 3B 7D 1C W (44920) control_pixhawk: Received message with ID 31
+FD 1C 00 00 88 01 01 1E 00 00 5F A0 05 00 33 CE 7E BB 5D DC 77 BD F5 DF 81 BF 10 E3 22 BB 1E 6C D0 BA 0D EE 70 3A 4F DA W (44930) control_pixhawk: Received message with ID 30
+FD 0A 00 00 89 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 2E BC ✅ DISARM/ARM command accepted!
+54 C5 77 BD C2 E0 81 BF DE 55 EC 3A D1 73 0D 3B C4 7D B3 B9 6E 13 FD 0A 00 00 B7 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 57 45 ✅ DISARM/ARM command accepted!
+FD 20 00 00 B8 01 01 1F 00 00 F4 A4 05 00 07 A5 5F 3F A2 70 85 BC B8 F9 D0 BC 38 AB F8 BE B9 50 3B 38 17 32 19 3A 
+[0;32mI (44980) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 02 54 
+Sent HEARTBEAT message.
+[0;32mI (45990) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 3E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 01 42 
+[0;32mI (45990) control_pixhawk: Read 280 bytes[0m
+8C 01 09 BA 09 F9 W (45990) control_pixhawk: Received message with ID 31
+FD 12 00 00 B9 01 01 4A 00 00 00 00 00 00 C3 F4 FE 3A 14 E9 40 41 61 8D 6C 3B 2D 01 3D 69 W (46000) control_pixhawk: Received message with ID 74
+FD 1C 00 00 BA 01 01 1E 00 00 0F A5 05 00 9F 26 72 BB 13 96 77 BD D9 E0 81 BF 11 2E 03 3B 64 4B BA 3A D3 F1 75 3A 32 30 W (46010) control_pixhawk: Received message with ID 30
+FD 1C 00 00 BB 01 01 1E 00 00 53 A5 05 00 02 B2 71 BB 00 72 77 BD 41 E1 81 BF 55 63 FE B9 A7 CB 3E 3B 70 D1 3B 3A 5A 85 W (46030) control_pixhawk: Received message with ID 30
+FD 33 00 00 BC 01 01 55 00 00 4F A5 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 3E E1 81 BF 00 00 00 00 3F 00 01 60 A2 W (46050) control_pixhawk: Received message with ID 85
+FD 20 00 00 BD 01 01 1F 00 00 57 A5 05 00 64 A4 5F 1C 00 00 EB 01 01 1E 00 00 39 A9 05 00 FE 67 78 BB DC 2F 77 BD BA E6 81 BF 81 1A B3 BA 64 04 16 39 18 47 29 BB 81 AB FD 20 00 00 EC 01 01 1F 00 00 3D A9 05 00 48 A2 5F 3F 93 B3 85 BC 14 7D D0 BC 5D B5 F8 BE 19 98 E3 BA F0 C6 84 3A E0 25 0F BB BC 6F W (46090) control_pixhawk: Received message with ID 31
+FD 
+[0;32mI (46100) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 3F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 33 40 
+Sent HEARTBEAT message.
+[0;32mI (47110) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 40 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 69 02 
+[0;32mI (47110) control_pixhawk: Read 280 bytes[0m
+0A 00 00 ED 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 54 CE ✅ DISARM/ARM command accepted!
+FD 1C 00 00 EE 01 01 1E 00 00 7C A9 05 00 37 86 77 BB 04 79 77 BD 6A E4 81 BF CD 5A A3 BA E4 F9 D3 BA B6 3F 48 3B 97 71 W (47120) control_pixhawk: Received message with ID 30
+FD 04 00 00 EF 01 01 2A 00 00 00 00 FF FF D3 16 W (47140) control_pixhawk: Received message with ID 42
+FD 20 00 00 F0 01 01 1F 00 00 A5 A9 05 00 35 A3 5F 3F 85 9C 85 BC 42 95 D0 BC FB B1 F8 BE A2 69 58 BA 10 B1 FA 3A 08 2E C4 3A B0 66 W (47160) control_pixhawk: Received message with ID 31
+FD 1C 00 00 F1 01 01 1E 00 00 C0 A9 05 00 33 86 75 BB 92 07 77 BD 73 E6 81 BF 83 62 C9 3A 9A FC 95 B9 A8 A2 90 38 CC 4C W (47160) control_pixhawk: Received message with ID 30
+FD 24 00 00 F2 01 01 53 00 00 E0 A9 05 00 DF BE 5F 3F 00 00 00 80 00 00 00 00 D3 C9 F8 BE 68 6D C9 3C 2A C7 C8 3E 92 53 B7 39 6F 12 83 3A 08 0C W (47190) control_pixhawk: Received message with ID 83
+FD 12 00 00 F3 01 01 4A 00 00 00 00 00 00 03 9C FF 3A AA 3F 41 41 C5 2D A6 3B 2D 01 17 3D W (47200) control_pixhawk: Received message with ID 74
+6B FD 04 00 00 1A 01 01 2A 00 00 00 00 FF FF C6 D1 W (47210) control_pixhawk: Received message with ID 42
+FD 20 00 00 1B 01 01 1F 00 00 8B AD 05 00 CF A3 5F 3F 29 AE 85 BC 07 4D 
+[0;32mI (47220) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 41 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2F 50 
+Sent HEARTBEAT message.
+[0;32mI (48230) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 42 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 B5 97 
+[0;32mI (48230) control_pixhawk: Read 280 bytes[0m
+D1 BC 31 AF F8 BE EE 8E 5A 3B 11 C0 0A 3B 2E 22 FE 39 A9 24 W (48230) control_pixhawk: Received message with ID 31
+FD 1C 00 00 1C 01 01 1E 00 00 AB AD 05 00 D6 0C 75 BB 77 F0 77 BD E6 E2 81 BF 80 81 EA BA 8C 36 B3 3A E8 8E E9 39 B6 E3 W (48240) control_pixhawk: Received message with ID 30
+FD 0A 00 00 1D 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 FB B3 ✅ DISARM/ARM command accepted!
+FD 24 00 00 1E 01 01 53 00 00 C6 AD 05 00 10 C0 5F 3F 00 00 00 80 00 00 00 00 88 C5 F8 BE 53 69 C7 3C 40 7F C9 3E 22 6B A0 39 6F 12 83 3A 13 50 W (48280) control_pixhawk: Received message with ID 83
+FD 12 00 00 1F 01 01 4A 00 00 00 00 00 00 A3 26 F3 3A 14 E9 40 41 50 48 C8 3B 2D 01 F2 49 W (48290) control_pixhawk: Received message with ID 74
+FD 1C 00 00 20 01 01 1E 00 00 E9 AD 05 00 C7 0B 77 BB 4A E2 77 BD 1C E3 81 BF 50 E3 F3 BA 2A 4B 88 B9 F5 53 BF 3A C6 1C W (48300) control_pixhawk: Received message with ID 30
+FD 20 00 00 21 01 01 1F 00 00 EE AD 05 00 83 A4 5F 3F DD DC 85 BC 6E 1B D1 BC BB AC F8 BE 68 AE 4B BA 10 93 B8 3A EF 4D 0A BA ED F4 W (48320) control_pixhawk: Received message with ID 31
+3A 82 8F FD 0A 00 00 4F 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 80 B8 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 50 01 01 1E 00 00 13 
+[0;32mI (48340) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 43 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1E 44 
+Sent HEARTBEAT message.
+[0;32mI (49350) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 44 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 C0 21 
+[0;32mI (49350) control_pixhawk: Read 280 bytes[0m
+B2 05 00 AB 1C 75 BB 79 AB 76 BD 19 E7 81 BF 61 E4 E6 B9 28 A1 C7 B9 6F DD CE 3A CB 82 W (49350) control_pixhawk: Received message with ID 30
+FD 20 00 00 51 01 01 1F 00 00 3C B2 05 00 D8 A2 5F 3F 16 3F 85 BC B5 18 D0 BC E5 B3 F8 BE 8C 8A C1 BA 76 73 13 BB 50 C4 A6 3A 54 ED W (49380) control_pixhawk: Received message with ID 31
+FD 33 00 00 52 01 01 55 00 00 58 B2 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 D1 E6 81 BF 00 00 00 00 3F 00 01 6C 94 W (49390) control_pixhawk: Received message with ID 85
+FD 1C 00 00 53 01 01 1E 00 00 57 B2 05 00 30 9B 74 BB 75 A3 76 BD D1 E6 81 BF F0 B9 CD BA EB 11 0A BB 5D 13 DD BA D2 15 W (49400) control_pixhawk: Received message with ID 30
+FD 1C 00 00 54 01 01 1E 00 00 9A B2 05 00 90 DE 75 BB 3D C7 76 BD 6E E6 81 BF AF 3F ED 39 D0 98 F1 38 DB 9E FF BA 68 E7 W (49420) control_pixhawk: Received message with ID 30
+FD 20 00 00 55 01 01 1F 00 00 9F B2 05 00 84 A2 5F 3F C2 60 85 BC 59 27 D0 BC FC B4 F8 BE C9 31 71 BA 36 AB 06 3A 33 5A AB BA CE 4F W (49440) control_pixhawk: Received message with ID 31
+FD 12 00 00 56 01 01 4A 00 00 00 00 00 00 4C 15 D3 3A 17 40 
+[0;32mI (49460) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 45 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4D 78 
+Sent HEARTBEAT message.
+[0;32mI (50470) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 46 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 1C B4 
+[0;32mI (50470) control_pixhawk: Read 280 bytes[0m
+44 41 6B B1 8B 3B 2D 01 30 66 W (50470) control_pixhawk: Received message with ID 74
+EC 2A FD 0A 00 00 7E 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 AC B1 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 7F 01 01 1E 00 00 80 B6 05 00 CA 7F 72 BB 59 84 77 BD 7D E8 81 BF 8A 66 4A BA DA 1D B9 BA B4 E2 52 3B 85 5B W (50490) control_pixhawk: Received message with ID 30
+FD 20 00 00 80 01 01 1F 00 00 85 B6 05 00 70 A1 5F 3F 23 83 85 BC FC F3 D0 BC 23 B8 F8 BE DA A6 1A BA 45 F6 57 BA C8 D2 39 3A CD 23 W (50520) control_pixhawk: Received message with ID 31
+FD 12 00 00 81 01 01 4A 00 00 00 00 00 00 84 FD 02 3B D4 EC 41 41 00 2A DA 3B 2D 01 C4 C0 W (50520) control_pixhawk: Received message with ID 74
+FD 1C 00 00 82 01 01 1E 00 00 C4 B6 05 00 DA 5F 71 BB 7A 93 77 BD 6E E7 81 BF 5F 71 84 3A AD 62 5E BB 04 00 27 3B 1B 96 W (50530) control_pixhawk: Received message with ID 30
+AF 01 01 4A 00 00 00 00 00 00 81 E8 CB 3A BC 46 40 41 9F 2B B7 3B 2D 01 22 54 FD 1C 00 00 B0 01 01 1E 00 00 AE BA 05 00 BB 71 6A BB B2 B0 76 BD 48 E8 81 BF 49 A1 9D 3A 46 60 31 3B F4 B4 D8 BA A1 71 W (50560) control_pixhawk: Received message with ID 30
+FD 0A 00 00 B1 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 75 25 ✅ DISARM/ARM command accepted!
+FD 20 00 00 
+[0;32mI (50580) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 47 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7C 6C 
+Sent HEARTBEAT message.
+[0;32mI (51590) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 48 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 3B 45 
+[0;32mI (51590) control_pixhawk: Read 280 bytes[0m
+B2 01 01 1F 00 00 D2 BA 05 00 BA A1 5F 3F 5F BE 84 BC 6F 47 D0 BC 11 B8 F8 BE 90 0D 0D BB 62 A4 63 3B 20 1E EB 3A 12 68 W (51590) control_pixhawk: Received message with ID 31
+FD 1C 00 00 B3 01 01 1E 00 00 ED BA 05 00 F8 5D 6B BB 13 8C 76 BD 0A E9 81 BF DA 6F 73 3A 17 EC DD BA BB 59 3F BA 79 62 W (51610) control_pixhawk: Received message with ID 30
+FD 1C 00 00 B4 01 01 1E 00 00 31 BB 05 00 32 F7 68 BB CD E8 76 BD F5 E8 81 BF 6B 0B 63 3B FC 93 AE B9 A7 2A A1 3A 7C 67 W (51620) control_pixhawk: Received message with ID 30
+FD 20 00 00 B5 01 01 1F 00 00 35 BB 05 00 6F A1 5F 3F C8 9B 84 BC C6 BA D0 BC CD B8 F8 BE D9 F0 A9 3A 90 04 0D 3A 78 CE 81 BA F9 0D W (51650) control_pixhawk: Received message with ID 31
+FD 09 00 00 B6 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 86 DA W (51660) control_pixhawk: Received message with ID 0
+FD 20 00 00 B7 01 01 8D 00 00 21 41 64 16 00 00 00 00 17 40 44 41 17 40 44 41 C3 02 11 3F C3 02 11 3F 00 00 C0 7F 00 00 C0 7F 43 6E W (51680) control_pixhawk: Received message with ID 141
+FD 1C 00 00 B8 01 01 1E 00 00 74 BB 05 00 02 DF 68 BB 12 E4 76 BD 55 E9 81 BF 6F BD F1 BA 69 47 B4 BA 2F 6B 85 3A 35 4F W (51680) control_pixhawk: Received message with ID 30
+FD 24 00 00 B9 01 01 53 00 00 70 
+[0;32mI (51700) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 49 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EB 00 
+Sent HEARTBEAT message.
+[0;32mI (52710) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 4A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 E7 D0 
+[0;32mI (52710) control_pixhawk: Read 280 bytes[0m
+BB 05 00 EB 05 00 BF B3 68 BB B5 14 77 BD 3C E9 81 BF 93 9F F6 B9 34 A8 5F BA 28 CD 2A 39 56 24 FD 1C 00 00 DD 01 01 1E 00 00 1C BF 05 00 C2 EA 66 BB E5 17 77 BD 84 E8 81 BF 8B 76 D6 3A 27 F0 19 3B 05 5E CB 39 18 D6 FD 20 00 00 DE 01 01 1F 00 00 1C BF 05 00 9F A1 5F 3F 58 AA 84 BC 94 E9 D0 BC F3 B7 F8 BE 72 DF 2C 3B FE 86 43 3B C8 AA D6 3A 03 1C W (52740) control_pixhawk: Received message with ID 31
+FD 0A 00 00 DF 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 69 F7 ✅ DISARM/ARM command accepted!
+FD 09 00 00 E0 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 5F D1 W (52760) control_pixhawk: Received message with ID 0
+FD 20 00 00 E1 01 01 8D 00 00 7B 89 73 16 00 00 00 00 91 99 3F 41 91 99 3F 41 28 D9 11 3F 28 D9 11 3F 00 00 C0 7F 00 00 C0 7F 74 73 W (52780) control_pixhawk: Received message with ID 141
+FD 1C 00 00 E2 01 01 1E 00 00 5B BF 05 00 C4 7B 67 BB 07 EC 76 BD 06 E9 81 BF D3 A1 F5 B9 04 90 C6 39 0C EE 83 B9 7C 57 W (52780) control_pixhawk: Received message with ID 30
+FD 24 00 00 E3 01 01 53 00 00 57 BF 05 00 54 00 14 01 01 20 00 00 46 C3 05 00 8F 75 11 3A 63 D3 C2 B9 4A F6 11 
+[0;32mI (52810) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DA 14 
+Sent HEARTBEAT message.
+[0;32mI (53820) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 4C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 92 66 
+[0;32mI (53820) control_pixhawk: Read 280 bytes[0m
+BF 32 E5 EA 39 C3 87 1D BA A2 54 A1 BB 00 12 FD 35 00 00 15 01 01 65 32 00 00 00 00 00 00 00 00 00 AD 96 44 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9B B1 W (53840) control_pixhawk: Received message with ID 12901
+FD 0E 00 00 16 01 01 1D 00 00 15 C3 05 00 5C EF 7C 44 00 00 00 00 37 10 22 EB W (53850) control_pixhawk: Received message with ID 29
+FD 24 00 00 17 01 01 01 00 00 0F 40 00 00 0F 40 01 00 3F 88 20 03 6B 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 01 59 C1 W (53870) control_pixhawk: Received message with ID 1
+FD 12 00 00 18 01 01 4A 00 00 00 00 00 00 5F 7E 44 3A AD 96 44 41 A2 54 A1 3B 2D 01 DB 5B W (53880) control_pixhawk: Received message with ID 74
+FD 19 00 00 19 01 01 08 00 00 8B D0 82 16 00 00 00 00 70 07 00 00 40 00 00 00 8D 42 00 00 81 01 00 00 58 77 14 BA 5E 87 C1 39 84 8F 26 BB AD 45 FD 1C 00 00 4A 01 01 1E 00 00 B2 C7 05 00 EF C8 6A BB EE FB 78 BD DB E4 81 BF 58 F0 A7 BA 76 C4 8C BA 69 E3 36 3B 0F B8 W (53910) control_pixhawk: Received message with ID 30
+FD 20 00 00 4B 01 01 1F 
+[0;32mI (53920) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 89 28 
+Sent HEARTBEAT message.
+[0;32mI (54930) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 4E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 4E F3 
+[0;32mI (54930) control_pixhawk: Read 280 bytes[0m
+00 00 B7 C7 05 00 22 A3 5F 3F 55 D1 85 BC 99 A1 D2 BC 6E B0 F8 BE DF DA 3F B9 C2 5B F7 BA DA 8F 1A 3B 9E AF W (54930) control_pixhawk: Received message with ID 31
+FD 09 00 00 1B FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 89 18 W (54950) control_pixhawk: Received message with ID 0
+FD 0A 00 00 4C 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 91 88 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 4D 01 01 1E 00 00 F6 C7 05 00 52 76 69 BB 89 32 79 BD 17 E4 81 BF 42 99 71 3B A0 E2 9B BA F7 96 6A 3A 5C A9 W (54970) control_pixhawk: Received message with ID 30
+FD 20 00 00 4E 01 01 1F 00 00 1A C8 05 00 18 A3 5F 3F FA D4 85 BC 98 7D D2 BC B0 B0 F8 BE 70 F6 EB 39 22 55 A8 B9 31 0A 7B BA 60 6C W (54990) control_pixhawk: Received message with ID 31
+FD 12 00 00 4F 01 01 4A 00 00 00 00 00 00 43 D1 18 3B AA 3F 41 41 BD FE 8F 3A 2D 01 A9 76 W (55000) control_pixhawk: Received message with ID 74
+19 3B 2D 01 52 F2 FD 1C 00 00 7A 01 01 1E 00 00 20 CC 05 00 AB F6 6D BB FB 1B 78 BD C4 E6 81 BF 36 7A C1 BA 47 44 10 BB 00 18 ED B9 04 83 W (55020) control_pixhawk: Received message with ID 30
+FD 0A 00 00 7B 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 9F E1 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 7C 01 01 1E 00 00 63 CC 05 00 78 8D 6B BB 7E 
+[0;32mI (55040) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 4F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B8 3C 
+Sent HEARTBEAT message.
+[0;32mI (56050) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 50 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 CD 8C 
+[0;32mI (56050) control_pixhawk: Read 280 bytes[0m
+1A 78 BD F4 E7 81 BF 44 5B 7F 3A BA 49 9F BA 74 3A BE 39 28 C8 W (56050) control_pixhawk: Received message with ID 30
+FD 33 00 00 7D 01 01 55 00 00 60 CC 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 4E E8 81 BF 00 00 00 00 3F 00 01 62 E0 W (56080) control_pixhawk: Received message with ID 85
+FD 20 00 00 7E 01 01 1F 00 00 63 CC 05 00 A2 A1 5F 3F 46 68 85 BC C2 A7 D1 BC DF B6 F8 BE 72 76 85 BA 37 58 73 BB 54 56 25 3A 48 21 W (56100) control_pixhawk: Received message with ID 31
+FD 1C 00 00 7F 01 01 1E 00 00 A6 CC 05 00 03 0B 6C BB DE 32 78 BD 79 E8 81 BF E4 BA E6 BA B7 FC 37 BA 2F 42 2B 3A AC 6F W (56100) control_pixhawk: Received message with ID 30
+FD 20 00 00 80 01 01 1F 00 00 CA CC 05 00 67 A1 5F 3F B8 80 85 BC FB C8 D1 BC 88 B7 F8 BE 63 2A 04 39 CB 47 73 3A 0E 13 00 BB FC 4B W (56130) control_pixhawk: Received message with ID 31
+00 00 AC 01 01 1E 00 00 49 D0 05 00 F2 F2 69 BB 92 35 77 BD 74 EC 81 BF F3 7D 90 BB BC 9E DB 3A 64 E8 7B B9 AE 92 FD 20 00 00 AD 01 01 1F 00 00 4E D0 05 00 C3 9F 5F 3F E2 E6 84 BC E5 F3 D0 BC 79 BE F8 BE 
+[0;32mI (56150) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 51 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A7 F1 
+Sent HEARTBEAT message.
+[0;32mI (57160) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 52 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 11 19 
+[0;32mI (57160) control_pixhawk: Read 280 bytes[0m
+76 9B 14 BB 28 23 91 3A EE 72 0E BA 68 D1 W (57160) control_pixhawk: Received message with ID 31
+FD 1C 00 00 AE 01 01 1E 00 00 8D D0 05 00 BD DC 6B BB 37 88 77 BD 6C ED 81 BF 08 F0 EA B8 B1 D1 2F BB 00 5D E9 B9 D7 1C W (57170) control_pixhawk: Received message with ID 30
+FD 0A 00 00 AF 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 CE CD ✅ DISARM/ARM command accepted!
+FD 20 00 00 B0 01 01 1F 00 00 B1 D0 05 00 1D 9F 5F 3F 0F 2A 85 BC 42 42 D1 BC 63 C0 F8 BE 67 C3 15 3A 9C 6E D3 BA D0 D2 3D B9 BA 4B W (57210) control_pixhawk: Received message with ID 31
+FD 14 00 00 B1 01 01 7C 01 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 68 57 W (57210) control_pixhawk: Received message with ID 380
+FD 1C 00 00 B2 01 01 1E 00 00 D0 D0 05 00 C6 17 6B BB D1 A1 77 BD B7 EE 81 BF D4 E0 8F BA C0 15 3F 3A A6 89 A0 BA 50 77 W (57230) control_pixhawk: Received message with ID 30
+4E C6 FD 0A 00 00 E0 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 1F 1E ✅ DISARM/ARM command accepted!
+FD 1C 00 00 E1 01 01 1E 00 00 FA D4 05 00 EC F7 6F BB 50 71 78 BD F9 E9 81 BF C5 B0 10 3B 5B D0 36 3B A1 29 65 3A A6 F8 W (57250) control_pixhawk: Received message with ID 30
+FD 20 00 00 E2 01 01 1F 00 00 FE D4 05 00 4E A0 5F 3F BC D9 85 BC 46 DA 
+[0;32mI (57270) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 53 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 96 E5 
+Sent HEARTBEAT message.
+[0;32mI (58280) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 54 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 64 AF 
+[0;32mI (58280) control_pixhawk: Read 280 bytes[0m
+D1 BC 40 BB F8 BE 9F 1D 91 3A 66 2D CC 3A D4 6B 1B B9 B9 78 W (58280) control_pixhawk: Received message with ID 31
+FD 1C 00 00 E3 01 01 1E 00 00 3D D5 05 00 37 CB 70 BB D4 7F 78 BD D8 E9 81 BF 6F 31 B6 3A 37 B7 0A BB BF 8C 54 3A 46 80 W (58290) control_pixhawk: Received message with ID 30
+FD 20 00 00 E4 01 01 1F 00 00 5D D5 05 00 9B A0 5F 3F C5 CE 85 BC 16 B1 D1 BC 53 BA F8 BE 86 E8 CF B9 6D DE 02 3A B8 B4 73 39 CE 22 W (58320) control_pixhawk: Received message with ID 31
+FD 1C 00 00 E5 01 01 1E 00 00 81 D5 05 00 57 5D 72 BB B1 68 78 BD 62 E8 81 BF B6 58 DC B9 A8 A0 1A B9 B5 62 71 3A 41 E9 W (58330) control_pixhawk: Received message with ID 30
+FD 1C 00 00 E6 01 01 1E 00 00 C4 D5 05 00 AC E5 72 BB DB 88 78 BD AC E6 81 BF AB EF 55 BA 8F 45 3D BB BC B3 63 3B A9 2D W (58340) control_pixhawk: Received message with ID 30
+FD 20 00 00 E7 01 01 1F 00 00 C4 D5 05 00 1A A2 5F 3F 7A 03 86 BC C2 CF D1 BC BB B4 F8 BE 2F 1E FA 3A E9 FB 4C BB 06 A5 B4 3A 31 80 W (58370) control_pixhawk: Received message with ID 31
+FD 12 00 00 E8 01 01 4A 00 00 00 00 00 00 41 73 DE 3A 95 F0 42 41 22 FD 7D 3B 2D 01 BE 0E W (58370) control_pixhawk: Received message with ID 74
+BC 5E AB CF BC 39 B7 F8 BE 70 6A 06 3A B0 32 EC 39 E4 87 32 3A 10 
+[0;32mI (58390) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 55 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C5 D9 
+Sent HEARTBEAT message.
+[0;32mI (59400) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 56 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 B8 3A 
+[0;32mI (59400) control_pixhawk: Read 280 bytes[0m
+DA FD 01 00 00 10 01 01 9B 01 00 11 6B 40 W (59400) control_pixhawk: Received message with ID 411
+FD 1C 00 00 11 01 01 1E 00 00 24 D9 05 00 A6 CF 55 BB D3 22 75 BD C0 E8 81 BF 98 1B EC 3A 0F 8C 18 3B A0 59 ED 3A 47 D9 W (59410) control_pixhawk: Received message with ID 30
+FD 20 00 00 12 01 01 1F 00 00 48 D9 05 00 6C A2 5F 3F 5A C5 82 BC 50 EA CF BC E3 B6 F8 BE 78 8E 3D BA 2D 59 A5 BB 9C E3 26 BA 11 A8 W (59440) control_pixhawk: Received message with ID 31
+FD 0A 00 00 13 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 A1 53 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 14 01 01 1E 00 00 67 D9 05 00 DE 78 54 BB 9D A5 75 BD E2 E7 81 BF 7F 21 D9 38 6C C5 F6 B9 54 06 03 3B 48 E9 W (59450) control_pixhawk: Received message with ID 30
+FD 33 00 00 15 01 01 55 00 00 68 D9 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 E2 E7 81 BF 00 00 00 00 3F 00 01 8E A2 W (59480) control_pixhawk: Received message with ID 85
+6A 04 91 3A 00 70 D1 38 8F 59 B3 BA B5 10 FD 20 00 00 40 01 01 1F 00 00 95 DD 05 00 2A A6 5F 3F E5 E7 81 BC 8D 4A CF BC 63 AA F8 BE 96 FA B0 3A 10 CD 5F 3A BB 87 B9 BA 4F 
+[0;32mI (59500) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 57 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F4 CD 
+Sent HEARTBEAT message.
+[0;32mI (60520) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 58 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 9F CB 
+[0;32mI (60520) control_pixhawk: Read 280 bytes[0m
+08 W (60520) control_pixhawk: Received message with ID 31
+FD 12 00 00 41 01 01 4A 00 00 00 00 00 00 16 18 FF 3A BC 46 40 41 CB 2A 59 3B 2D 01 74 AB W (60530) control_pixhawk: Received message with ID 74
+FD 0A 00 00 42 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 CB 68 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 43 01 01 1E 00 00 D4 DD 05 00 6A E8 4C BB 65 77 74 BD 23 E0 81 BF 62 91 80 3A 48 C2 B6 39 82 CA 42 3A CA 6E W (60550) control_pixhawk: Received message with ID 30
+FD 20 00 00 44 01 01 1F 00 00 FD DD 05 00 C1 A6 5F 3F DE 09 82 BC 9F 7B CF BC 0D A8 F8 BE 0A 83 BE 3A 24 BF CD B9 B2 A0 3A 3A 0B 0C W (60580) control_pixhawk: Received message with ID 31
+FD 1C 00 00 45 01 01 1E 00 00 18 DE 05 00 76 F7 4B BB B8 62 74 BD B5 DF 81 BF F3 5C 40 3A 57 05 1C 3B 28 D9 9A B8 B9 7E W (60580) control_pixhawk: Received message with ID 30
+FD 1C 00 00 46 01 01 1E 00 00 5B DE 05 00 9B 7C 4E BB 20 0A 74 BD B7 DF 81 BF C2 B1 F9 BA F0 99 E9 3A 2B 2E 94 BA 89 FF W (60600) control_pixhawk: Received message with ID 30
+FD 20 00 00 47 01 01 1F 00 00 60 DE 05 00 63 A6 5F 3F C2 BE 81 BC 09 01 CF BC F4 A9 F8 BE A5 14 2B BA 45 CE 09 3B F2 46 5D BB 2C 48 W (60620) control_pixhawk: Received message with ID 31
+00 5F FF 4F BB 5B C8 72 BD 17 DF 81 BF F4 1A 95 BA A5 C3 
+[0;32mI (60630) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 59 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 63 A1 
+Sent HEARTBEAT message.
+[0;32mI (61640) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 5A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 43 5E 
+[0;32mI (61640) control_pixhawk: Read 280 bytes[0m
+3D BB C7 CA B4 3A 04 75 FD 20 00 00 72 01 01 1F 00 00 E3 E1 05 00 3D A7 5F 3F 3C 2C 81 BC 58 A2 CD BC 4D A8 F8 BE F4 93 5D 38 D6 8E B2 3A 60 11 A8 BA 12 C4 W (61650) control_pixhawk: Received message with ID 31
+FD 0A 00 00 73 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 E7 61 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 74 01 01 1E 00 00 FE E1 05 00 33 67 4E BB 11 81 72 BD A8 DE 81 BF 5D 50 03 39 3D 30 1B 3A 3F 63 3C 3B F1 B5 W (61670) control_pixhawk: Received message with ID 30
+FD 1C 00 00 75 01 01 1E 00 00 41 E2 05 00 35 20 50 BB A5 CA 72 BD 55 DF 81 BF 01 1B F7 B9 3E 45 DD 39 53 B9 09 3B 00 4E W (61690) control_pixhawk: Received message with ID 30
+FD 20 00 00 76 01 01 1F 00 00 46 E2 05 00 EC A6 5F 3F FC 47 81 BC 55 B8 CD BC 54 A9 F8 BE 1F D6 A2 39 C5 BA 45 3B 4E 9A 39 3A 5E 83 W (61710) control_pixhawk: Received message with ID 31
+00 00 E9 E5 05 00 B9 BB 4B BB 1F EA 73 BD F9 E5 81 BF DF 8D 49 BB 12 24 07 BB D8 EC 72 BA 24 57 FD 1C 00 00 9F 01 01 1E 00 00 2C E6 05 00 F3 F6 49 BB 54 A2 73 BD 62 E6 81 BF 10 82 75 B9 E0 C1 6A 3B F4 CE B3 BA 85 86 W (61730) control_pixhawk: Received message with ID 30
+FD 20 00 00 A0 01 01 1F 00 00 
+[0;32mI (61740) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 52 B5 
+Sent HEARTBEAT message.
+[0;32mI (62760) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 5C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 36 E8 
+[0;32mI (62760) control_pixhawk: Read 280 bytes[0m
+2C E6 05 00 A1 A3 5F 3F D8 65 81 BC 0C C6 CE BC 37 B4 F8 BE 88 DD F2 39 A4 43 69 3B A0 33 3C 39 C8 54 W (62760) control_pixhawk: Received message with ID 31
+FD 0A 00 00 A1 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 94 2D ✅ DISARM/ARM command accepted!
+FD 09 00 00 A2 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 6C 53 W (62790) control_pixhawk: Received message with ID 0
+FD 20 00 00 A3 01 01 8D 00 00 DA 1F 0C 17 00 00 00 00 52 9D 40 41 52 9D 40 41 5D 30 11 3F 5D 30 11 3F 00 00 C0 7F 00 00 C0 7F DA D0 W (62810) control_pixhawk: Received message with ID 141
+FD 1C 00 00 A4 01 01 1E 00 00 6B E6 05 00 14 84 48 BB 7E 4E 73 BD 91 E8 81 BF A0 75 81 B8 98 7B 71 BB 9E 4F A3 BA 12 5C W (62810) control_pixhawk: Received message with ID 30
+FD 24 00 00 A5 01 01 53 00 00 67 E6 05 00 84 BD 5F 3F 00 00 00 80 00 00 00 00 B3 CE F8 BE AF C3 A2 3C 56 A8 C5 3E 28 5F 8D 39 6F 12 83 3A 91 53 W (62840) control_pixhawk: Received message with ID 83
+FD 29 00 00 A6 01 01 93 00 00 FF FF FF FF FF FF FF FF FF 7F FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 01 01 FF 00 00 00 00 01 A3 5D W (62860) control_pixhawk: Received message with ID 147
+FD 08 00 00 A7 01 01 B4 01 00 00 00 04 03 00 00 04 03 
+[0;32mI (62870) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 01 89 
+Sent HEARTBEAT message.
+[0;32mI (63880) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 5E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 EA 7D 
+[0;32mI (63880) control_pixhawk: Read 280 bytes[0m
+09 EE W (63880) control_pixhawk: Received message with ID 436
+FD 29 00 00 A8 01 01 E6 00 00 B6 03 0C 17 DF 81 BC 48 3D CF BC 19 B2 F8 BE A5 0A 50 3A 7D D4 6E BA 19 35 5A BA BC F5 FD 1C 00 00 DC 01 01 1E 00 00 99 EA 05 00 B8 74 4E BB D0 7A 74 BD 81 E4 81 BF A6 D4 96 BA 84 43 62 39 DA AB A9 3A BB 16 FD 0A 00 00 DD 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 77 D7 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 DE 01 01 1E 00 00 D8 EA 05 00 5C 82 4B BB E6 8E 74 BD 35 E5 81 BF B6 78 C9 3A 60 ED DE 37 5C 9C 91 BA A1 BD W (63920) control_pixhawk: Received message with ID 30
+FD 20 00 00 DF 01 01 1F 00 00 E1 EA 05 00 C8 A3 5F 3F 7D E2 81 BC 49 85 CF BC C8 B2 F8 BE BE F7 AD 3A 6A FD A8 B9 8C 07 F7 BA 70 AE W (63940) control_pixhawk: Received message with ID 31
+C3 EE 05 00 A9 A3 5F 3F 80 86 86 BC 8D F6 D2 BC DA AD F8 BE BA AE DE 39 80 91 C2 B9 B0 D1 BC B8 47 09 FD 09 00 00 2F FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 62 DA W (63960) control_pixhawk: Received message with ID 0
+FD 1C 00 00 0D 01 01 1E 00 00 02 EF 05 00 44 0B 72 BB B5 07 7A BD C7 E3 81 BF 96 F2 B1 BA C8 1B 4B B9 96 A9 2F 3A 
+[0;32mI (63980) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 5F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 30 9D 
+Sent HEARTBEAT message.
+[0;32mI (64990) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 60 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 30 17 
+[0;32mI (64990) control_pixhawk: Read 280 bytes[0m
+8D 9A W (64990) control_pixhawk: Received message with ID 30
+FD 0A 00 00 0E 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 0B 8B ✅ DISARM/ARM command accepted!
+FD 20 00 00 0F 01 01 1F 00 00 2A EF 05 00 10 A3 5F 3F 18 DA 86 BC 37 F6 D2 BC D8 AF F8 BE 41 D3 39 BB AC D8 C4 39 4A 32 8F BA 1D 3E W (65020) control_pixhawk: Received message with ID 31
+FD 12 00 00 10 01 01 4A 00 00 00 00 00 00 22 58 1D 3B 52 9D 40 41 7E E9 30 3B 2D 01 22 77 W (65020) control_pixhawk: Received message with ID 74
+FD 1C 00 00 11 01 01 1E 00 00 45 EF 05 00 A5 31 76 BB DF EF 79 BD 38 E4 81 BF 9D 3D 05 BB D0 9A CB BA C8 9C A9 B8 5F 5A W (65040) control_pixhawk: Received message with ID 30
+FD 1C 00 00 12 01 01 1E 00 00 89 EF 05 00 BA 17 78 BB 1C BD 79 BD A3 E5 81 BF 5D 5F 3D 3A DA 73 88 3B 62 2F 46 BB 04 3E W (65050) control_pixhawk: Received message with ID 30
+FD 20 00 00 13 01 01 1F 00 00 8D EF 05 00 F9 A1 5F 3F 9C C4 86 BC 5E A8 D2 BC 11 B4 F8 BE C6 99 E9 3A 6E 80 05 3B F0 6A 20 BB 11 F4 W (65080) control_pixhawk: Received message with ID 31
+01 4A 00 00 00 00 00 00 B9 0B 22 3B 24 99 3C 41 00 C2 5C 3B 2D 01 3C 53 FD 1C 00 00 3C 01 01 1E 00 00 30 F3 05 00 B9 F8 6C BB DF CE 74 BD 71 EE 81 BF 78 B7 9B 36 98 97 C5 BA 
+[0;32mI (65100) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 61 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 2E 1B 
+Sent HEARTBEAT message.
+[0;32mI (66110) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 62 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 EC 82 
+[0;32mI (66110) control_pixhawk: Read 280 bytes[0m
+1C EA 10 3A E3 D7 W (66110) control_pixhawk: Received message with ID 30
+FD 1C 00 00 3D 01 01 1E 00 00 73 F3 05 00 02 BA 69 BB B6 8B 74 BD C7 EF 81 BF B9 AA 6F BA 8A E5 01 BB D4 7F 84 B9 16 8C W (66120) control_pixhawk: Received message with ID 30
+FD 33 00 00 3E 01 01 55 00 00 70 F3 05 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 9C EF 81 BF 00 00 00 00 3F 00 01 37 17 W (66150) control_pixhawk: Received message with ID 85
+FD 20 00 00 3F 01 01 1F 00 00 73 F3 05 00 9E 9E 5F 3F B9 9A 83 BC 41 96 CE BC 3E C5 F8 BE B4 0C 12 BB CF BB 88 BA 8E 60 9B B9 F7 77 W (66170) control_pixhawk: Received message with ID 31
+FD 0A 00 00 40 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 D5 48 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 41 01 01 1E 00 00 B2 F3 05 00 90 D9 6A BB 83 00 75 BD 84 F0 81 BF 79 AB C9 BA 48 76 E2 B8 D4 7D CC B9 F0 12 W (66180) control_pixhawk: Received message with ID 30
+65 BB 20 2E 74 BD AE EF 81 BF C5 A0 F9 BA 62 80 8F BA D2 29 8E 3A 60 7C FD 20 00 00 70 01 01 1F 00 00 C1 F7 05 00 48 9E 5F 3F 8C 4D 83 BC F7 37 CE BC E9 C6 F8 BE 4F 88 19 BB 56 08 EC BA 14 DA CB 
+[0;32mI (66210) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 63 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 1F 0F 
+Sent HEARTBEAT message.
+[0;32mI (67230) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 64 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 99 34 
+[0;32mI (67230) control_pixhawk: Read 280 bytes[0m
+BA BC F6 W (67230) control_pixhawk: Received message with ID 31
+FD 1C 00 00 71 01 01 1E 00 00 E1 F7 05 00 BA D9 66 BB 58 50 74 BD A8 F0 81 BF 29 51 2F 3B E8 83 8E 3A 60 7F 62 3B 19 28 W (67240) control_pixhawk: Received message with ID 30
+FD 0A 00 00 72 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 E8 71 ✅ DISARM/ARM command accepted!
+FD 24 00 00 73 01 01 53 00 00 00 F8 05 00 16 B9 5F 3F 00 00 00 80 00 00 00 00 A1 DE F8 BE D5 15 BD 3C 2E 74 C6 3E 87 89 A6 39 6F 12 83 3A 46 06 W (67270) control_pixhawk: Received message with ID 83
+FD 12 00 00 74 01 01 4A 00 00 00 00 00 00 73 5C 2D 3B 14 E9 40 41 F8 E9 CD 3B 2D 01 BA 08 W (67280) control_pixhawk: Received message with ID 74
+FD 1C 00 00 75 01 01 1E 00 00 20 F8 05 00 EF 0E 69 BB 31 87 74 BD 8A F1 81 BF 22 F5 57 3A C0 09 0E B9 0D 3F B6 BA 2F 6E W (67290) control_pixhawk: Received message with ID 30
+FD 20 00 00 76 01 01 1F 00 00 29 F8 05 00 D8 9D 5F 3F 70 95 83 BC 33 9A CE BC 05 C8 F8 BE 7A 1B 41 3A BC E3 4F 39 B3 3C AD BA FD 97 W (67320) control_pixhawk: Received message with ID 31
+81 6A BB 6F 91 73 BD DA F3 81 BF 23 D4 A3 B8 7F D5 0D BB 2F 7B 80 BA 63 4F FD 20 00 00 A1 01 01 1F 00 00 0F FC 05 00 AE 9C 5F 3F 0A 28 83 BC 4C BA CD BC 21 CD 
+[0;32mI (67340) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 65 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 4C 33 
+Sent HEARTBEAT message.
+[0;32mI (68350) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 66 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 45 A1 
+[0;32mI (68350) control_pixhawk: Read 280 bytes[0m
+F8 BE B4 4B 15 BA 4C 28 A7 BA 3E 48 2C BA 6A 2B W (68350) control_pixhawk: Received message with ID 31
+FD 04 00 00 A2 01 01 2A 00 00 00 00 FF FF B8 6C W (68360) control_pixhawk: Received message with ID 42
+FD 01 00 00 A3 01 01 9B 01 00 11 D1 EC W (68370) control_pixhawk: Received message with ID 411
+FD 0A 00 00 A4 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 A7 7D ✅ DISARM/ARM command accepted!
+FD 1C 00 00 A5 01 01 1E 00 00 4E FC 05 00 EF 62 69 BB 39 EA 73 BD E4 F2 81 BF 52 76 A9 BA C0 25 0B 37 5F CA 34 3A 08 B5 W (68390) control_pixhawk: Received message with ID 30
+FD 20 00 00 A6 01 01 1F 00 00 72 FC 05 00 29 9D 5F 3F AB 42 83 BC 35 0F CE BC 1F CB F8 BE 1E 78 FB BA 3E 50 D5 3A CA 7C C0 B9 48 66 W (68410) control_pixhawk: Received message with ID 31
+FD 1C 00 00 A7 01 01 1E 00 00 8D FC 05 00 02 E1 67 BB C5 F8 73 BD A5 F2 81 BF 29 03 D4 B9 7C 48 E6 3A D8 53 25 39 B9 D7 W (68420) control_pixhawk: Received message with ID 30
+B9 86 A8 FD 33 00 00 D5 01 01 55 00 00 78 00 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 4A EE 81 BF 00 00 00 00 3F 00 01 AA B7 W (68450) control_pixhawk: Received message with ID 85
+FD 0A 00 00 D6 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 1E 67 ✅ DISARM/ARM command accepted!
+FD 
+[0;32mI (68470) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 67 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 7D 27 
+Sent HEARTBEAT message.
+[0;32mI (69480) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 68 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 62 50 
+[0;32mI (69480) control_pixhawk: Read 280 bytes[0m
+1C 00 00 D7 01 01 1E 00 00 BB 00 06 00 C1 B8 69 BB A1 09 75 BD 85 ED 81 BF 16 C5 A4 3A 39 6D D5 BA E1 C3 0C 3A 4A 03 W (69480) control_pixhawk: Received message with ID 30
+FD 20 00 00 D8 01 01 1F 00 00 BF 00 06 00 46 9F 5F 3F 66 DC 83 BC 1A 08 CF BC 60 C2 F8 BE CA E4 A1 BA 24 5C 8D B9 40 BF C1 B9 9B 44 W (69510) control_pixhawk: Received message with ID 31
+FD 12 00 00 D9 01 01 4A 00 00 00 00 00 00 EE 9E 03 3A 52 9D 40 41 F6 71 C7 3B 2D 01 E0 03 W (69520) control_pixhawk: Received message with ID 74
+FD 1C 00 00 DA 01 01 1E 00 00 FA 00 06 00 C4 52 6D BB 0D 0C 75 BD 29 EE 81 BF 7A DA 89 BA EA F9 04 BB 50 E8 CC 3A 85 CC W (69530) control_pixhawk: Received message with ID 30
+FD 20 00 00 DB 01 01 1F 00 00 22 01 06 00 4E 9F 5F 3F 33 F3 83 BC F9 E1 CE BC 59 C2 F8 BE 06 34 A2 39 7A 29 23 3A 60 9F 9D 38 28 12 W (69550) control_pixhawk: Received message with ID 31
+00 00 00 2E 11 91 3A 14 E9 40 41 F0 B2 5C 3B 2D 01 EB F7 FD 1C 00 00 03 01 01 1E 00 00 E5 04 06 00 72 D7 67 BB CB D0 75 BD 3C E5 81 BF 3C CA 6D 3A 96 6E 93 BA E1 0E 10 3B E4 B6 W (69570) control_pixhawk: Received message with ID 30
+FD 0A 00 00 04 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 6D 2B ✅ DISARM/ARM command accepted!
+FD 20 
+[0;32mI (69590) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 69 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 EA 4B 
+Sent HEARTBEAT message.
+[0;32mI (70600) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 6A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 BE C5 
+[0;32mI (70600) control_pixhawk: Read 280 bytes[0m
+00 00 05 01 01 1F 00 00 09 05 06 00 3F A3 5F 3F F8 3E 84 BC 71 D9 CF BC 33 B3 F8 BE 28 F2 EC 39 7E 6F 87 BA B0 1E DB 3A AB 7D W (70600) control_pixhawk: Received message with ID 31
+FD 1C 00 00 06 01 01 1E 00 00 28 05 06 00 E6 DD 68 BB 30 DD 75 BD BB E5 81 BF 38 BE DD B9 1E 53 C7 3A 6B 7F 6E BA C4 B7 W (70620) control_pixhawk: Received message with ID 30
+FD 1C 00 00 07 01 01 1E 00 00 6B 05 06 00 D0 60 66 BB 5E 9F 75 BD 38 E5 81 BF 62 42 A1 B8 BE 55 CB B9 21 2B 73 BA D5 4D W (70640) control_pixhawk: Received message with ID 30
+FD 20 00 00 08 01 01 1F 00 00 70 05 06 00 A5 A3 5F 3F AD E3 83 BC AE 94 CF BC 33 B2 F8 BE 88 CD 97 B9 8E F1 B7 3A 70 4B DD BA 16 C8 W (70660) control_pixhawk: Received message with ID 31
+FD 09 00 00 09 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 9D F6 W (70670) control_pixhawk: Received message with ID 0
+FD 20 00 00 0A 01 01 8D 00 00 F2 35 86 17 00 00 00 00 95 F0 42 41 95 F0 42 41 00 51 13 3F 00 51 13 3F 00 00 C0 7F 00 00 C0 7F 0C BB W (70690) control_pixhawk: Received message with ID 141
+FD 1C 00 00 0B 01 01 1E 00 00 AF 05 06 00 FA C4 66 BB F6 8A 75 BD DA E4 81 BF 0F 3F 4E 39 CA 27 F0 39 DE 7C 15 3A C6 0B W (70690) control_pixhawk: Received message with ID 30
+FD 24 00 00 0C 01 01 53 00 
+[0;32mI (70710) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 DB 5F 
+Sent HEARTBEAT message.
+[0;32mI (71720) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 6C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 CB 73 
+[0;32mI (71720) control_pixhawk: Read 280 bytes[0m
+00 AB 05 06 00 64 D2 3A B6 96 FD 1C 00 00 36 01 01 1E 00 00 52 09 06 00 75 E8 68 BB 16 D8 74 BD F4 E6 81 BF 0C 58 35 BB 74 0A 89 BB 86 73 40 3A 08 D4 FD 20 00 00 37 01 01 1F 00 00 56 09 06 00 9B A2 5F 3F 7D 9D 83 BC A2 CB CE BC BD B6 F8 BE 23 62 AD BA B9 08 61 BA 2C 5A CB BA 22 34 W (71750) control_pixhawk: Received message with ID 31
+FD 0A 00 00 38 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 0A F2 ✅ DISARM/ARM command accepted!
+FD 09 00 00 39 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 14 1C W (71760) control_pixhawk: Received message with ID 0
+FD 20 00 00 3A 01 01 8D 00 00 3A 74 95 17 00 00 00 00 FF 99 42 41 FF 99 42 41 1B 1C 13 3F 1B 1C 13 3F 00 00 C0 7F 00 00 C0 7F A3 5F W (71780) control_pixhawk: Received message with ID 141
+FD 1C 00 00 3B 01 01 1E 00 00 95 09 06 00 54 F3 65 BB FF A7 74 BD 5F E6 81 BF 96 BD 30 BA 46 FB B2 BA 1F 98 09 3B 0D 84 W (71790) control_pixhawk: Received message with ID 30
+FD 24 00 00 3C 01 01 53 00 00 91 09 06 00 2D 3E A5 54 01 FD 02 00 00 69 01 01 F5 00 00 00 01 7B CA FD 1C 00 00 6A 01 01 20 00 00 77 0D 06 00 DF 5C 0A B8 7A 93 5A 3A 0F 2A 12 BF 
+[0;32mI (71820) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 88 63 
+Sent HEARTBEAT message.
+[0;32mI (72830) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 6E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 17 E6 
+[0;32mI (72830) control_pixhawk: Read 280 bytes[0m
+56 66 21 BA 20 DC 28 3B 57 80 90 BB 35 93 FD 35 00 00 6B 01 01 65 32 00 00 00 00 00 00 00 00 00 40 96 41 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 80 53 W (72850) control_pixhawk: Received message with ID 12901
+FD 33 00 00 6C 01 01 55 00 00 78 0D 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 E1 EA 81 BF 00 00 00 00 3F 00 01 44 A6 W (72870) control_pixhawk: Received message with ID 85
+FD 0E 00 00 6D 01 01 1D 00 00 4F 0D 06 00 33 F3 7C 44 00 00 00 00 37 10 33 EB W (72880) control_pixhawk: Received message with ID 29
+FD 24 00 00 6E 01 01 01 00 00 0F 40 00 00 0F 40 01 00 3F 88 20 03 6C 01 FF FF FF FF FD 81 BC 5B 33 CE BC CA BE F8 BE 19 EF 7C 3B 92 AD 02 3B 46 41 A5 BA D4 A4 FD 09 00 00 41 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 F6 6B W (72900) control_pixhawk: Received message with ID 0
+FD 0A 00 00 A0 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 9B 3D ✅ DISARM/ARM command accepted!
+FD 1C 00 00 A1 01 01 1E 00 00 2C 12 06 00 7E 09 
+[0;32mI (72930) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 6F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B9 77 
+Sent HEARTBEAT message.
+[0;32mI (73940) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 70 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 94 99 
+[0;32mI (73940) control_pixhawk: Read 280 bytes[0m
+55 BB 7A 76 73 BD 52 EE 81 BF E6 49 27 B9 A4 F7 6F BA B6 AC 2A BB B5 5D W (73940) control_pixhawk: Received message with ID 30
+FD 20 00 00 A2 01 01 1F 00 00 54 12 06 00 DB 9F 5F 3F 29 33 82 BC 58 6B CE BC AF C1 F8 BE 80 A9 34 BB F1 AE AE 3A C5 2E 8A 3A A5 63 W (73970) control_pixhawk: Received message with ID 31
+FD 12 00 00 A3 01 01 4A 00 00 00 00 00 00 08 72 96 3B E4 9C 3D 41 18 C7 7B 3B 2D 01 CB BD W (73970) control_pixhawk: Received message with ID 74
+FD 1C 00 00 A4 01 01 1E 00 00 6F 12 06 00 19 C6 58 BB C1 CE 73 BD 9A EC 81 BF 50 7A 1F BB FE BA EC BA 34 82 F9 39 23 9D W (73980) control_pixhawk: Received message with ID 30
+FD 1C 00 00 A5 01 01 1E 00 00 B3 12 06 00 31 A3 58 BB 47 0D 74 BD 0C EE 81 BF C1 A1 FB BA D9 0A C0 3A 1C 3D CA BA 5A 5F W (74000) control_pixhawk: Received message with ID 30
+FD 33 00 00 A6 01 01 55 00 00 B4 12 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 0C EE 81 BF 00 00 00 00 3F 00 01 E6 76 W (74030) control_pixhawk: Received message with ID 85
+FD 20 00 00 A7 01 01 1F 00 00 B7 12 06 00 F5 9F 5F 5D 72 B3 38 40 96 41 41 72 23 30 3B 2D 01 4F FB FD 1C 00 00 D2 01 
+[0;32mI (74050) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 71 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 A6 BA 
+Sent HEARTBEAT message.
+[0;32mI (75060) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 72 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 48 0C 
+[0;32mI (75060) control_pixhawk: Read 280 bytes[0m
+01 1E 00 00 56 16 06 00 36 99 60 BB 4A 71 75 BD 84 EC 81 BF 98 DA 8B 3B 4E A4 C1 3B 9E 47 A0 BA 19 80 FD 0A 00 00 D3 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 2D 37 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 D4 01 01 1E 00 00 99 16 06 00 2A 0F 62 BB 42 7B 75 BD 47 EC 81 BF 27 78 2E 3B A7 C4 88 3B EC 97 94 3A 56 CA W (75080) control_pixhawk: Received message with ID 30
+FD 20 00 00 D5 01 01 1F 00 00 9E 16 06 00 D1 A0 5F 3F D6 96 83 BC C2 A9 CF BC 73 BC F8 BE 62 E9 FF 3A FA 3F C7 39 DE A7 90 3A 80 D1 W (75110) control_pixhawk: Received message with ID 31
+FD 1C 00 00 D6 01 01 1E 00 00 DD 16 06 00 7C 75 5E BB 28 73 75 BD 8E E9 81 BF 79 34 B6 39 14 13 E8 3A 21 8A B4 3A EC 84 W (75110) control_pixhawk: Received message with ID 30
+FD 20 00 00 D7 01 01 1F 00 00 01 17 06 00 D3 A1 5F 3F 6C 5E 83 BC E3 B1 CF BC EB B8 F8 BE 4E 57 88 BA BA 6A E2 B9 94 4E AB 3A 0F C7 W (75140) control_pixhawk: Received message with ID 31
+42 61 BB 2A 5E 75 BD FE E6 81 BF 30 3E A4 BA DE 60 89 B9 FE 8C C8 3A BA 70 FD 0A 00 00 02 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 4F 4B FD 20 00 00 03 01 01 1F 00 
+[0;32mI (75160) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 73 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 97 AE 
+Sent HEARTBEAT message.
+[0;32mI (76170) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 74 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 3D BA 
+[0;32mI (76170) control_pixhawk: Read 280 bytes[0m
+00 EB 1A 06 00 EC A2 5F 3F FB C2 83 BC 41 AA CF BC C9 B4 F8 BE D2 F2 12 BB 44 C9 33 B9 DE 8A F0 B9 9D F9 FD 1C 00 00 04 01 01 1E 00 00 06 1B 06 00 5D 27 63 BB 43 9F 75 BD A1 E7 81 BF 1E 9D 39 BB 17 DB 35 BB 1C 60 50 B9 1F A1 FD 24 00 00 05 01 01 53 00 00 22 1B 06 00 F9 BE 5F 3F 00 00 00 80 00 00 00 00 75 C9 F8 BE B6 3D BA 3C 9D 8E C7 3E 35 36 A1 39 6F 12 83 3A 45 49 FD 12 00 00 06 01 01 4A 00 00 00 00 00 00 46 50 B2 3A 67 EC 3E 41 37 70 0A 3A 2D 01 72 35 FD 1C 00 00 07 01 01 1E 00 00 4A 1B 06 00 61 C7 67 BB EE A2 75 BD 16 E5 81 BF 8C CC EC BA C4 F9 87 BA D5 71 8A BA 6C C1 FD 20 00 00 08 01 01 1F 00 00 4E 1B 06 00 4F A3 5F 3F 13 10 84 BC BF 86 CF BC 5E B3 F8 BE DC 56 91 BA 4A C7 87 3A E0 13 A5 B9 BD AE W (76230) control_pixhawk: Received message with ID 31
+00 11 1F 06 00 25 BE 5F 3F 00 00 00 80 00 00 00 00 6D CC F8 BE C8 D3 B6 3C 1A B3 C7 3E 40 35 B0 39 6F 12 83 3A 73 8C FD 12 00 00 
+[0;32mI (76250) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 75 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 C4 92 
+Sent HEARTBEAT message.
+[0;32mI (77260) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 76 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 E1 2F 
+[0;32mI (77260) control_pixhawk: Read 280 bytes[0m
+34 01 01 4A 00 00 00 00 00 00 5B 23 DC 3A FD 42 3F 41 45 09 36 3B 2D 01 53 7C W (77260) control_pixhawk: Received message with ID 74
+FD 1C 00 00 35 01 01 1E 00 00 30 1F 06 00 FA C2 62 BB A2 00 76 BD 42 E7 81 BF 21 9D 6A 3A A6 9C BF BA EE EA 01 BA 11 8C W (77280) control_pixhawk: Received message with ID 30
+FD 20 00 00 36 01 01 1F 00 00 39 1F 06 00 B2 A2 5F 3F D5 FB 83 BC EC 26 D0 BC 0F B5 F8 BE 87 8C 1A BB CF 41 18 BB A4 05 2C 3B 4C 9C W (77300) control_pixhawk: Received message with ID 31
+FD 0A 00 00 37 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 5F 02 ✅ DISARM/ARM command accepted!
+FD 01 00 00 38 01 01 9B 01 00 11 27 DB W (77320) control_pixhawk: Received message with ID 411
+FD 04 00 00 39 01 01 2A 00 00 00 00 FF FF FF CD W (77320) control_pixhawk: Received message with ID 42
+FD 1C 00 00 3A 01 01 1E 00 00 78 1F 06 00 E3 7B 62 BB 06 D8 75 BD 9B E9 81 BF DB 75 1E 3B 79 4A 82 3A A8 86 AF BA 1C 8E W (77330) control_pixhawk: Received message with ID 30
+1A 22 3B 0E 71 DE 3B 60 01 B2 B8 A0 0C FD 1C 00 00 64 01 01 1E 00 00 5E 23 06 00 E6 0C 64 BB 68 CC 75 BD 8C F2 81 BF B6 42 EA 3A 31 76 76 3A 6D 92 F7 3A B4 CE W (77360) control_pixhawk: Received message with ID 30
+FD 04 00 00 65 01 01 2A 00 00 00 00 FF FF 40 93 W (77370) control_pixhawk: Received message with ID 42
+FD 20 00 00 66 01 01 1F 00 00 
+[0;32mI (77380) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 77 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 F5 86 
+Sent HEARTBEAT message.
+[0;32mI (78390) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 78 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 C6 DE 
+[0;32mI (78390) control_pixhawk: Read 280 bytes[0m
+82 23 06 00 A2 9D 5F 3F DD BC 83 BC 06 89 CF BC EF C7 F8 BE 3F D0 03 BB 12 06 C4 B9 98 2D D8 B8 57 65 W (78390) control_pixhawk: Received message with ID 31
+FD 0A 00 00 67 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 3A 29 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 68 01 01 1E 00 00 9D 23 06 00 4C 84 63 BB 12 44 75 BD 73 F2 81 BF 5C 3E 10 BA CD A1 78 BA A4 8F FB B9 43 C9 W (78420) control_pixhawk: Received message with ID 30
+FD 1C 00 00 69 01 01 1E 00 00 E5 23 06 00 37 AD 64 BB 41 E9 74 BD 40 F2 81 BF 2C 4C 59 BA F9 DD 06 3A C1 C0 06 3A F4 D0 W (78430) control_pixhawk: Received message with ID 30
+FD 20 00 00 6A 01 01 1F 00 00 E5 23 06 00 60 9D 5F 3F 96 83 83 BC F5 0D CF BC 5C C9 F8 BE 8C E8 16 BA 40 EA 87 3A 04 32 1C 3B 99 09 W (78460) control_pixhawk: Received message with ID 31
+FD 12 00 00 6B 01 01 4A 00 00 00 00 00 00 1D 01 2B 3B BC 46 40 41 A6 E9 91 3B 2D 01 39 3D W (78460) control_pixhawk: Received message with ID 74
+01 B9 E5 79 FD 12 00 00 98 01 01 4A 00 00 00 00 00 00 E8 D9 04 3A D4 EC 41 41 4C 4D B7 3B 2D 01 F1 F1 W (78480) control_pixhawk: Received message with ID 74
+FD 0A 00 00 99 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 CF B4 ✅ DISARM/ARM command accepted!
+FD 14 00 00 9A 01 01 7C 01 00 00 00 00 00 
+[0;32mI (78500) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 79 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 62 EA 
+Sent HEARTBEAT message.
+[0;32mI (79510) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 7A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 1A 4B 
+[0;32mI (79510) control_pixhawk: Read 280 bytes[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 78 3A W (79510) control_pixhawk: Received message with ID 380
+FD 1C 00 00 9B 01 01 1E 00 00 0A 28 06 00 B8 73 5D BB A6 D2 74 BD 3E F6 81 BF 24 72 8E 3A 46 47 AC 3A 20 F3 63 B9 60 91 W (79520) control_pixhawk: Received message with ID 30
+FD 20 00 00 9C 01 01 1F 00 00 33 28 06 00 11 9B 5F 3F A9 01 83 BC C9 1F CF BC E6 D1 F8 BE 3F 91 33 3A E2 39 61 BB 70 BB E7 B8 AB 12 W (79550) control_pixhawk: Received message with ID 31
+FD 1C 00 00 9D 01 01 1E 00 00 52 28 06 00 7A AD 59 BB AE 70 74 BD 3C F8 81 BF 64 B2 EA 3A B8 C1 4B 3B 72 4B D5 BA 2E 38 W (79560) control_pixhawk: Received message with ID 30
+FD 1C 00 00 9E 01 01 1E 00 00 91 28 06 00 E2 C9 5C BB 9B A3 74 BD 75 F7 81 BF E0 61 87 BA 93 08 C4 BA 28 7A 92 3A 50 45 W (79570) control_pixhawk: Received message with ID 30
+FD 20 00 00 9F 01 01 1F 00 00 96 28 06 00 E7 9A 5F 3F 67 F3 82 BC 3B 1B CF BC 84 D2 F8 BE 21 6D F4 B9 25 15 EE BA 06 F6 05 3B 62 FE W (79600) control_pixhawk: Received message with ID 31
+00 00 39 2C 06 00 36 5B 67 BB B7 55 75 BD DA F7 81 BF CD 87 AC B9 AE 85 92 BA FF D5 37 3B B5 AE FD 0A 00 00 C8 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 A5 8F ✅ DISARM/ARM command accepted!
+
+[0;32mI (79620) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 53 FE 
+Sent HEARTBEAT message.
+[0;32mI (80630) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 7C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 6F FD 
+[0;32mI (80630) control_pixhawk: Read 280 bytes[0m
+FD 1C 00 00 C9 01 01 1E 00 00 77 2C 06 00 F5 A5 66 BB A2 0F 75 BD BA F6 81 BF 9B 5A 86 BA A9 C6 2B 3A 65 53 1D 3B DA 08 W (80630) control_pixhawk: Received message with ID 30
+FD 20 00 00 CA 01 01 1F 00 00 80 2C 06 00 67 9B 5F 3F FD C8 83 BC 64 28 CF BC 36 D0 F8 BE B3 45 CB 39 08 33 92 BA 0E 01 71 3B 0D 17 W (80660) control_pixhawk: Received message with ID 31
+FD 09 00 00 CB 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 BB 50 W (80670) control_pixhawk: Received message with ID 0
+FD 20 00 00 CC 01 01 8D 00 00 61 C4 1E 18 00 00 00 00 FF 99 42 41 FF 99 42 41 2A 94 13 3F 2A 94 13 3F 00 00 C0 7F 00 00 C0 7F 03 C5 W (80690) control_pixhawk: Received message with ID 141
+FD 24 00 00 CD 01 01 53 00 00 BB 2C 06 00 DD B6 5F 3F 00 00 00 80 00 00 00 00 9C E6 F8 BE F4 08 BA 3C 84 14 C7 3E 64 E9 60 39 6F 12 83 3A DC 06 W (80700) control_pixhawk: Received message with ID 83
+FD 29 00 00 CE 01 01 00 62 30 06 00 F9 B3 5A BB 72 C7 74 BD 1C F1 81 BF 74 1E 4B 3B 80 32 1B B7 AF 18 C7 BA 02 6F FD 20 00 00 F8 01 01 1F 00 00 67 30 06 00 EA 9D 5F 3F 7E E8 82 BC 3A 42 CF BC 94 C7 F8 BE 6F F1 AF 3A 66 17 6D 3A BC 42 1E B9 B7 16 FD 
+[0;32mI (80730) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 00 C2 
+Sent HEARTBEAT message.
+[0;32mI (81740) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 7E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 B3 68 
+[0;32mI (81740) control_pixhawk: Read 280 bytes[0m
+0A 00 00 F9 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 89 86 ✅ DISARM/ARM command accepted!
+FD 09 00 00 FA 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 22 34 W (81750) control_pixhawk: Received message with ID 0
+FD 20 00 00 FB 01 01 8D 00 00 0B 0C 2E 18 00 00 00 00 AA 3F 41 41 AA 3F 41 41 C1 9A 14 3F C1 9A 14 3F 00 00 C0 7F 00 00 C0 7F 76 D5 W (81770) control_pixhawk: Received message with ID 141
+FD 1C 00 00 FC 01 01 1E 00 00 A6 30 06 00 82 79 5A BB 64 12 75 BD 83 EF 81 BF 39 05 3A 3B 7C 78 E1 BA 11 9D E9 3A BC EF W (81780) control_pixhawk: Received message with ID 30
+FD 24 00 00 FD 01 01 53 00 00 A1 30 06 00 13 BA 5F 3F 00 00 00 80 00 00 00 00 15 DB F8 BE 34 56 B1 3C 5A 17 C7 3E 25 A1 94 39 6F 12 83 3A 94 C0 W (81800) control_pixhawk: Received message with ID 83
+FD 02 00 00 FE 01 01 F5 00 00 00 01 DA 18 W (81810) control_pixhawk: Received message with ID 245
+FD 1C 00 00 FF 01 01 20 00 00 A1 30 06 00 1F DD 8F 39 F1 3E 6F BA C1 9A 14 BF D5 C0 CD 39 8D 93 BC BA A8 C7 2D BB 8D 3B W (81820) control_pixhawk: Received message with ID 32
+FD 35 00 00 00 01 01 65 32 00 00 00 00 00 00 00 00 00 AA 3F 41 41 00 00 7A C4 00 00 7A C4 00 FF 7F 01 A3 9A FD 33 00 00 2D 01 01 55 00 00 88 34 06 00 00 00 
+[0;32mI (81850) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 7F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 31 D6 
+Sent HEARTBEAT message.
+[0;32mI (82860) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 80 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 BF 7D 
+[0;32mI (82860) control_pixhawk: Read 280 bytes[0m
+C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 DD F1 81 BF 00 00 00 00 3F 00 01 99 65 FD 0E 00 00 2E 01 01 1D 00 00 52 34 06 00 A3 F0 7C 44 00 00 00 00 37 10 89 E7 W (82870) control_pixhawk: Received message with ID 29
+FD 24 00 00 2F 01 01 01 00 00 0F 40 00 00 0F 40 01 00 3F 88 20 03 70 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 01 D4 93 W (82900) control_pixhawk: Received message with ID 1
+FD 12 00 00 30 01 01 4A 00 00 00 00 00 00 FA 0D F3 39 6E 9A 45 41 9B 17 2D 3B 2D 01 45 B1 W (82900) control_pixhawk: Received message with ID 74
+FD 19 00 00 31 01 01 08 00 00 DA 4D 3D 18 00 00 00 00 84 06 00 00 40 00 00 00 C2 47 00 00 B5 01 00 00 BF 36 83 W (82920) control_pixhawk: Received message with ID 8
+FD 20 00 00 32 01 01 1F 00 00 B4 34 06 00 2D 9E 5F 3F 66 82 82 BC 0F 3F CF BC D7 C6 F8 BE 78 D9 11 3B 6E 5A A2 BB EA 2B C8 01 01 1F 00 00 FD 38 06 00 9C 9C 5F 3F 46 22 82 BC 37 5F CF BC 94 CC F8 BE C4 E7 88 BA 36 5B 9A BA C6 5B 9D BA 06 F5 FD 09 00 00 55 FF BE 00 00 00 00 00 
+[0;32mI (82960) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 81 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 38 E2 
+Sent HEARTBEAT message.
+[0;32mI (83970) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 82 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 63 E8 
+[0;32mI (83970) control_pixhawk: Read 280 bytes[0m
+00 00 06 08 C0 04 03 1C E2 W (83970) control_pixhawk: Received message with ID 0
+FD 1C 00 00 62 01 01 1E 00 00 3C 39 06 00 F1 2E 4F BB 3D 7E 74 BD D2 F4 81 BF DE CA 85 B9 48 68 1C 3B 67 38 17 BA 59 C2 W (83980) control_pixhawk: Received message with ID 30
+FD 0A 00 00 63 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 06 69 ✅ DISARM/ARM command accepted!
+FD 20 00 00 64 01 01 1F 00 00 61 39 06 00 47 9C 5F 3F C1 35 82 BC 18 64 CF BC BC CD F8 BE DE 29 12 BB 38 38 FE 38 02 1F C7 BA 6E 1F W (84020) control_pixhawk: Received message with ID 31
+FD 12 00 00 65 01 01 4A 00 00 00 00 00 00 EA 75 FE 3A 91 99 3F 41 B1 6F 46 3B 2D 01 74 17 W (84020) control_pixhawk: Received message with ID 74
+FD 1C 00 00 66 01 01 1E 00 00 80 39 06 00 77 E7 4F BB 4B 96 74 BD D4 F4 81 BF 3E 1E 9A B9 C8 89 56 B9 28 4C EC B8 94 D3 W (84030) control_pixhawk: Received message with ID 30
+01 1E 00 00 66 3D 06 00 F3 D5 44 BB C5 EA 74 BD 7A F5 81 BF 56 9E 46 B9 90 4A 89 B8 30 CD 1D 3B 2B 32 FD 1C 00 00 94 01 01 1E 00 00 AA 3D 06 00 91 F0 46 BB 60 D6 74 BD 3F F4 81 BF 13 4A CE BA DC D3 B6 39 7D DB 63 3B 39 DE W (84060) control_pixhawk: Received message with ID 30
+FD 20 00 00 95 01 01 1F 00 00 AE 3D 06 00 77 9C 5F 3F C3 D4 81 
+[0;32mI (84080) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 83 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 09 F6 
+Sent HEARTBEAT message.
+[0;32mI (85090) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 84 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 16 5E 
+[0;32mI (85090) control_pixhawk: Read 280 bytes[0m
+BC 40 DE CF BC DB CC F8 BE C3 EC B4 BA B6 36 B2 3A 8A 0F 81 B9 28 C8 W (85090) control_pixhawk: Received message with ID 31
+FD 0A 00 00 96 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 9A 44 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 97 01 01 1E 00 00 ED 3D 06 00 D5 B4 48 BB 20 1F 75 BD 81 F2 81 BF FB 87 33 3A F8 5E 4B BB 34 AE 82 3B FA B0 W (85110) control_pixhawk: Received message with ID 30
+FD 20 00 00 98 01 01 1F 00 00 11 3E 06 00 89 9D 5F 3F 6B 4A 82 BC 23 0D D0 BC 9F C8 F8 BE F5 8F 57 BA 75 56 A5 BA C4 9D 1B 3B F9 52 W (85140) control_pixhawk: Received message with ID 31
+FD 1C 00 00 99 01 01 1E 00 00 2C 3E 06 00 86 FA 4C BB 85 6B 75 BD AD F1 81 BF 57 89 42 B8 CE E0 0E BB 76 C7 B7 3A E6 01 W (85150) control_pixhawk: Received message with ID 30
+FD 24 00 00 9A 01 01 53 00 00 4C 3E 06 00 BB B8 5F 3F 00 00 00 80 00 00 00 00 E8 DF F8 BE B2 C2 A4 3C FA 66 C7 3E 04 6D 92 39 6F 12 83 3A 0F C9 W (85170) control_pixhawk: Received message with ID 83
+FD 12 00 00 9B 01 01 4A 00 00 00 00 00 00 98 05 FD 3A 67 EC 3E 41 CD C3 EC 3A 2D 01 75 68 W (85180) control_pixhawk: Received message with ID 74
+C2 01 01 1E 00 00 D3 41 06 00 25 4B 4E BB 12 37 76 BD 56 F5 81 BF 11 71 54 BA E0 E7 A2 38 54 B3 C2 
+[0;32mI (85200) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 85 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5A CA 
+Sent HEARTBEAT message.
+[0;32mI (86210) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 86 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 CA CB 
+[0;32mI (86210) control_pixhawk: Read 280 bytes[0m
+BA 1C 57 FD 20 00 00 C3 01 01 1F 00 00 F7 41 06 00 C3 9B 5F 3F BB 1A 83 BC 30 D1 D0 BC ED CD F8 BE 21 33 7F BA 90 42 E3 38 9C 03 C3 BA 90 F5 W (86220) control_pixhawk: Received message with ID 31
+FD 0A 00 00 C4 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 E1 4F ✅ DISARM/ARM command accepted!
+FD 1C 00 00 C5 01 01 1E 00 00 17 42 06 00 DF F4 51 BB 60 45 76 BD 70 F6 81 BF BF E5 B5 3A 79 76 A9 BA 60 60 22 BB 70 F8 W (86240) control_pixhawk: Received message with ID 30
+FD 24 00 00 C6 01 01 53 00 00 33 42 06 00 81 B6 5F 3F 00 00 00 80 00 00 00 00 E9 E7 F8 BE 4B 6C AA 3C AB 16 C8 3E E3 73 8A 39 6F 12 83 3A 27 85 W (86270) control_pixhawk: Received message with ID 83
+FD 12 00 00 C7 01 01 4A 00 00 00 00 00 00 16 5D 21 3B D1 95 3E 41 60 83 6E 3B 2D 01 EC 31 W (86270) control_pixhawk: Received message with ID 74
+39 6F 12 83 3A EF 40 FD 12 00 00 F6 01 01 4A 00 00 00 00 00 00 AF 88 67 3B FF 99 42 41 B8 C4 7F 3A 2D 01 5F 9F W (86290) control_pixhawk: Received message with ID 74
+FD 1C 00 00 F7 01 01 1E 00 00 40 46 06 00 0B CD 61 BB E1 48 76 BD 3F F7 81 BF 0E EE B3 3A BE 50 A2 3A B0 7D 56 B8 5B 6D W (86300) control_pixhawk: Received message with ID 30
+FD 20 00 00 F8 01 01 1F 00 00 45 46 06 00 C0 9A 
+[0;32mI (86320) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 87 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6B DE 
+Sent HEARTBEAT message.
+[0;32mI (87330) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 88 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 ED 3A 
+[0;32mI (87330) control_pixhawk: Read 280 bytes[0m
+5F 3F 9C 09 84 BC F2 57 D0 BC 73 D1 F8 BE 0D 64 4B BB CB B6 AB BA 8B D6 3C 3A 54 3C W (87330) control_pixhawk: Received message with ID 31
+FD 0A 00 00 F9 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 89 86 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 FA 01 01 1E 00 00 84 46 06 00 48 96 61 BB 43 DD 75 BD B1 F7 81 BF 01 BA 13 3B 34 FC 58 3A 41 DE 15 3B 8F 96 W (87350) control_pixhawk: Received message with ID 30
+FD 20 00 00 FB 01 01 1F 00 00 A8 46 06 00 4D 9A 5F 3F 6C B8 83 BC 40 F7 CF BC 8C D3 F8 BE BA F1 2B B8 28 DF D2 38 26 1E C0 BA 78 CB W (87380) control_pixhawk: Received message with ID 31
+FD 04 00 00 FC 01 01 2A 00 00 00 00 FF FF 25 99 W (87390) control_pixhawk: Received message with ID 42
+FD 1C 00 00 FD 01 01 1E 00 00 C7 46 06 00 9F C9 5F BB 94 C3 75 BD 6F F8 81 BF 43 0F 0B BB 82 9F 0A 3B 6A 82 82 BA 9A BE W (87400) control_pixhawk: Received message with ID 30
+FD 33 00 00 FE 01 01 55 00 00 C3 46 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 DA F7 81 BF 00 00 00 00 3F 00 01 30 14 W (87420) control_pixhawk: Received message with ID 85
+01 01 1E 00 00 6F 4A 06 00 34 2E 53 BB C7 0A 75 BD E6 F9 81 BF DC 59 62 BA F2 18 
+[0;32mI (87440) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 89 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FC B2 
+Sent HEARTBEAT message.
+[0;32mI (88450) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 8A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 31 AF 
+[0;32mI (88450) control_pixhawk: Read 280 bytes[0m
+91 BA 68 D3 26 BA 9A 30 FD 20 00 00 26 01 01 1F 00 00 93 4A 06 00 0C 9A 5F 3F A5 8D 82 BC 25 AF CF BC 56 D5 F8 BE 0C D5 78 3A AF 95 07 BB 3C 49 74 B9 F4 AF W (88460) control_pixhawk: Received message with ID 31
+FD 04 00 00 27 01 01 2A 00 00 00 00 FF FF 67 F5 W (88470) control_pixhawk: Received message with ID 42
+FD 1C 00 00 28 01 01 1E 00 00 B2 4A 06 00 B5 17 50 BB 5D B1 74 BD 95 F9 81 BF CD 5E 0A 3B 31 D8 25 3B B6 4A AF BA A3 11 W (88480) control_pixhawk: Received message with ID 30
+FD 0A 00 00 29 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 E4 EA ✅ DISARM/ARM command accepted!
+FD 1C 00 00 2A 01 01 1E 00 00 F6 4A 06 00 9A 82 4C BB 9C 9D 74 BD 44 F8 81 BF 84 C4 76 BA 6C F8 72 B9 64 25 32 B9 65 DD W (88510) control_pixhawk: Received message with ID 30
+FD 20 00 00 2B 01 01 1F 00 00 F6 4A 06 00 B4 9A 5F 3F F7 11 82 BC B4 84 CF BC 52 D3 F8 BE 22 C9 D6 BA 10 0D DA BA 3C 34 80 BA 7C E6 W (88530) control_pixhawk: Received message with ID 31
+FD 12 00 00 2C 01 01 4A 00 00 00 00 00 00 36 A5 02 3A 40 96 41 41 57 22 4D 3A 2D 01 D6 CE W (88540) control_pixhawk: Received message with ID 74
+D2 F8 BE 0C FB 1C BA F0 95 5B B8 04 40 46 3A 1E 5D FD 12 00 00 5A 01 01 4A 00 00 00 00 00 00 A5 B1 E2 3A AA 
+[0;32mI (88560) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CD A6 
+Sent HEARTBEAT message.
+[0;32mI (89570) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 8C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 44 19 
+[0;32mI (89570) control_pixhawk: Read 280 bytes[0m
+3F 41 41 61 D8 6C 3A 2D 01 B1 94 W (89570) control_pixhawk: Received message with ID 74
+FD 0A 00 00 5B 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 5D F0 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 5C 01 01 1E 00 00 1B 4F 06 00 ED D8 50 BB A2 6C 74 BD F2 F7 81 BF 87 E4 B3 B9 3A A2 C7 3A FA FF AD B9 49 0E W (89590) control_pixhawk: Received message with ID 30
+FD 20 00 00 5D 01 01 1F 00 00 43 4F 06 00 29 9A 5F 3F 36 21 82 BC D7 3E CF BC 81 D5 F8 BE BA C3 3D B8 9A F2 D4 39 18 01 6F BA DC 97 W (89620) control_pixhawk: Received message with ID 31
+FD 1C 00 00 5E 01 01 1E 00 00 5E 4F 06 00 CE 39 50 BB 08 73 74 BD 7B F9 81 BF 69 19 84 39 F4 36 3A 39 7E 59 38 BA 98 83 W (89620) control_pixhawk: Received message with ID 30
+FD 14 00 00 5F 01 01 7C 01 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FD 7C W (89640) control_pixhawk: Received message with ID 380
+BD 68 F8 81 BF C4 EC DF 39 C6 D8 FB 39 A5 33 07 BB 06 EF FD 20 00 00 87 01 01 1F 00 00 29 53 06 00 6B 9B 5F 3F 63 15 83 BC FB 24 CF BC 90 D0 F8 BE CC 31 A5 B9 66 58 01 BB 58 0E 0D 3B B1 E8 W (89660) control_pixhawk: Received message with ID 31
+FD 1C 00 00 88 01 01 1E 00 00 49 53 06 00 45 9D 5E BB FF AC 74 BD 56 F7 81 BF 86 1C 
+[0;32mI (89680) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9E 9A 
+Sent HEARTBEAT message.
+[0;32mI (90690) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 8E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 98 8C 
+[0;32mI (90690) control_pixhawk: Read 280 bytes[0m
+6E BA BA 88 1C BB 80 10 0E 39 4A 31 W (90690) control_pixhawk: Received message with ID 30
+FD 0A 00 00 89 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 2E BC ✅ DISARM/ARM command accepted!
+FD 1C 00 00 8A 01 01 1E 00 00 88 53 06 00 F3 CF 5E BB A4 FA 74 BD F3 F7 81 BF A1 37 A5 3A 08 8B 62 BB 7C 42 50 B9 FA 48 W (90710) control_pixhawk: Received message with ID 30
+FD 20 00 00 8B 01 01 1F 00 00 91 53 06 00 0F 9B 5F 3F B0 55 83 BC 00 3E CF BC A7 D1 F8 BE AF 8E F8 BA 18 B9 11 BB F9 A6 5E 3B 4D A5 W (90740) control_pixhawk: Received message with ID 31
+FD 09 00 00 8C 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 FA 74 W (90740) control_pixhawk: Received message with ID 0
+FD 20 00 00 8D 01 01 8D 00 00 FC 5B B7 18 00 00 00 00 27 F0 3F 41 27 F0 3F 41 47 11 14 3F 47 11 14 3F 00 00 C0 7F 00 00 C0 7F 21 FB W (90760) control_pixhawk: Received message with ID 141
+FD 1C 00 00 8E 01 01 1E 00 00 CB 53 06 00 0C EF 60 BB 89 2B 75 BD 24 F6 81 BF EC 81 FC B9 E6 78 D1 B9 B7 3D 09 3A 22 54 W (90770) control_pixhawk: Received message with ID 30
+FD 24 00 00 8F 01 01 53 00 00 CC 53 06 00 D3 3F 00 00 C0 7F 00 00 C0 7F 68 6C FD 1C 00 00 BC 01 01 1E 00 00 B6 57 06 00 4D D8 66 BB C4 0F 75 BD 7B F3 81 BF 87 D4 0E 3A 3E 
+[0;32mI (90800) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 8F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AF 8E 
+Sent HEARTBEAT message.
+[0;32mI (91810) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 90 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 1B F3 
+[0;32mI (91810) control_pixhawk: Read 280 bytes[0m
+DD 2A BA 40 0F 1A B8 0F 92 FD 24 00 00 BD 01 01 53 00 00 B2 57 06 00 1A B8 5F 3F 00 00 00 80 00 00 00 00 2D E2 F8 BE 31 60 BB 3C 39 15 C7 3E D9 B1 98 39 6F 12 83 3A BC F4 W (91820) control_pixhawk: Received message with ID 83
+FD 02 00 00 BE 01 01 F5 00 00 00 01 B9 FE W (91830) control_pixhawk: Received message with ID 245
+FD 1C 00 00 BF 01 01 20 00 00 B2 57 06 00 FF 9A 89 BA 9D C0 8B BA 43 7A 14 BF BA CA 39 BB 9B CA AA BA 27 F2 2A BB 2C B7 W (91840) control_pixhawk: Received message with ID 32
+FD 35 00 00 C0 01 01 65 32 00 00 00 00 00 00 00 00 00 2A 47 43 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 E9 AF W (91870) control_pixhawk: Received message with ID 12901
+FD 0E 00 00 C1 01 01 1D 00 00 89 57 06 00 8F F2 7C 44 00 00 00 00 37 10 96 39 B7 57 5A 3A 66 A6 DA 3A D3 5A FD 1C 00 00 F6 01 01 1E 00 00 23 5C 06 00 7E C5 56 BB 74 17 75 BD 34 EF 81 BF 26 8A E6 BA 60 8F F6 BA 22 72 2C 3B 09 DD W (91890) control_pixhawk: Received message with ID 30
+FD 20 00 00 F7 01 01 1F 00 00 28 5C 06 00 AD 9E 5F 3F 87 D2 82 BC C3 B2 CF BC 82 C4 
+[0;32mI (91910) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 91 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B0 43 
+Sent HEARTBEAT message.
+[0;32mI (92920) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 92 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 C7 66 
+[0;32mI (92920) control_pixhawk: Read 280 bytes[0m
+F8 BE BA 5B 9A 3A 82 B7 8E 3A 03 9E 43 BA 32 D6 W (92920) control_pixhawk: Received message with ID 31
+FD 0A 00 00 F8 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 86 96 ✅ DISARM/ARM command accepted!
+FD 09 00 00 67 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 A4 1C W (92940) control_pixhawk: Received message with ID 0
+FD 1C 00 00 F9 01 01 1E 00 00 62 5C 06 00 72 51 55 BB 6E F7 74 BD 3C EE 81 BF EA C1 AC BA 79 06 2B 3A 75 B5 5C BA 0B 21 W (92950) control_pixhawk: Received message with ID 30
+FD 20 00 00 FA 01 01 1F 00 00 8B 5C 06 00 3E 9F 5F 3F 6B AB 82 BC A0 B1 CF BC 8F C2 F8 BE A7 B2 06 3B ED D1 04 3A 00 3C 21 B6 F6 CA W (92980) control_pixhawk: Received message with ID 31
+FD 12 00 00 FB 01 01 4A 00 00 00 00 00 00 EC 4C 25 3B 2A 47 43 41 5F 1D 36 3B 2D 01 54 75 W (92980) control_pixhawk: Received message with ID 74
+FD 1C 00 00 FC 01 01 1E 00 00 AA 5C 06 00 95 30 54 BB 6E FA 74 BD E3 EE 81 BF 07 8F C7 B9 AC 96 3F BB 56 16 9A BA 2E 51 W (93000) control_pixhawk: Received message with ID 30
+98 73 BD 26 EF 81 BF C3 A3 43 B9 DA 40 4B BB B4 7E 1B B9 74 AC FD 20 00 00 24 01 01 1F 00 00 71 60 06 00 D7 9F 5F 3F 49 85 81 BC 0A A5 CE BC E0 C1 F8 BE 80 8A B0 BA 60 FD F5 BA D8 72 B1 3A 16 49 W (93020) control_pixhawk: Received message with ID 31
+FD 12 
+[0;32mI (93030) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 93 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 81 57 
+Sent HEARTBEAT message.
+[0;32mI (94040) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 94 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 B2 D0 
+[0;32mI (94040) control_pixhawk: Read 280 bytes[0m
+00 00 25 01 01 4A 00 00 00 00 00 00 B2 03 46 3B FF 99 42 41 9D 7C D9 3A 2D 01 CC 87 W (94040) control_pixhawk: Received message with ID 74
+FD 1C 00 00 26 01 01 1E 00 00 90 60 06 00 60 CA 4C BB BD 88 73 BD A6 EE 81 BF 1C 1B 9F BA 7E DB A0 BA A5 42 B8 BA 20 6A W (94060) control_pixhawk: Received message with ID 30
+FD 0A 00 00 27 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 BE 0A ✅ DISARM/ARM command accepted!
+FD 1C 00 00 28 01 01 1E 00 00 CF 60 06 00 4C 03 4D BB F1 5A 73 BD AB F1 81 BF A8 06 81 3A 9C 08 44 BB C8 C7 89 3A 61 38 W (94080) control_pixhawk: Received message with ID 30
+FD 33 00 00 29 01 01 55 00 00 CC 60 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 99 F1 81 BF 00 00 00 00 3F 00 01 43 26 W (94110) control_pixhawk: Received message with ID 85
+FD 20 00 00 2A 01 01 1F 00 00 D8 60 06 00 44 9E 5F 01 CE 06 FD 1C 00 00 54 01 01 1E 00 00 77 64 06 00 F6 C3 4C BB A0 F1 73 BD E9 F2 81 BF 28 CD BB 38 86 09 D9 B9 BA 18 1A BB 24 5F FD 1C 00 00 55 01 01 1E 00 00 BA 64 06 00 34 CF 4B BB 85 59 74 BD A3 F4 81 BF CD 
+[0;32mI (94140) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 95 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D2 6B 
+Sent HEARTBEAT message.
+[0;32mI (95150) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 96 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 6E 45 
+[0;32mI (95150) control_pixhawk: Read 280 bytes[0m
+C9 68 3A E0 FD 1B BB FC 47 D7 BA 3C 72 W (95150) control_pixhawk: Received message with ID 30
+FD 20 00 00 56 01 01 1F 00 00 BF 64 06 00 80 9C 5F 3F 79 F7 81 BC 98 55 CF BC 19 CD F8 BE 4C DA 29 B9 D1 5E 1C BB 46 5B 39 BB 12 62 W (95170) control_pixhawk: Received message with ID 31
+FD 0A 00 00 57 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 19 30 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 58 01 01 1E 00 00 FE 64 06 00 2F D6 4D BB AF 6E 74 BD 00 F4 81 BF 29 95 12 3B 2B 60 14 BA BE CC D8 3A 3B 8A W (95190) control_pixhawk: Received message with ID 30
+FD 20 00 00 59 01 01 1F 00 00 22 65 06 00 F1 9C 5F 3F E2 57 82 BC BB 6D CF BC 39 CB F8 BE D3 AB 7F BA A4 A1 13 39 BE 15 12 39 08 93 W (95210) control_pixhawk: Received message with ID 31
+FD 1C 00 00 5A 01 01 1E 00 00 41 65 06 00 BA 5A 52 BB 9F 0E 75 BD 43 F3 81 BF 83 9D 34 BA CF F7 59 BB A5 F1 62 3A B0 D0 W (95220) control_pixhawk: Received message with ID 30
+F8 FD 12 00 00 88 01 01 4A 00 00 00 00 00 00 60 34 F1 3A 14 E9 40 41 21 69 00 3B 2D 01 E4 7C W (95230) control_pixhawk: Received message with ID 74
+FD 0A 00 00 89 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 2E BC ✅ DISARM/ARM command accepted!
+FD 1C 00 00 8A 01 01 1E 00 00 6B 69 06 00 0B 1E 58 BB 1D 80 76 BD 3E FA 
+[0;32mI (95260) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 97 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E3 7F 
+Sent HEARTBEAT message.
+[0;32mI (96270) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 98 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 49 B4 
+[0;32mI (96270) control_pixhawk: Read 280 bytes[0m
+81 BF 56 A6 60 38 CE 46 4B BA 40 6E FC B7 29 5F W (96270) control_pixhawk: Received message with ID 30
+FD 20 00 00 8B 01 01 1F 00 00 6F 69 06 00 80 99 5F 3F DE 8E 83 BC EF CD D0 BC D2 D5 F8 BE F6 00 42 39 D0 E0 99 B8 9F 8B 02 3B A1 42 W (96290) control_pixhawk: Received message with ID 31
+FD 1C 00 00 8C 01 01 1E 00 00 AE 69 06 00 A0 F0 55 BB BE BA 76 BD E0 F9 81 BF 41 29 E1 BA 5B 00 F3 BA 10 27 21 B8 6E D0 W (96300) control_pixhawk: Received message with ID 30
+FD 20 00 00 8D 01 01 1F 00 00 D2 69 06 00 BC 99 5F 3F 45 74 83 BC 83 0F D1 BC D2 D4 F8 BE F5 91 19 3A 77 B3 FD BA 79 F1 19 3A 0C C7 W (96320) control_pixhawk: Received message with ID 31
+FD 1C 00 00 8E 01 01 1E 00 00 F2 69 06 00 D0 7C 54 BB 45 B3 76 BD 65 F9 81 BF F5 C7 3D 3A 30 60 F8 B9 44 E4 69 BA 40 0E W (96330) control_pixhawk: Received message with ID 30
+FD 04 00 00 8F 01 01 2A 00 00 00 00 FF FF 5C 39 W (96350) control_pixhawk: Received message with ID 42
+0D 9F 3A 7C 95 25 BA F6 18 3F BA 1D A4 FD 1C 00 00 BA 01 01 1E 00 00 94 6D 06 00 F3 1E 5E BB 2F 07 77 BD 66 F8 81 BF AD 81 A7 3A 33 A8 1B 3B 72 59 4C BB DA C4 W (96370) control_pixhawk: Received message with ID 30
+FD 0A 00 00 BB 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 13 85 ✅ DISARM/ARM command accepted!
+FD 20 00 00 BC 
+[0;32mI (96380) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 99 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 74 13 
+Sent HEARTBEAT message.
+[0;32mI (97390) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 9A 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 95 21 
+[0;32mI (97390) control_pixhawk: Read 280 bytes[0m
+01 01 1F 00 00 BD 6D 06 00 3D 9A 5F 3F 66 0E 84 BC 47 02 D1 BC BB D2 F8 BE 9B 0E BE B9 E2 08 85 3A 01 21 8A 39 FF 5B W (97390) control_pixhawk: Received message with ID 31
+FD 1C 00 00 BD 01 01 1E 00 00 D8 6D 06 00 1F 79 5C BB 89 11 77 BD DA F5 81 BF 83 FE 01 3A AA D5 30 BB D0 8C 3D 3B 25 C9 W (97410) control_pixhawk: Received message with ID 30
+FD 33 00 00 BE 01 01 55 00 00 D4 6D 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 22 F7 81 BF 00 00 00 00 3F 00 01 24 4D W (97440) control_pixhawk: Received message with ID 85
+FD 04 00 00 BF 01 01 2A 00 00 00 00 FF FF 93 AA W (97450) control_pixhawk: Received message with ID 42
+FD 1C 00 00 C0 01 01 1E 00 00 1B 6E 06 00 04 B0 5A BB 87 F7 76 BD B8 F7 81 BF 7B 1E 63 BA 63 E7 47 BA C4 D0 DB 3A 38 3B W (97450) control_pixhawk: Received message with ID 30
+FD 20 00 00 C1 01 01 1F 00 00 20 6E 06 00 44 9A 5F 3F 72 F2 83 BC A4 34 D1 BC 85 D2 F8 BE 66 04 BD 3A 22 A7 07 BB 08 27 29 B9 AA 61 W (97480) control_pixhawk: Received message with ID 31
+FD 12 00 00 C2 01 01 4A 00 00 00 00 00 00 E2 91 A3 3B 42 ED 44 41 2D 89 87 3A 2D 01 73 A4 W (97490) control_pixhawk: Received message with ID 74
+E1 FC 81 BF 5D F0 23 3A 
+[0;32mI (97500) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9B FF BE 00 00 00 00 00 00 00 06 08 00 04 03 45 07 
+Sent HEARTBEAT message.
+[0;32mI (98510) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 9C 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 E0 97 
+[0;32mI (98510) control_pixhawk: Read 280 bytes[0m
+06 BE F3 39 18 BE CC 3A E3 6F FD 04 00 00 EA 01 01 2A 00 00 00 00 FF FF 17 1D W (98510) control_pixhawk: Received message with ID 42
+FD 1C 00 00 EB 01 01 1E 00 00 01 72 06 00 9E 8E 5B BB A4 16 76 BD EE FB 81 BF 25 B0 D7 B9 01 51 16 3A 65 D3 40 3A 53 F1 W (98530) control_pixhawk: Received message with ID 30
+FD 20 00 00 EC 01 01 1F 00 00 06 72 06 00 BF 98 5F 3F F4 87 83 BC F9 6B D0 BC DB D8 F8 BE B3 41 01 3B D5 2A 75 3A D7 A9 4C 3A 6C AB W (98550) control_pixhawk: Received message with ID 31
+FD 12 00 00 ED 01 01 4A 00 00 00 00 00 00 42 EB A9 3A BC 46 40 41 26 84 5C 3B 2D 01 06 A8 W (98560) control_pixhawk: Received message with ID 74
+FD 0A 00 00 EE 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 45 FE ✅ DISARM/ARM command accepted!
+FD 1C 00 00 EF 01 01 1E 00 00 45 72 06 00 DF 3F 58 BB 00 0F 76 BD E1 FA 81 BF AD F3 57 3A C6 AB 07 3B A0 8C AF B7 DB 2A W (98580) control_pixhawk: Received message with ID 30
+01 1E 00 00 2B 76 06 00 BF 45 54 BB 05 89 75 BD 83 FA 81 BF 56 D4 92 3A 2E 73 E7 3A 72 71 2A BA 76 7F FD 20 00 00 1D 01 01 1F 00 00 4F 76 06 00 25 99 5F 3F F6 EF 82 BC 85 02 D0 BC 17 D8 F8 BE 46 33 B5 BA 4C 5D 85 3A F8 73 CF B9 FB C0 W (98600) control_pixhawk: Received message with ID 31
+
+[0;32mI (98620) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9D FF BE 00 00 00 00 00 00 00 06 08 00 04 03 16 3B 
+Sent HEARTBEAT message.
+[0;32mI (99630) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 9E 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 3C 02 
+[0;32mI (99630) control_pixhawk: Read 280 bytes[0m
+FD 0A 00 00 1E 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 EA 83 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 1F 01 01 1E 00 00 6F 76 06 00 BC 9A 55 BB 1C 4F 75 BD F0 FA 81 BF 5B 4C 13 BB E2 01 ED 3A 7C 38 94 B9 EC B0 W (99640) control_pixhawk: Received message with ID 30
+FD 1C 00 00 20 01 01 1E 00 00 B2 76 06 00 01 85 53 BB 0F FA 74 BD 8B FC 81 BF 88 08 B2 B9 5B 1B 81 3B B8 F0 BC B9 0B 92 W (99660) control_pixhawk: Received message with ID 30
+FD 20 00 00 21 01 01 1F 00 00 B7 76 06 00 7B 98 5F 3F 7A 96 82 BC 1F A7 CF BC F7 DA F8 BE 06 D9 90 3A C2 28 FF 3A 56 F7 17 39 5A 07 W (99680) control_pixhawk: Received message with ID 31
+FD 09 00 00 22 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 79 77 W (99690) control_pixhawk: Received message with ID 0
+FD 20 00 00 23 01 01 8D 00 00 0F B7 40 19 00 00 00 00 FD 42 3F 41 FD 42 3F 41 FA 43 15 3F FA 43 15 3F 00 00 C0 7F 00 00 C0 7F A4 4E W (99710) control_pixhawk: Received message with ID 141
+FD 1C 00 00 24 01 01 1E 00 00 F6 76 06 00 13 0A 55 BB 2F 2B 75 BD 49 FC 81 BF 61 09 98 38 2A 61 DA B9 D8 69 34 3A 7E F7 W (99720) control_pixhawk: Received message with ID 30
+FD 24 00 00 25 01 01 53 00 00 F6 76 06 00 D6 BE CC 2E 92 BA 9E 9B EF B9 DB 31 67 3A 0B 
+[0;32mI (99740) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 9F FF BE 00 00 00 00 00 00 00 06 08 00 04 03 27 2F 
+Sent HEARTBEAT message.
+[0;32mI (100750) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 A0 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 E6 68 
+[0;32mI (100750) control_pixhawk: Read 280 bytes[0m
+8E FD 0A 00 00 4C 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 91 88 FD 09 00 00 4D 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 FD 48 W (100760) control_pixhawk: Received message with ID 0
+FD 20 00 00 4E 01 01 8D 00 00 6D F1 4F 19 00 00 00 00 AA 3F 41 41 AA 3F 41 41 37 B5 14 3F 37 B5 14 3F 00 00 C0 7F 00 00 C0 7F 70 A2 W (100780) control_pixhawk: Received message with ID 141
+FD 1C 00 00 4F 01 01 1E 00 00 DC 7A 06 00 1F 55 61 BB BC 29 74 BD 54 F7 81 BF DF 2A 58 3A 47 B4 07 BB 3A 21 95 3A C8 F9 W (100790) control_pixhawk: Received message with ID 30
+FD 24 00 00 50 01 01 53 00 00 DC 7A 06 00 3F B6 5F 3F 00 00 00 80 00 00 00 00 D5 E8 F8 BE BD E7 B6 3C 67 5A C6 3E D6 DD 99 39 6F 12 83 3A 21 DB W (100810) control_pixhawk: Received message with ID 83
+FD 29 00 00 51 01 01 93 00 00 FF FF FF FF FF FF FF FF FF 7F FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 01 01 FF 00 00 00 00 01 1D E7 W (100830) control_pixhawk: Received message with ID 147
+FD 08 00 00 52 01 01 B4 01 00 00 00 04 03 00 00 04 03 60 C5 W (100840) control_pixhawk: Received message with ID 436
+FD 29 00 00 53 01 01 E6 00 00 92 ED 4F 19 02 CD 4E BA A9 76 FD 1C 00 00 87 01 01 1E 00 00 05 
+[0;32mI (100860) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 39 A9 
+Sent HEARTBEAT message.
+[0;32mI (101870) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 A2 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 3A FD 
+[0;32mI (101870) control_pixhawk: Read 280 bytes[0m
+7F 06 00 A7 89 69 BB 3A 4C 74 BD 99 F0 81 BF 48 BA 05 BB 94 A8 C6 3A 70 25 19 BB 1D 74 FD 14 00 00 88 01 01 7C 01 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 3D 92 W (101880) control_pixhawk: Received message with ID 380
+FD 0A 00 00 89 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 2E BC ✅ DISARM/ARM command accepted!
+FD 1C 00 00 8A 01 01 1E 00 00 49 7F 06 00 69 C5 6A BB 7F 67 74 BD FA EF 81 BF 26 88 3E 3A 66 82 9B B9 53 78 E3 BA 60 7E W (101900) control_pixhawk: Received message with ID 30
+FD 20 00 00 8B 01 01 1F 00 00 4D 7F 06 00 70 9E 5F 3F 31 89 83 BC 04 5B CE BC 22 C6 F8 BE 6B 7F 89 3A B0 C8 89 BA C8 89 D4 B9 D4 7B W (101930) control_pixhawk: Received message with ID 31
+FD 09 00 00 79 FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 BB D1 W (101940) control_pixhawk: Received message with ID 0
+73 08 BA 7B 8F 13 BB 50 53 F8 3A 80 39 FD 09 00 00 7B FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 8A C5 W (101950) control_pixhawk: Received message with ID 0
+FD 1C 00 00 B9 01 01 1E 00 00 73 83 06 00 7A 59 59 BB 8A 5B 74 BD 0F E7 81 BF A0 68 BD BA 40 FD F3 BA 62 CD 1A 3A 53 D4 W (101960) control_pixhawk: Received message with ID 30
+FD 0A 00 00 BA 01 01 4D 00 00 90 01 00 00 00 00 00 00 
+[0;32mI (101980) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 08 BD 
+Sent HEARTBEAT message.
+[0;32mI (102990) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 A4 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 4F 4B 
+[0;32mI (102990) control_pixhawk: Read 280 bytes[0m
+01 C8 1C 95 ✅ DISARM/ARM command accepted!
+FD 20 00 00 BB 01 01 1F 00 00 9B 83 06 00 E9 A2 5F 3F ED 90 82 BC 90 01 CF BC FF B5 F8 BE D0 17 5E BA 28 78 A2 3A B5 EB D2 39 5F 9C W (103010) control_pixhawk: Received message with ID 31
+FD 12 00 00 BC 01 01 4A 00 00 00 00 00 00 2B A7 BD 3A 91 99 3F 41 24 4D 22 3A 2D 01 B4 FD W (103010) control_pixhawk: Received message with ID 74
+FD 1C 00 00 BD 01 01 1E 00 00 B6 83 06 00 8B 70 58 BB AE 98 74 BD 9E E7 81 BF 03 6A 5D 38 18 E3 DF B8 38 41 1A 3B 91 02 W (103030) control_pixhawk: Received message with ID 30
+FD 1C 00 00 BE 01 01 1E 00 00 FA 83 06 00 DA 4B 55 BB ED 4D 74 BD 77 E6 81 BF C0 27 7B 3A 69 5B 57 BB 1C 1D E3 39 96 45 W (103040) control_pixhawk: Received message with ID 30
+FD 20 00 00 BF 01 01 1F 00 00 FE 83 06 00 E2 A2 5F 3F 9E 5C 82 BC 14 13 CF BC 2B B6 F8 BE 88 5C 29 BA 68 EB 85 BB 50 94 10 BB 3F AF W (103070) control_pixhawk: Received message with ID 31
+3F 41 41 AA 17 0F 3A 2D 01 06 04 FD 1C 00 00 E7 01 01 1E 00 00 A1 87 06 00 24 79 51 BB 31 10 73 BD 68 E2 81 BF BC AB 94 BA EC FC EC BA AA CB 01 BA EA 05 W (103080) control_pixhawk: Received message with ID 30
+FD 1C 00 00 E8 01 01 1E 00 00 E0 87 06 00 E9 81 52 BB 68 E3 72 BD 02 E2 81 BF C8 
+[0;32mI (103100) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 5B 81 
+Sent HEARTBEAT message.
+[0;32mI (104110) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 A6 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 93 DE 
+[0;32mI (104110) control_pixhawk: Read 280 bytes[0m
+02 B2 B8 3B 7A 99 3B AE 25 24 3A 64 30 W (104110) control_pixhawk: Received message with ID 30
+FD 33 00 00 E9 01 01 55 00 00 DC 87 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 78 E2 81 BF 00 00 00 00 3F 00 01 B5 E5 W (104130) control_pixhawk: Received message with ID 85
+FD 0A 00 00 EA 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 79 BE ✅ DISARM/ARM command accepted!
+FD 20 00 00 EB 01 01 1F 00 00 E9 87 06 00 FD A5 5F 3F 7B 79 81 BC DE EA CD BC 67 AC F8 BE 5C C7 F7 3A E5 70 35 3A 58 1B 38 3B A7 B0 W (104160) control_pixhawk: Received message with ID 31
+FD 1C 00 00 EC 01 01 1E 00 00 23 88 06 00 E3 04 52 BB 33 BA 72 BD F8 E0 81 BF 08 C6 A2 3A D5 7A 04 3B D0 02 A3 3A 18 C5 W (104170) control_pixhawk: Received message with ID 30
+FD 20 00 00 ED 01 01 1F 00 00 4C 88 06 00 9C A6 5F 3F 1B 54 81 BC 5F DC CD BC 4D AA F8 BE 07 6E 07 3A 8A 50 FE 3A E6 CA 58 39 C9 DE W (104190) control_pixhawk: Received message with ID 31
+A6 5F 3F CC 78 81 BC B8 46 CE BC 95 AB F8 BE E0 4A 36 3B B5 60 7A 3A 41 38 38 BA 19 7A FD 1C 00 00 19 01 01 1E 00 00 0E 8C 06 00 E8 76 4E BB F0 37 73 BD 24 E2 81 
+[0;32mI (104210) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 6A 95 
+Sent HEARTBEAT message.
+[0;32mI (105230) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 A8 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 B4 2F 
+[0;32mI (105230) control_pixhawk: Read 280 bytes[0m
+BF BC E4 F8 39 5C 76 38 3B E2 6F DB BA 75 CB W (105230) control_pixhawk: Received message with ID 30
+FD 20 00 00 1A 01 01 1F 00 00 32 8C 06 00 50 A5 5F 3F 45 73 81 BC 3A EE CD BC D6 AE F8 BE 44 38 1F BB 65 9E 33 BA BB 4D 55 BA 6F 93 W (105250) control_pixhawk: Received message with ID 31
+FD 0A 00 00 1B 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 D9 D3 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 1C 01 01 1E 00 00 4D 8C 06 00 96 DD 53 BB 05 D8 72 BD 1D E2 81 BF 5C B5 D2 39 B4 9A D8 BA 35 67 83 3A 34 D3 W (105270) control_pixhawk: Received message with ID 30
+FD 24 00 00 1D 01 01 53 00 00 6D 8C 06 00 16 C1 5F 3F 00 00 00 80 00 00 00 00 DA C1 F8 BE 7E 1E AB 3C 55 4E C5 3E 70 86 BB 39 6F 12 83 3A 3D 1C W (105290) control_pixhawk: Received message with ID 83
+FD 12 00 00 1E 01 01 4A 00 00 00 00 00 00 15 FA 82 3B BC 46 40 41 B1 B4 6E 3B 2D 01 AB D4 W (105300) control_pixhawk: Received message with ID 74
+82 BC 42 73 CE BC 02 B0 F8 BE 42 7D EF BA A2 0E 00 3B D9 CE 32 BA 92 A0 FD 0A 00 00 4C 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 91 88 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 4D 01 01 1E 00 00 BA 90 06 00 96 67 5C BB 61 79 74 BD 3A E4 81 BF 17 FF F0 39 DB D2 19 3A 1A 
+[0;32mI (105340) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 A9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FD F9 
+Sent HEARTBEAT message.
+[0;32mI (106350) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 AA 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 68 BA 
+[0;32mI (106350) control_pixhawk: Read 280 bytes[0m
+77 82 B9 97 B1 W (106350) control_pixhawk: Received message with ID 30
+FD 20 00 00 4E 01 01 1F 00 00 E2 90 06 00 87 A4 5F 3F 5E 34 83 BC 6D 5F CF BC 87 AF F8 BE 0A 1E 9B BA 76 7D 44 BB 13 25 4E BA 39 D1 W (106370) control_pixhawk: Received message with ID 31
+FD 1C 00 00 4F 01 01 1E 00 00 02 91 06 00 80 66 5F BB F8 46 75 BD BB E1 81 BF FE E4 A2 BA 8E 44 48 BB 1D 2F 53 3B 2D DE W (106380) control_pixhawk: Received message with ID 30
+FD 1C 00 00 50 01 01 1E 00 00 41 91 06 00 34 48 66 BB 81 21 76 BD 10 E3 81 BF 15 F2 8E BB 74 7A C8 BB 8B DC 64 BA 9B 67 W (106390) control_pixhawk: Received message with ID 30
+FD 20 00 00 51 01 01 1F 00 00 45 91 06 00 73 A4 5F 3F 01 33 84 BC 5A 3D D0 BC 96 AE F8 BE 61 E9 5F BB B0 44 A9 BB 9B 6B 53 3A 7C DB W (106420) control_pixhawk: Received message with ID 31
+FD 12 00 00 52 01 01 4A 00 00 00 00 00 00 A6 0B 87 3B 27 F0 3F 41 F3 60 A0 3B 2D 01 2D 41 W (106420) control_pixhawk: Received message with ID 74
+09 BB 37 8E 49 BA 89 6C 84 3A 97 EA FD 1C 00 00 7E 01 01 1E 00 00 E8 94 06 00 80 71 6D BB F8 3B 75 BD 27 DC 81 BF 4E 54 4E BA A2 0F 3D 3B 70 1A B7 BA 59 7A W (106450) control_pixhawk: Received message with ID 30
+FD 33 00 00 7F 01 01 55 00 00 E4 94 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 
+[0;32mI (106460) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CC ED 
+Sent HEARTBEAT message.
+[0;32mI (107470) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 AC 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 1D 0C 
+[0;32mI (107470) control_pixhawk: Read 280 bytes[0m
+7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 5D DC 81 BF 00 00 00 00 3F 00 01 D3 0D W (107470) control_pixhawk: Received message with ID 85
+FD 0A 00 00 80 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 59 2C ✅ DISARM/ARM command accepted!
+FD 1C 00 00 81 01 01 1E 00 00 27 95 06 00 89 ED 65 BB F3 84 74 BD 49 DC 81 BF AA BD 20 3A 42 EB 85 3A 1C 2A 54 B9 21 8A W (107500) control_pixhawk: Received message with ID 30
+FD 20 00 00 82 01 01 1F 00 00 30 95 06 00 8B A7 5F 3F 24 64 83 BC AF A6 CE BC 32 A5 F8 BE B6 B9 07 BA 3F 9A 4C 3A 26 DD 6D BB 07 47 W (107520) control_pixhawk: Received message with ID 31
+FD 12 00 00 83 01 01 4A 00 00 00 00 00 00 17 9D F6 3A 52 9D 40 41 0A 27 97 3B 2D 01 9B FA W (107530) control_pixhawk: Received message with ID 74
+FD 04 00 00 84 01 01 2A 00 00 00 00 FF FF 45 7B W (107540) control_pixhawk: Received message with ID 42
+00 00 FF FF 47 8E FD 1C 00 00 AF 01 01 1E 00 00 55 99 06 00 81 96 57 BB 61 9A 72 BD 05 D9 81 BF 84 FC 63 3A E1 38 00 BA 1C 3B 43 BB 60 71 W (107560) control_pixhawk: Received message with ID 30
+FD 0A 00 00 B0 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 7A 35 ✅ DISARM/ARM command accepted!
+FD 20 00 00 B1 01 01 1F 00 00 79 99 06 00 D2 AA 5F 3F D4 88 81 BC 
+[0;32mI (107580) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9F D1 
+Sent HEARTBEAT message.
+[0;32mI (108590) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 AE 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 C1 99 
+[0;32mI (108590) control_pixhawk: Read 280 bytes[0m
+B1 7B CD BC 54 9B F8 BE 19 A0 2A 3B 89 3A 0D BA B3 F0 1A 3A 4D 19 W (108590) control_pixhawk: Received message with ID 31
+FD 1C 00 00 B2 01 01 1E 00 00 94 99 06 00 6D 05 56 BB 54 91 72 BD 6E D7 81 BF 06 7E BE BA DC E2 62 BB 3D 9F 57 3A B5 A2 W (108600) control_pixhawk: Received message with ID 30
+FD 1C 00 00 B3 01 01 1E 00 00 DC 99 06 00 ED C3 58 BB D1 08 73 BD CA D5 81 BF D2 43 80 BA F0 B4 73 B8 19 BE BF 3A CB 80 W (108620) control_pixhawk: Received message with ID 30
+FD 20 00 00 B4 01 01 1F 00 00 DC 99 06 00 B3 AB 5F 3F D2 DC 81 BC 52 D5 CD BC B7 97 F8 BE 90 4A 69 39 1E 4D 12 3B A0 49 0E 3A 9D F0 W (108650) control_pixhawk: Received message with ID 31
+FD 09 00 00 B5 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 A7 40 W (108650) control_pixhawk: Received message with ID 0
+FD 20 00 00 B6 01 01 8D 00 00 99 11 CA 19 00 00 00 00 52 9D 40 41 52 9D 40 41 CE 49 17 3F CE 49 17 3F 00 00 C0 7F 00 00 C0 7F 43 0B W (108670) control_pixhawk: Received message with ID 141
+FD 1C 00 00 B7 01 01 1E 00 00 20 9A 06 00 62 EA 5A BB 7D 50 73 BD EC D8 81 BF 8A 30 98 BA 9E 6B A4 BA 79 83 0C BB E0 D0 W (108680) control_pixhawk: Received message with ID 30
+FD 24 00 00 B8 01 01 53 00 00 20 9A 06 00 07 81 3A D3 08 FD 20 00 00 DE 01 01 1F 00 00 
+[0;32mI (108700) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 AF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AE C5 
+Sent HEARTBEAT message.
+[0;32mI (109710) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 B0 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 42 E6 
+[0;32mI (109710) control_pixhawk: Read 280 bytes[0m
+60 9D 06 00 E8 AB 5F 3F 8C 22 82 BC C5 AF CE BC 1D 96 F8 BE D0 82 E9 B6 D0 68 AA 39 3B B6 7E 3A 63 5A FD 1C 00 00 DF 01 01 1E 00 00 7F 9D 06 00 50 85 53 BB D0 D7 73 BD 06 D5 81 BF CA C8 30 3A 22 47 81 3B E8 1B 24 BB 62 FC W (109730) control_pixhawk: Received message with ID 30
+FD 1C 00 00 E0 01 01 1E 00 00 C3 9D 06 00 91 FD 55 BB EF D2 73 BD 64 D2 81 BF 66 DE 3B BA BE 29 91 BA F4 78 2A 3B 98 6A W (109740) control_pixhawk: Received message with ID 30
+FD 20 00 00 E1 01 01 1F 00 00 C7 9D 06 00 40 AD 5F 3F 95 20 82 BC 0E 81 CE BC 74 91 F8 BE 3F F1 E7 BA 00 1A C2 36 E4 9D 37 3B 43 F8 W (109760) control_pixhawk: Received message with ID 31
+FD 0A 00 00 E2 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 01 3E ✅ DISARM/ARM command accepted!
+FD 09 00 00 E3 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 7E 4B W (109780) control_pixhawk: Received message with ID 0
+FD 20 00 00 E4 01 01 8D 00 00 45 46 D9 19 00 00 00 00 14 E9 40 41 14 E9 40 41 B8 A0 16 3F B8 A0 16 3F 00 00 C0 7F 00 00 C0 7F 09 44 W (109800) control_pixhawk: Received message with ID 141
+FD 1C 00 00 E5 01 01 1E 00 00 01 9E 06 00 89 4A 55 BB 9B C0 73 BD 54 D3 81 BF AD 54 1A 3B E2 42 3E BA 5E 
+[0;32mI (109810) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B1 08 
+Sent HEARTBEAT message.
+[0;32mI (110830) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 B2 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 9E 73 
+[0;32mI (110830) control_pixhawk: Read 280 bytes[0m
+BE 70 3A 29 35 W (110830) control_pixhawk: Received message with ID 30
+FD 24 00 00 E6 01 01 53 00 00 FE 9D 06 00 7F 14 01 01 E6 00 00 AC 85 E8 19 00 00 00 00 00 00 C0 7F 00 00 C0 7F CC CD 2A 3B 3F EF 02 3C 00 00 C0 7F 00 00 C0 7F DF C1 78 3C B3 FE 8B 3E A5 74 33 FD 02 00 00 15 01 01 F5 00 00 00 01 9A 64 FD 1C 00 00 16 01 01 20 00 00 EC A1 06 00 DF DC 10 39 06 8D 41 B9 0F 14 17 BF 8E 87 B2 B9 8B E1 D5 3A A0 83 72 BB 10 52 FD 35 00 00 17 01 01 65 32 00 00 00 00 00 00 00 00 00 D4 EC 41 41 00 00 7A C4 00 00 7A C4 00 FF 7F 47 04 8D 9C 63 9C 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 14 65 FD 33 00 00 18 01 01 55 00 00 ED A1 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 C3 D5 81 BF 00 00 00 00 3F 00 01 0A 06 FD 0E 00 00 19 01 01 1D 00 01 1F 00 00 5E A6 06 00 A4 A9 5F 3F F1 DF 82 BC C4 7C CE BC 
+[0;32mI (110910) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 80 1C 
+Sent HEARTBEAT message.
+[0;32mI (111920) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 B4 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 EB C5 
+[0;32mI (111920) control_pixhawk: Read 280 bytes[0m
+10 9E F8 BE 81 3B 8C BA 1F 50 17 3A 1C 56 80 3A B5 CC FD 09 00 00 8D FF BE 00 00 00 00 00 00 00 06 08 C0 04 03 47 A1 W (111920) control_pixhawk: Received message with ID 0
+FD 0A 00 00 4B 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 BC F8 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 4C 01 01 1E 00 00 9D A6 06 00 52 4F 61 BB 16 7E 74 BD 64 D9 81 BF 8B 92 E5 3A 79 63 A7 BB 01 2E CA BA A5 22 W (111950) control_pixhawk: Received message with ID 30
+FD 14 00 00 4D 01 01 7C 01 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF B8 D4 W (111960) control_pixhawk: Received message with ID 380
+FD 20 00 00 4E 01 01 1F 00 00 C1 A6 06 00 E6 A8 5F 3F 4F 0D 83 BC A4 6E CE BC AF A0 F8 BE BD F4 BD 39 05 1D 70 3B 15 6C 8B BA C9 68 W (111990) control_pixhawk: Received message with ID 31
+FD 12 00 00 4F 01 01 4A 00 00 00 00 00 00 DF 50 C2 3A FD 42 3F 41 C9 8F 78 39 2D 01 97 F0 W (111990) control_pixhawk: Received message with ID 74
+0D 3A DE 46 FD 12 00 00 7C 01 01 4A 00 00 00 00 00 00 CE 56 11 3B AD 96 44 41 E9 E6 3C 39 2D 01 9B E3 W (112010) control_pixhawk: Received message with ID 74
+FD 1C 00 00 7D 01 01 1E 00 00 C7 AA 06 00 8F 78 6A BB C3 7A 75 BD A8 CD 81 BF 8A B6 BB BA C0 50 7A 39 84 6A AA 3A DB 
+[0;32mI (112030) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 D3 20 
+Sent HEARTBEAT message.
+[0;32mI (113040) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 B6 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 37 50 
+[0;32mI (113040) control_pixhawk: Read 280 bytes[0m
+06 W (113040) control_pixhawk: Received message with ID 30
+FD 0A 00 00 7E 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 AC B1 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 7F 01 01 1E 00 00 0A AB 06 00 0F 6A 67 BB 8C 73 75 BD 8C CE 81 BF A4 7D A1 3B 77 0C 2A BB 70 16 B5 B9 E4 2B W (113060) control_pixhawk: Received message with ID 30
+FD 20 00 00 80 01 01 1F 00 00 0E AB 06 00 91 AE 5F 3F C0 D6 83 BC FB 77 CF BC 03 8B F8 BE AA D2 C3 3A 32 88 95 BA E0 62 22 B9 67 2F W (113080) control_pixhawk: Received message with ID 31
+FD 1C 00 00 81 01 01 1E 00 00 49 AB 06 00 20 2D 68 BB C8 44 75 BD AD CD 81 BF 30 89 57 39 59 93 CD 3A 94 41 45 BA 76 79 W (113090) control_pixhawk: Received message with ID 30
+FD 20 00 00 82 01 01 1F 00 00 71 AB 06 00 2D AF 5F 3F 6C BD 83 BC 24 95 CF BC BF 88 F8 BE CD 42 51 3B 5B ED 34 BB 0A 4D 3F BB 89 50 W (113120) control_pixhawk: Received message with ID 31
+00 00 AD 01 01 1E 00 00 34 AF 06 00 B3 08 52 BB 21 D9 74 BD D5 CA 81 BF C4 17 21 3B E1 36 7A 3A 7E 95 C1 3A A9 4A FD 0A 00 00 AE 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 C1 DD ✅ DISARM/ARM command accepted!
+FD 20 00 00 AF 01 01 1F 00 00 5C AF 06 00 E8 B0 5F 3F DA 5B 82 BC 84 CA CF BC 1C 83 F8 
+[0;32mI (113150) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 E2 34 
+Sent HEARTBEAT message.
+[0;32mI (114160) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 B8 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 10 A1 
+[0;32mI (114160) control_pixhawk: Read 280 bytes[0m
+BE D8 46 81 3A B5 8D 17 3A A0 9D 10 39 59 22 W (114160) control_pixhawk: Received message with ID 31
+FD 1C 00 00 B0 01 01 1E 00 00 77 AF 06 00 1C 57 51 BB AA 0C 75 BD 4F CB 81 BF E1 0D C3 B9 92 26 D0 B9 CA B6 D6 39 53 FD W (114170) control_pixhawk: Received message with ID 30
+FD 24 00 00 B1 01 01 53 00 00 97 AF 06 00 57 CC 5F 3F 00 00 00 80 00 00 00 00 57 99 F8 BE FA D2 AA 3C 8D 27 C7 3E 22 23 87 39 6F 12 83 3A 6E B9 W (114200) control_pixhawk: Received message with ID 83
+FD 12 00 00 B2 01 01 4A 00 00 00 00 00 00 4F 19 F9 3A D4 EC 41 41 F5 F3 77 3A 2D 01 E5 DB W (114210) control_pixhawk: Received message with ID 74
+FD 1C 00 00 B3 01 01 1E 00 00 BB AF 06 00 F6 D5 53 BB 7B 08 75 BD 80 C8 81 BF B0 CD A2 BA 7C 61 B6 BA 7E FD 02 3A 69 84 W (114220) control_pixhawk: Received message with ID 30
+FD 20 00 00 B4 01 01 1F 00 00 BF AF 06 00 C2 B1 5F 3F 6F 85 82 BC 64 CF CF BC EC 7F F8 BE FD 21 6C 39 14 EE 94 BA 2E 62 B4 3A A7 71 W (114240) control_pixhawk: Received message with ID 31
+BE 32 98 3A 83 E9 43 41 28 38 F5 36 2D 01 CB 89 FD 1C 00 00 DF 01 01 1E 00 00 A1 B3 06 00 E4 C7 4B BB 9B C5 73 BD 0F CD 81 BF 02 91 4C 3A CE 0E 7D 3A 41 0B D2 BA B3 F1 W (114260) control_pixhawk: Received message with ID 30
+FD 20 00 00 E0 01 01 
+[0;32mI (114270) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 B9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 75 58 
+Sent HEARTBEAT message.
+[0;32mI (115280) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 BA 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 CC 34 
+[0;32mI (115280) control_pixhawk: Read 280 bytes[0m
+1F 00 00 A5 B3 06 00 0D B0 5F 3F 8C 75 81 BC AF E1 CE BC 6A 87 F8 BE 6B 70 C3 BA 29 50 AA 3A BA 2B 85 39 01 5D W (115280) control_pixhawk: Received message with ID 31
+FD 0A 00 00 E1 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 10 0E ✅ DISARM/ARM command accepted!
+FD 1C 00 00 E2 01 01 1E 00 00 E4 B3 06 00 A0 EB 47 BB 82 64 73 BD EB CC 81 BF 2E C3 0D 3B D6 D1 3F 3B 76 15 73 BA 64 48 W (115310) control_pixhawk: Received message with ID 30
+FD 20 00 00 E3 01 01 1F 00 00 08 B4 06 00 B6 B0 5F 3F 72 44 81 BC A8 B9 CE BC 3E 85 F8 BE 63 55 DA BA 80 14 02 37 A8 E7 43 B9 AD 8A W (115330) control_pixhawk: Received message with ID 31
+FD 1C 00 00 E4 01 01 1E 00 00 28 B4 06 00 22 BB 4B BB 25 3A 73 BD AC CB 81 BF 76 5A 0E BA 14 E2 3E 3B 2D 82 D7 3A 04 0E W (115340) control_pixhawk: Received message with ID 30
+FD 33 00 00 E5 01 01 55 00 00 29 B4 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 AC CB 81 BF 00 00 00 00 3F 00 01 90 73 W (115370) control_pixhawk: Received message with ID 85
+39 60 8A A0 37 62 56 65 BA 1B 5E FD 1C 00 00 0D 01 01 1E 00 00 CA B7 06 00 AF DE 4C BB 59 D4 72 BD 7D 
+[0;32mI (115380) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 44 4C 
+Sent HEARTBEAT message.
+[0;32mI (116400) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 BC 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 B9 82 
+[0;32mI (116400) control_pixhawk: Read 280 bytes[0m
+D3 81 BF B8 28 C0 3A 76 12 EF BA A8 00 AA 3A 70 9F W (116400) control_pixhawk: Received message with ID 30
+FD 01 00 00 0E 01 01 9B 01 00 11 1E 2B W (116410) control_pixhawk: Received message with ID 411
+FD 0A 00 00 0F 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 04 9B ✅ DISARM/ARM command accepted!
+FD 20 00 00 10 01 01 1F 00 00 EE B7 06 00 10 AD 5F 3F 06 09 81 BC D2 20 CE BC FD 92 F8 BE 90 41 6B BA 9D 8D 3C BA A0 0F 0A 39 91 E9 W (116440) control_pixhawk: Received message with ID 31
+FD 1C 00 00 11 01 01 1E 00 00 0E B8 06 00 3B 20 4B BB D7 DE 72 BD 72 D3 81 BF 4C F1 C6 BA 08 D2 36 3B F7 06 07 3A E5 CC W (116450) control_pixhawk: Received message with ID 30
+FD 1C 00 00 12 01 01 1E 00 00 51 B8 06 00 C0 81 4D BB 44 23 73 BD C7 D3 81 BF 84 5A FE 3A B6 0E 8A BA C1 04 6C 3A D2 AC W (116460) control_pixhawk: Received message with ID 30
+FD 20 00 00 13 01 01 1F 00 00 56 B8 06 00 FB AC 5F 3F 65 4E 81 BC 94 3B CE BC 11 93 F8 BE D0 64 6B 3A EF 38 2C BA E0 C6 E4 B7 D0 C7 W (116490) control_pixhawk: Received message with ID 31
+01 AA 4B FD 1C 00 00 41 01 01 1E 00 00 38 BC 06 00 26 20 6B BB D9 8B 74 BD 80 D0 81 BF 33 17 6F BB 3A B7 9F BB C2 87 96 BA 3C 5C W (116500) control_pixhawk: Received message with ID 30
+FD 20 00 00 42 01 01 1F 00 00 41 BC 06 00 C0 AD 5F 
+[0;32mI (116510) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 17 70 
+Sent HEARTBEAT message.
+[0;32mI (117530) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 BE 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 65 17 
+[0;32mI (117530) control_pixhawk: Read 280 bytes[0m
+3F 38 95 83 BC 43 9D CE BC C9 8E F8 BE 64 58 5C BA 2D E7 AD BA 34 F4 53 3A 6D 3A W (117530) control_pixhawk: Received message with ID 31
+FD 12 00 00 43 01 01 4A 00 00 00 00 00 00 4F 15 A5 3A AA 3F 41 41 9B 2C C0 3A 2D 01 AD 44 W (117550) control_pixhawk: Received message with ID 74
+FD 0A 00 00 44 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 E9 08 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 45 01 01 1E 00 00 7B BC 06 00 F0 9A 73 BB 52 E8 74 BD CC D0 81 BF 86 F1 CB BA 54 07 E1 B9 F2 CB 8B 39 5F 56 W (117570) control_pixhawk: Received message with ID 30
+FD 04 00 00 46 01 01 2A 00 00 00 00 FF FF 79 8F W (117580) control_pixhawk: Received message with ID 42
+FD 20 00 00 47 01 01 1F 00 00 A3 BC 06 00 DF AC 5F 3F AA 79 84 BC E2 E2 CE BC 47 91 F8 BE E9 E6 A6 BA CC 62 66 BB 70 8F 16 39 7D AB W (117600) control_pixhawk: Received message with ID 31
+FD 1C 00 00 48 01 01 1E 00 00 BE BC 06 00 D2 1C 75 BB D4 5B 75 BD 4B D1 81 BF D5 30 EF BA E8 EC 18 3A 86 CA FE B9 94 9D W (117610) control_pixhawk: Received message with ID 30
+01 01 1E 00 00 66 C0 06 00 99 BD 66 BB B3 6F 74 BD C6 D2 81 BF 2F CE D9 3A B0 47 AA 38 49 50 52 3A 89 E9 FD 20 00 00 70 01 01 1F 00 00 8A C0 06 00 30 AD 5F 3F DD 24 83 BC 0D 98 CE BC 
+[0;32mI (117640) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 BF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 26 64 
+Sent HEARTBEAT message.
+[0;32mI (118650) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 C0 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 0D 57 
+[0;32mI (118650) control_pixhawk: Read 280 bytes[0m
+12 91 F8 BE 89 66 F5 39 B0 25 C4 BA E0 01 9F 3A 81 74 W (118650) control_pixhawk: Received message with ID 31
+FD 04 00 00 71 01 01 2A 00 00 00 00 FF FF 50 BC W (118660) control_pixhawk: Received message with ID 42
+FD 0A 00 00 72 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 E8 71 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 73 01 01 1E 00 00 A5 C0 06 00 C3 87 63 BB BA 34 74 BD 02 D3 81 BF E4 67 8C 38 0B 10 55 3B 4C 20 42 BA F7 85 W (118680) control_pixhawk: Received message with ID 30
+FD 1C 00 00 74 01 01 1E 00 00 E8 C0 06 00 4B F1 65 BB 26 20 74 BD 99 D0 81 BF BD E0 3F 3A 1B 84 EF 3A 6D 87 58 3B D2 89 W (118700) control_pixhawk: Received message with ID 30
+FD 20 00 00 75 01 01 1F 00 00 ED C0 06 00 87 AD 5F 3F 33 27 83 BC 27 6A CE BC FC 8F F8 BE 0A 75 A0 BA 92 BC 2C BA DC DB ED B9 B1 A6 W (118720) control_pixhawk: Received message with ID 31
+FD 09 00 00 76 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 91 68 W (118730) control_pixhawk: Received message with ID 0
+FD 20 00 00 77 01 01 8D 00 00 8B A2 62 1A 00 00 00 00 27 F0 3F 41 27 F0 3F 41 6F 35 19 3F 6F 35 19 3F 00 00 C0 7F 00 00 C0 7F 3B 81 W (118750) control_pixhawk: Received message with ID 141
+FD 1C 00 00 78 01 01 1E 00 00 2C C1 06 00 0C D3 65 BB E2 05 74 BD E5 D3 81 BF C3 D5 25 BA 3D C8 A0 3A B0 
+[0;32mI (118760) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 3A 74 
+Sent HEARTBEAT message.
+[0;32mI (119780) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 C2 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 D1 C2 
+[0;32mI (119780) control_pixhawk: Read 280 bytes[0m
+A1 F7 B9 B0 FB W (119780) control_pixhawk: Received message with ID 30
+FD 24 00 00 79 01 01 53 00 00 28 C1 06 00 B3 92 3B BB CA 06 9A BB 71 86 3B 3A 49 03 FD 20 00 00 A3 01 01 1F 00 00 D7 C4 06 00 BE AD 5F 3F EB D0 82 BC 1D DD CD BC D6 8F F8 BE 21 0E 0E BB F4 B1 9E BB 10 F9 48 B8 F3 00 FD 0A 00 00 A4 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 A7 7D ✅ DISARM/ARM command accepted!
+FD 09 00 00 A5 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 2F E1 W (119820) control_pixhawk: Received message with ID 0
+FD 20 00 00 A6 01 01 8D 00 00 01 E4 71 1A 00 00 00 00 52 9D 40 41 52 9D 40 41 C5 B9 18 3F C5 B9 18 3F 00 00 C0 7F 00 00 C0 7F EF E6 W (119840) control_pixhawk: Received message with ID 141
+FD 1C 00 00 A7 01 01 1E 00 00 16 C5 06 00 6B B4 6D BB 63 B8 74 BD 8C D0 81 BF A1 8A 67 BB CA 01 CB BB 48 5B A7 39 01 E8 W (119840) control_pixhawk: Received message with ID 30
+FD 24 00 00 A8 01 01 53 00 00 17 C5 06 00 18 00 0F 40 01 00 3F 88 20 03 69 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 01 40 61 FD 12 00 00 DC 01 01 4A 00 00 00 00 00 00 41 D1 FD 39 6A 43 42 41 FD 17 04 3B 
+[0;32mI (119880) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 0B 60 
+Sent HEARTBEAT message.
+[0;32mI (120890) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 C4 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 A4 74 
+[0;32mI (120890) control_pixhawk: Read 280 bytes[0m
+2D 01 C7 4F W (120890) control_pixhawk: Received message with ID 74
+FD 1A 00 00 DD 01 01 08 00 00 6A 23 81 1A 00 00 00 00 A6 06 00 00 40 00 00 00 94 4E 00 00 F9 01 00 00 03 01 25 3F W (120900) control_pixhawk: Received message with ID 8
+FD 20 00 00 DE 01 01 1F 00 00 25 C9 06 00 C2 AF 5F 3F 0F 5A 82 BC 3D B0 CE BC 2C 88 F8 BE 86 60 3F 3A D4 A9 48 3B 9A E7 E2 39 71 C7 W (120930) control_pixhawk: Received message with ID 31
+FD 1C 00 00 DF 01 01 1E 00 00 40 C9 06 00 01 D7 5A BB D7 23 74 BD BD CD 81 BF 18 6B 1D BB FE BC 30 BB 00 91 BE B7 67 DD W (120930) control_pixhawk: Received message with ID 30
+FD 0A 00 00 E0 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 1F 1E ✅ DISARM/ARM command accepted!
+FD 1C 00 00 E1 01 01 1E 00 00 7F C9 06 00 BF AA 59 BB F7 13 74 BD C3 CF 81 BF 00 53 23 BB 18 62 D9 B8 08 E9 74 B9 A0 50 W (120960) control_pixhawk: Received message with ID 30
+FD 20 00 00 E2 01 01 1F 00 00 88 C9 06 00 8B AE 5F 3F 59 78 82 BC AD 88 CE BC 97 8C F8 BE 08 93 1A BB 50 40 62 B8 02 BB F0 3A 13 28 W (120980) control_pixhawk: Received message with ID 31
+0C 01 01 1E 00 00 AD CD 06 00 0B 0C 5F BB 28 DC 73 BD 26 D7 81 BF 04 DF B8 39 EA 22 8B BA 28 F6 F2 3A 5B 8B FD 0A 00 00 0D 01 01 4D 00 00 90 01 
+[0;32mI (121000) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C5 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 58 5C 
+Sent HEARTBEAT message.
+[0;32mI (122010) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 C6 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 78 E1 
+[0;32mI (122010) control_pixhawk: Read 280 bytes[0m
+00 00 00 00 00 00 01 C8 1A BB ✅ DISARM/ARM command accepted!
+FD 20 00 00 0E 01 01 1F 00 00 D1 CD 06 00 A8 AA 5F 3F AE A6 82 BC C3 6A CE BC 9B 9A F8 BE 36 78 13 3B 4E 2D 88 3A A8 1C AD 3A 71 5A W (122030) control_pixhawk: Received message with ID 31
+FD 12 00 00 0F 01 01 4A 00 00 00 00 00 00 11 41 36 3B 2A 47 43 41 41 54 E7 3A 2D 01 95 27 W (122040) control_pixhawk: Received message with ID 74
+FD 1C 00 00 10 01 01 1E 00 00 EC CD 06 00 80 98 5E BB 4C CC 73 BD E7 D8 81 BF A0 43 4E 38 8A 05 86 3B 42 67 35 3A 8A 08 W (122050) control_pixhawk: Received message with ID 30
+FD 1C 00 00 11 01 01 1E 00 00 30 CE 06 00 B6 25 5A BB A6 B4 73 BD 04 D7 81 BF 1A 50 1E 3B 89 A3 17 BA 92 AF 1D 3A 85 C4 W (122060) control_pixhawk: Received message with ID 30
+FD 33 00 00 12 01 01 55 00 00 30 CE 06 00 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 C0 7F 00 00 00 00 00 00 00 00 00 00 C8 42 04 D7 81 BF 00 00 00 00 3F 00 01 49 E9 W (122090) control_pixhawk: Received message with ID 85
+FD 20 00 00 13 01 01 1F 00 00 34 CE 06 00 F2 AA 5F FD 20 00 00 41 01 01 1F 00 00 1F D2 06 00 FA AD 5F 3F 49 C2 83 BC 64 A2 CE BC DE 8D F8 BE CA 71 5D 38 00 06 
+[0;32mI (122110) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C7 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 69 48 
+Sent HEARTBEAT message.
+[0;32mI (123130) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 C8 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 5F 10 
+[0;32mI (123130) control_pixhawk: Read 280 bytes[0m
+32 36 EA F9 A0 3A C5 F4 FD 0A 00 00 42 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 CB 68 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 43 01 01 1E 00 00 59 D2 06 00 64 E3 6D BB 99 BC 74 BD 03 CF 81 BF 29 B0 A4 39 58 09 67 BB 54 51 83 3A 39 A8 W (123140) control_pixhawk: Received message with ID 30
+FD 20 00 00 44 01 01 1F 00 00 82 D2 06 00 5A AE 5F 3F 30 ED 83 BC 9A C9 CE BC 4B 8C F8 BE 21 56 07 BB 14 90 2E BB 9A 17 77 BA 2C A5 W (123170) control_pixhawk: Received message with ID 31
+FD 1C 00 00 45 01 01 1E 00 00 A1 D2 06 00 E8 7F 6E BB 0C E2 74 BD C4 CF 81 BF 92 1E 1A 39 C8 A5 31 3B 47 A6 7A 3A B2 F1 W (123180) control_pixhawk: Received message with ID 30
+FD 24 00 00 46 01 01 53 00 00 C1 D2 06 00 ED C9 5F 3F 00 00 00 80 00 00 00 00 08 A2 F8 BE DA 88 C0 3C FE CE C6 3E 72 0C 94 39 6F 12 83 3A 5F C7 W (123200) control_pixhawk: Received message with ID 83
+FD 12 00 00 47 01 01 4A 00 00 00 00 00 00 6F 3C 50 3B FF 99 42 41 ED BD 95 3A 2D 01 FD 2E W (123210) control_pixhawk: Received message with ID 74
+12 9D B9 DF 8B FD 14 00 00 6E 01 01 7C 01 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF CA 3B W (123220) control_pixhawk: Received message with ID 380
+FD 20 00 00 6F 01 01 1F 00 00 6D 
+[0;32mI (123240) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 C9 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 FE 24 
+Sent HEARTBEAT message.
+[0;32mI (124250) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 CA 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 83 85 
+[0;32mI (124250) control_pixhawk: Read 280 bytes[0m
+D6 06 00 FC AF 5F 3F D2 34 83 BC 52 39 CF BC 70 86 F8 BE E6 3D 36 BB C4 7E 8A B9 7B 8B 32 BA F2 27 W (124250) control_pixhawk: Received message with ID 31
+FD 1C 00 00 70 01 01 1E 00 00 87 D6 06 00 19 D8 5F BB F0 05 75 BD D8 CA 81 BF 58 10 9C 3A 14 9E B1 3A 6B 4F 2B BA D2 88 W (124270) control_pixhawk: Received message with ID 30
+FD 0A 00 00 71 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 F9 41 ✅ DISARM/ARM command accepted!
+FD 24 00 00 72 01 01 53 00 00 A8 D6 06 00 F2 CC 5F 3F 00 00 00 80 00 00 00 00 29 97 F8 BE C8 CC B5 3C 6C 31 C7 3E 4F 01 56 39 6F 12 83 3A 39 B4 W (124300) control_pixhawk: Received message with ID 83
+FD 12 00 00 73 01 01 4A 00 00 00 00 00 00 85 C6 29 3B 6A 43 42 41 6C D2 ED 3A 2D 01 72 CB W (124310) control_pixhawk: Received message with ID 74
+FD 1C 00 00 74 01 01 1E 00 00 CB D6 06 00 0C CB 62 BB 82 4E 75 BD 80 C7 81 BF 40 D8 2D BA 1F AF 0C BA 21 AD 02 BA B1 3C W (124320) control_pixhawk: Received message with ID 30
+FD 20 00 00 75 01 01 1F 00 00 CF D6 06 00 F5 B1 5F 3F 96 84 83 BC 03 95 CF BC E2 7E F8 BE E0 F6 09 BA 57 08 00 BB 7D 6F 6B BA 44 71 W (124350) control_pixhawk: Received message with ID 31
+00 3F 5A 6A 3A FF 99 42 41 54 9C E4 3A 2D 01 88 62 FD 1C 00 00 A0 01 
+[0;32mI (124360) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CB FF BE 00 00 00 00 00 00 00 06 08 00 04 03 CF 30 
+Sent HEARTBEAT message.
+[0;32mI (125370) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 CC 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 F6 33 
+[0;32mI (125370) control_pixhawk: Read 280 bytes[0m
+01 1E 00 00 B1 DA 06 00 42 F1 5D BB D0 42 74 BD 87 CA 81 BF AE AF 12 3A 07 94 47 BA E1 61 48 BA 61 94 W (125370) control_pixhawk: Received message with ID 30
+FD 20 00 00 A1 01 01 1F 00 00 B6 DA 06 00 1D B1 5F 3F 86 AA 82 BC 4D C1 CE BC 0A 83 F8 BE 67 DE 41 B9 FA 08 8C 3A 40 F8 F9 B7 61 E6 W (125400) control_pixhawk: Received message with ID 31
+FD 0A 00 00 A2 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 85 1D ✅ DISARM/ARM command accepted!
+FD 1C 00 00 A3 01 01 1E 00 00 F5 DA 06 00 1D 19 5F BB 82 38 74 BD 23 CC 81 BF B5 47 E8 BA 3C 3B CF BA 9E 3E B4 BA C8 17 W (125410) control_pixhawk: Received message with ID 30
+FD 01 00 00 A4 01 01 9B 01 00 11 DF 70 W (125430) control_pixhawk: Received message with ID 411
+FD 20 00 00 A5 01 01 1F 00 00 19 DB 06 00 EE B0 5F 3F 01 88 82 BC 68 A9 CE BC DE 83 F8 BE 9B F1 89 3A D6 74 DA BA 24 14 EC 3A E1 E7 W (125450) control_pixhawk: Received message with ID 31
+D5 0C 56 BB 86 76 73 BD D6 CE 81 BF 97 C7 1E 39 02 46 07 3A C9 39 BE BA 0F 78 FD 20 00 00 D0 01 01 1F 00 00 03 DF 06 00 A8 AF 5F 3F 1F D4 81 BC 9E 3B CE BC 25 89 F8 BE D6 BA 59 3A F4 F0 D3 BA F0 87 1F 3B 8F 60 W (125460) control_pixhawk: Received message with ID 31
+FD 1C 00 00 D1 01 01 1E 00 00 1E DF 06 
+[0;32mI (125480) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CD FF BE 00 00 00 00 00 00 00 06 08 00 04 03 9C 0C 
+Sent HEARTBEAT message.
+[0;32mI (126490) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 CE 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 2A A6 
+[0;32mI (126490) control_pixhawk: Read 280 bytes[0m
+00 DC 82 56 BB E6 3C 73 BD 7D CE 81 BF 6E 3D 50 3A E7 34 FE 3A 4C B0 17 BA 3E DF W (126490) control_pixhawk: Received message with ID 30
+FD 0A 00 00 D2 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 22 27 ✅ DISARM/ARM command accepted!
+FD 1C 00 00 D3 01 01 1E 00 00 62 DF 06 00 75 49 59 BB BA 4E 73 BD 76 CD 81 BF FB 90 8E 39 28 82 EF B9 CC 24 07 3B CC 5C W (126510) control_pixhawk: Received message with ID 30
+FD 20 00 00 D4 01 01 1F 00 00 66 DF 06 00 C5 AF 5F 3F E5 EE 81 BC EF 1B CE BC CD 88 F8 BE FD CE 4D 3B F0 83 93 39 80 17 99 3A 6B 06 W (126540) control_pixhawk: Received message with ID 31
+FD 12 00 00 D5 01 01 4A 00 00 00 00 00 00 A4 C2 8F 3A 83 E9 43 41 7A FA E8 39 2D 01 8A 01 W (126550) control_pixhawk: Received message with ID 74
+FD 1C 00 00 D6 01 01 1E 00 00 A5 DF 06 00 0B 37 55 BB EA 52 73 BD 39 CD 81 BF FB 7A E1 39 33 A4 11 BB 2E 73 A0 3A 28 36 W (126560) control_pixhawk: Received message with ID 30
+31 90 F8 BE EE EA 64 B9 78 D0 B7 39 D8 0D AB 38 46 53 FD 12 00 00 04 01 01 4A 00 00 00 00 00 00 34 5A 75 3B BC 46 40 41 CE C6 B7 39 2D 01 AD 9E W (126590) control_pixhawk: Received message with ID 74
+FD 1C 00 00 05 01 01 1E 00 00 8B E3 06 00 DF DD 49 BB B1 47 74 BD 92 D0 81 BF 09 7A B3 
+[0;32mI (126600) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 CF FF BE 00 00 00 00 00 00 00 06 08 00 04 03 AD 18 
+Sent HEARTBEAT message.
+[0;32mI (127610) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 D0 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 A9 D9 
+[0;32mI (127610) control_pixhawk: Read 280 bytes[0m
+39 2E 32 0E BA A6 4A 0F 39 1A 05 W (127610) control_pixhawk: Received message with ID 30
+FD 20 00 00 06 01 01 1F 00 00 B4 E3 06 00 C1 AD 5F 3F FF B4 81 BC 82 4B CF BC 33 8F F8 BE 76 20 98 3A F8 3A D6 39 92 83 98 BA B3 2F W (127630) control_pixhawk: Received message with ID 31
+FD 0A 00 00 07 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 7C 1B ✅ DISARM/ARM command accepted!
+FD 1C 00 00 08 01 01 1E 00 00 CF E3 06 00 FF AF 46 BB 5F 44 74 BD 2D D2 81 BF D9 15 97 39 D9 2B 89 BA 70 4D 9D BA 9C 39 W (127650) control_pixhawk: Received message with ID 30
+FD 04 00 00 09 01 01 2A 00 00 00 00 FF FF 30 5E W (127660) control_pixhawk: Received message with ID 42
+FD 1C 00 00 0A 01 01 1E 00 00 12 E4 06 00 B4 B7 47 BB A7 5D 74 BD 69 D1 81 BF 02 CF B8 BA 5A 89 B9 BA 11 ED 06 BA 14 D7 W (127670) control_pixhawk: Received message with ID 30
+FD 20 00 00 0B 01 01 1F 00 00 17 E4 06 00 91 AD 5F 3F 26 A7 81 BC C2 8B CF BC B4 8F F8 BE 8F F8 3C BB 80 62 22 BB 47 A3 3B BA 98 46 W (127700) control_pixhawk: Received message with ID 31
+D2 BC 45 83 F8 BE A5 75 0B 3B 3C 88 3D 3B 07 72 B8 BA FA 4C FD 0A 00 00 37 01 01 4D 00 00 90 01 00 00 00 00 00 00 01 C8 5F 02 ✅ DISARM/ARM command accepted!
+FD 09 00 00 38 01 01 00 00 00 00 00 04 03 02 0C 1D 00 03 04 92 W (127720) control_pixhawk: Received message with ID 0
+
+[0;32mI (127730) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D1 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 B2 D5 
+Sent HEARTBEAT message.
+[0;32mI (128740) control_pixhawk: Wrote 44 bytes[0m
+FD 20 00 00 D2 01 C8 4C 00 00 00 00 00 00 00 98 A5 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 01 01 01 75 4C 
+[0;32mI (128740) control_pixhawk: Read 280 bytes[0m
+FD 20 00 00 39 01 01 8D 00 00 75 31 FB 1A 00 00 00 00 52 9D 40 41 52 9D 40 41 6C 66 1C 3F 6C 66 1C 3F 00 00 C0 7F 00 00 C0 7F 00 B2 W (128750) control_pixhawk: Received message with ID 141
+FD 1C 00 00 3A 01 01 1E 00 00 3C E8 06 00 1F 76 5F BB 59 65 78 BD 3D CB 81 BF 5D 3B 56 BA D2 50 41 BB FE 4E 28 BA A1 05 W (128760) control_pixhawk: Received message with ID 30
+FD 24 00 00 3B 01 01 53 00 00 38 E8 06 00 AC CB 5F 3F 00 00 00 80 00 00 00 00 BF 9B F8 BE F2 60 B5 3C 70 CA C9 3E D4 F2 97 39 6F 12 83 3A F2 88 W (128790) control_pixhawk: Received message with ID 83
+FD 29 00 00 3C 01 01 93 00 00 FF FF FF FF FF FF FF FF FF 7F FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 01 01 FF 00 00 00 00 01 16 CC W (128800) control_pixhawk: Received message with ID 147
+FD 08 00 00 3D 01 01 B4 01 00 00 00 04 03 00 00 04 03 BE B2 W (128810) control_pixhawk: Received message with ID 436
+FD 29 00 00 3E 01 01 E6 00 00 0B 1C FB 1A 00 00 00 00 FF 00 00 00 00 01 12 0C FD 12 00 00 6E 01 01 4A 00 00 00 00 00 00 7D 79 33 3B BC 46 40 41 08 FE FB 3A 2D 01 67 9A FD 1A 00 00 6F 01 01 08 00 00 09 75 0A 1B 00 00 00 00 2B 
+[0;32mI (128840) control_pixhawk: Wrote 21 bytes[0m
+FD 09 00 00 D3 FF BE 00 00 00 00 00 00 00 06 08 00 04 03 83 C1 
+Sent HEARTBEAT message.
