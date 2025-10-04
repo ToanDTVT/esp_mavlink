@@ -15,10 +15,11 @@ void gpio_init()
 void press_button()
 {
     int button_state = gpio_get_level(BUTTON_GPIO);
-    if (button_state == 0) // Nút được nhấn (kéo xuống)
+    if (button_state == 0) // Nút được nhấn
     {
         printf("Button Pressed!\n");
-        send_disarm();
+        int evt = 1;
+        xQueueSend(button_evt_queue, &evt, 0);
     }
     else
     {

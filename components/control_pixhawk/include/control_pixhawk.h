@@ -21,6 +21,7 @@ void uart_init (void);
 void create_mavlink_receive_task();
 void send_disarm ();
 void send_heartbeat(void);
+void create_disarm_task();
 
 
 

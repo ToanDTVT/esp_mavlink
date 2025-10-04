@@ -188,3 +188,23 @@ void send_heartbeat(void)
     }
     printf("Sent HEARTBEAT message.\n");
 }
+
+
+
+
+void disarm_task(void *pvParameters)
+{
+    int evt;
+    while (1)
+    {
+        if (xQueueReceive(button_evt_queue, &evt, portMAX_DELAY))
+        {
+            send_disarm(); // Gửi lệnh và chờ phản hồi trong hàm này
+        }
+    }
+}
+
+void create_disarm_task()
+{
+    xTaskCreate(disarm_task, "disarm_task", 4096, NULL, 10, NULL);
+}

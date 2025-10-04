@@ -10,6 +10,7 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/queue.h"
 #include <inttypes.h>
 #include "sdkconfig.h"
 
@@ -21,7 +22,7 @@
 #include "esp_err.h"
 #include "esp_compiler.h"
 
-
+extern QueueHandle_t button_evt_queue;
 void test_global(void);
 
 #endif // GLOBAL_H
