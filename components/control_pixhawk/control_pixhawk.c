@@ -60,54 +60,7 @@ void send_disarm () {
         }
         printf("\n");
     }
-    
-    // uint8_t data[UART_BUF_SIZE];
-    // mavlink_message_t msg;
-    // mavlink_status_t status;
-    // while (1) {
-    //     int len = uart_read_bytes(UART_NUM_PIXHAWK, data, UART_BUF_SIZE, 20 / portTICK_PERIOD_MS);
-    //     if (len > 0) {
-    //         for (int i = 0; i < len; i++) {
-    //             if (mavlink_parse_char(MAVLINK_COMM_0, data[i], &msg, &status)) {
-    //                 // printf("[MAVLINK] msgid=%d sysid=%d compid=%d\n", msg.msgid, msg.sysid, msg.compid);
-    //                 switch (msg.msgid) {
-    //                     case MAVLINK_MSG_ID_COMMAND_ACK: {
-    //                         uint16_t command = mavlink_msg_command_ack_get_command(&msg);
-    //                         uint8_t result   = mavlink_msg_command_ack_get_result(&msg);
-    //                         printf("COMMAND_ACK received: command=%d, result=%d\n", command, result);
-    //                         if (command == MAV_CMD_COMPONENT_ARM_DISARM) {
-    //                             if (result == MAV_RESULT_ACCEPTED) {
-    //                                 printf("✅ DISARM/ARM command accepted!\n");
-    //                             } else {
-    //                                 printf("❌ DISARM/ARM command failed, result=%d\n", result);
-    //                             }
-    //                         }
-    //                         goto EXIT_LOOP;
-    //                         break;
-    //                     }
-    //                     case MAVLINK_MSG_ID_HEARTBEAT: {
-    //                         mavlink_heartbeat_t hb;
-    //                         mavlink_msg_heartbeat_decode(&msg, &hb);
-    //                         printf("HEARTBEAT: type=%d, autopilot=%d, base_mode=%d, system_status=%d\n",
-    //                                hb.type, hb.autopilot, hb.base_mode, hb.system_status);
-    //                         break;
-    //                     }
-    //                     case MAVLINK_MSG_ID_COMMAND_LONG: {
-    //                         mavlink_command_long_t cmd;
-    //                         mavlink_msg_command_long_decode(&msg, &cmd);
-    //                         printf("COMMAND_LONG: command=%d, param1=%.2f, param2=%.2f\n",
-    //                                cmd.command, cmd.param1, cmd.param2);
-    //                         break;
-    //                     }
-    //                     default:
-    //                         // printf("[MAVLINK] Unknown/Other msgid=%d\n", msg.msgid);
-    //                         break;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    // EXIT_LOOP:
+  
     printf("\n");
 }
 
@@ -143,6 +96,31 @@ void mavlink_receive_task(void *pvParameters) {
                             mavlink_msg_heartbeat_decode(&msg, &hb);
                             printf("HEARTBEAT: type=%d, autopilot=%d, base_mode=%d, system_status=%d\n",
                                    hb.type, hb.autopilot, hb.base_mode, hb.system_status);
+                            break;
+                        }
+                        case MAVLINK_MSG_ID_GLOBAL_POSITION_INT: {
+                            mavlink_global_position_int_t pos;
+                            mavlink_msg_global_position_int_decode(&msg, &pos);
+                            printf("Lat: %.7f, Lon: %.7f, Alt: %.2f m, RelAlt: %.2f m\n",
+                                pos.lat / 1e7, pos.lon / 1e7,
+                                pos.alt / 1000.0, pos.relative_alt / 1000.0);
+                            break;
+                        }
+                        case MAVLINK_MSG_ID_ALTITUDE: {
+                            mavlink_altitude_t alt;
+                            mavlink_msg_altitude_decode(&msg, &alt);
+                            printf("Alt AMSL=%.2f m, Relative=%.2f m, Terrain=%.2f m\n",
+                                alt.altitude_amsl,
+                                alt.altitude_relative,
+                                alt.altitude_terrain);
+                            break;
+                        }
+                        case MAVLINK_MSG_ID_GPS_RAW_INT: {
+                            mavlink_gps_raw_int_t gps;
+                            mavlink_msg_gps_raw_int_decode(&msg, &gps);
+                            printf("GPS: lat=%.7f, lon=%.7f, alt=%.2f m, sat=%d, fix=%d\n",
+                                gps.lat / 1e7, gps.lon / 1e7,
+                                gps.alt / 1000.0, gps.satellites_visible, gps.fix_type);
                             break;
                         }
                         case MAVLINK_MSG_ID_COMMAND_LONG: {

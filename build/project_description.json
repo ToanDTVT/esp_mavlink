@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp_mavlink",
-    "project_version":    "d0897e8-dirty",
+    "project_version":    "eef5d02-dirty",
     "project_path":       "/home/qtoan/esp/project/esp_mavlink",
     "idf_path":           "/home/qtoan/esp/esp-idf",
     "build_dir":          "/home/qtoan/esp/project/esp_mavlink/build",
