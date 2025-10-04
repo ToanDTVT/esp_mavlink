@@ -31,14 +31,14 @@ void send_mavlink_message(mavlink_message_t* msg)
 }
 
 void send_disarm () {
-    mavlink_message_t msg;
+    mavlink_message_t msg_1;
     uint8_t buf[MAVLINK_MAX_PACKET_LEN];
 
     // Tạo message COMMAND_LONG
     mavlink_msg_command_long_pack(
         255,               // system_id của GCS (Ground station)
         200,             // component_id của GCS
-        &msg,
+        &msg_1,
         1,               // target_system (thường là 1 = autopilot)
         1,               // target_component (thường là 1 = autopilot)
         MAV_CMD_COMPONENT_ARM_DISARM, // command ID
@@ -49,7 +49,7 @@ void send_disarm () {
     );
 
     // Đóng gói ra buffer
-    uint16_t len = mavlink_msg_to_send_buffer(buf, &msg);
+    uint16_t len = mavlink_msg_to_send_buffer(buf, &msg_1);
     int written = uart_write_bytes(UART_NUM_PIXHAWK, (const char *)buf, len);
     if (written < 0) {
         ESP_LOGE(TAG, "UART write failed");
@@ -60,35 +60,54 @@ void send_disarm () {
         }
         printf("\n");
     }
-
-    // uint16_t len_read = uart_read_bytes(UART_NUM_PIXHAWK, buf, sizeof(buf), 100 / portTICK_PERIOD_MS);
-    // if (len_read > 0) {
-    //     ESP_LOGI(TAG, "Read %d bytes", len_read);
-    //     for (int i = 0; i < len_read; i++) {
-    //         printf("%02X ", buf[i]);
-    //         if (mavlink_parse_char(MAVLINK_COMM_0, buf[i], &msg, NULL)) {
-    //             if (msg.msgid == MAVLINK_MSG_ID_COMMAND_ACK) {
-    //                 uint16_t command = mavlink_msg_command_ack_get_command(&msg);
-    //                 uint8_t result   = mavlink_msg_command_ack_get_result(&msg);
-    //                 if (command == MAV_CMD_COMPONENT_ARM_DISARM) {
-    //                     if (result == MAV_RESULT_ACCEPTED) {
-    //                         printf("✅ DISARM/ARM command accepted!\n");
-    //                     } else {
-    //                         printf("❌ DISARM/ARM command failed, result=%d\n", result);
+    
+    // uint8_t data[UART_BUF_SIZE];
+    // mavlink_message_t msg;
+    // mavlink_status_t status;
+    // while (1) {
+    //     int len = uart_read_bytes(UART_NUM_PIXHAWK, data, UART_BUF_SIZE, 20 / portTICK_PERIOD_MS);
+    //     if (len > 0) {
+    //         for (int i = 0; i < len; i++) {
+    //             if (mavlink_parse_char(MAVLINK_COMM_0, data[i], &msg, &status)) {
+    //                 // printf("[MAVLINK] msgid=%d sysid=%d compid=%d\n", msg.msgid, msg.sysid, msg.compid);
+    //                 switch (msg.msgid) {
+    //                     case MAVLINK_MSG_ID_COMMAND_ACK: {
+    //                         uint16_t command = mavlink_msg_command_ack_get_command(&msg);
+    //                         uint8_t result   = mavlink_msg_command_ack_get_result(&msg);
+    //                         printf("COMMAND_ACK received: command=%d, result=%d\n", command, result);
+    //                         if (command == MAV_CMD_COMPONENT_ARM_DISARM) {
+    //                             if (result == MAV_RESULT_ACCEPTED) {
+    //                                 printf("✅ DISARM/ARM command accepted!\n");
+    //                             } else {
+    //                                 printf("❌ DISARM/ARM command failed, result=%d\n", result);
+    //                             }
+    //                         }
+    //                         goto EXIT_LOOP;
+    //                         break;
     //                     }
+    //                     case MAVLINK_MSG_ID_HEARTBEAT: {
+    //                         mavlink_heartbeat_t hb;
+    //                         mavlink_msg_heartbeat_decode(&msg, &hb);
+    //                         printf("HEARTBEAT: type=%d, autopilot=%d, base_mode=%d, system_status=%d\n",
+    //                                hb.type, hb.autopilot, hb.base_mode, hb.system_status);
+    //                         break;
+    //                     }
+    //                     case MAVLINK_MSG_ID_COMMAND_LONG: {
+    //                         mavlink_command_long_t cmd;
+    //                         mavlink_msg_command_long_decode(&msg, &cmd);
+    //                         printf("COMMAND_LONG: command=%d, param1=%.2f, param2=%.2f\n",
+    //                                cmd.command, cmd.param1, cmd.param2);
+    //                         break;
+    //                     }
+    //                     default:
+    //                         // printf("[MAVLINK] Unknown/Other msgid=%d\n", msg.msgid);
+    //                         break;
     //                 }
-    //             } else {
-    //                 printf("\n");
-    //                 ESP_LOGW(TAG, "Received message with ID %d", msg.msgid);
     //             }
-    //         } 
+    //         }
     //     }
-    // } else {
-    //     printf("\n");
-    //     ESP_LOGW(TAG, "No response received");
     // }
-
-
+    // EXIT_LOOP:
     printf("\n");
 }
 
@@ -104,7 +123,7 @@ void mavlink_receive_task(void *pvParameters) {
         if (len > 0) {
             for (int i = 0; i < len; i++) {
                 if (mavlink_parse_char(MAVLINK_COMM_0, data[i], &msg, &status)) {
-                    printf("[MAVLINK] msgid=%d sysid=%d compid=%d\n", msg.msgid, msg.sysid, msg.compid);
+                    // printf("[MAVLINK] msgid=%d sysid=%d compid=%d\n", msg.msgid, msg.sysid, msg.compid);
                     switch (msg.msgid) {
                         case MAVLINK_MSG_ID_COMMAND_ACK: {
                             uint16_t command = mavlink_msg_command_ack_get_command(&msg);
@@ -134,7 +153,7 @@ void mavlink_receive_task(void *pvParameters) {
                             break;
                         }
                         default:
-                            printf("[MAVLINK] Unknown/Other msgid=%d\n", msg.msgid);
+                            // printf("[MAVLINK] Unknown/Other msgid=%d\n", msg.msgid);
                             break;
                     }
                 }
@@ -144,7 +163,7 @@ void mavlink_receive_task(void *pvParameters) {
 }
 
 void create_mavlink_receive_task() {
-    xTaskCreate(mavlink_receive_task, "mavlink_receive_task", 4096, NULL, 10, NULL);
+    xTaskCreate(mavlink_receive_task, "mavlink_receive_task", 4096, NULL, 5, NULL);
 }
 
 

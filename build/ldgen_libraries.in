@@ -110,6 +110,10 @@ $<TARGET_FILE:idf::global>
 $<TARGET_FILE:__idf_driver>
 $<TARGET_FILE:idf::control_pixhawk>
 $<TARGET_FILE:__idf_global>
+$<TARGET_FILE:idf::gpio_config>
+$<TARGET_FILE:__idf_control_pixhawk>
+$<TARGET_FILE:idf::servo_config>
+$<TARGET_FILE:idf::mpu6050_config>
 $<TARGET_FILE:idf::nvs_flash>
 $<TARGET_FILE:idf::esp_event>
 $<TARGET_FILE:idf::esp_vfs_console>
@@ -132,7 +136,9 @@ $<TARGET_FILE:__idf_esp_eth>
 $<TARGET_FILE:idf::json>
 $<TARGET_FILE:idf::mqtt>
 $<TARGET_FILE:idf::main>
-$<TARGET_FILE:__idf_control_pixhawk>
+$<TARGET_FILE:__idf_gpio_config>
+$<TARGET_FILE:__idf_servo_config>
+$<TARGET_FILE:__idf_mpu6050_config>
 $<TARGET_FILE:__idf_protocol_examples_common>
 $<TARGET_FILE:__idf_json>
 $<TARGET_FILE:__idf_mqtt>

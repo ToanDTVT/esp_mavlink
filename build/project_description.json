@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp_mavlink",
-    "project_version":    "1",
+    "project_version":    "7579be4-dirty",
     "project_path":       "/home/qtoan/esp/project/esp_mavlink",
     "idf_path":           "/home/qtoan/esp/esp-idf",
     "build_dir":          "/home/qtoan/esp/project/esp_mavlink/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/qtoan/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/qtoan/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/qtoan/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/qtoan/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/qtoan/esp/esp-idf/components/partition_table/Kconfig.projbuild;/home/qtoan/esp/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "console", "control_pixhawk", "cxx", "driver", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_http_client", "esp_https_ota", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "global", "hal", "heap", "http_parser", "ieee802154", "json", "log", "lwip", "main", "mavlink", "mbedtls", "mqtt", "newlib", "nvs_flash", "openthread", "partition_table", "protocol_examples_common", "pthread", "sdmmc", "soc", "spi_flash", "tcp_transport", "vfs", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/home/qtoan/esp/esp-idf/components/app_update", "/home/qtoan/esp/esp-idf/components/bootloader", "/home/qtoan/esp/esp-idf/components/bootloader_support", "/home/qtoan/esp/esp-idf/components/console", "/home/qtoan/esp/project/esp_mavlink/components/control_pixhawk", "/home/qtoan/esp/esp-idf/components/cxx", "/home/qtoan/esp/esp-idf/components/driver", "/home/qtoan/esp/esp-idf/components/efuse", "/home/qtoan/esp/esp-idf/components/esp-tls", "/home/qtoan/esp/esp-idf/components/esp_app_format", "/home/qtoan/esp/esp-idf/components/esp_bootloader_format", "/home/qtoan/esp/esp-idf/components/esp_coex", "/home/qtoan/esp/esp-idf/components/esp_common", "/home/qtoan/esp/esp-idf/components/esp_driver_ana_cmpr", "/home/qtoan/esp/esp-idf/components/esp_driver_bitscrambler", "/home/qtoan/esp/esp-idf/components/esp_driver_dac", "/home/qtoan/esp/esp-idf/components/esp_driver_gpio", "/home/qtoan/esp/esp-idf/components/esp_driver_gptimer", "/home/qtoan/esp/esp-idf/components/esp_driver_i2c", "/home/qtoan/esp/esp-idf/components/esp_driver_i2s", "/home/qtoan/esp/esp-idf/components/esp_driver_ledc", "/home/qtoan/esp/esp-idf/components/esp_driver_mcpwm", "/home/qtoan/esp/esp-idf/components/esp_driver_parlio", "/home/qtoan/esp/esp-idf/components/esp_driver_pcnt", "/home/qtoan/esp/esp-idf/components/esp_driver_rmt", "/home/qtoan/esp/esp-idf/components/esp_driver_sdio", "/home/qtoan/esp/esp-idf/components/esp_driver_sdm", "/home/qtoan/esp/esp-idf/components/esp_driver_sdmmc", "/home/qtoan/esp/esp-idf/components/esp_driver_sdspi", "/home/qtoan/esp/esp-idf/components/esp_driver_spi", "/home/qtoan/esp/esp-idf/components/esp_driver_tsens", "/home/qtoan/esp/esp-idf/components/esp_driver_twai", "/home/qtoan/esp/esp-idf/components/esp_driver_uart", "/home/qtoan/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/home/qtoan/esp/esp-idf/components/esp_eth", "/home/qtoan/esp/esp-idf/components/esp_event", "/home/qtoan/esp/esp-idf/components/esp_http_client", "/home/qtoan/esp/esp-idf/components/esp_https_ota", "/home/qtoan/esp/esp-idf/components/esp_hw_support", "/home/qtoan/esp/esp-idf/components/esp_mm", "/home/qtoan/esp/esp-idf/components/esp_netif", "/home/qtoan/esp/esp-idf/components/esp_netif_stack", "/home/qtoan/esp/esp-idf/components/esp_partition", "/home/qtoan/esp/esp-idf/components/esp_phy", "/home/qtoan/esp/esp-idf/components/esp_pm", "/home/qtoan/esp/esp-idf/components/esp_ringbuf", "/home/qtoan/esp/esp-idf/components/esp_rom", "/home/qtoan/esp/esp-idf/components/esp_security", "/home/qtoan/esp/esp-idf/components/esp_system", "/home/qtoan/esp/esp-idf/components/esp_timer", "/home/qtoan/esp/esp-idf/components/esp_vfs_console", "/home/qtoan/esp/esp-idf/components/esp_wifi", "/home/qtoan/esp/esp-idf/components/esptool_py", "/home/qtoan/esp/esp-idf/components/freertos", "/home/qtoan/esp/project/esp_mavlink/components/global", "/home/qtoan/esp/esp-idf/components/hal", "/home/qtoan/esp/esp-idf/components/heap", "/home/qtoan/esp/esp-idf/components/http_parser", "/home/qtoan/esp/esp-idf/components/ieee802154", "/home/qtoan/esp/esp-idf/components/json", "/home/qtoan/esp/esp-idf/components/log", "/home/qtoan/esp/esp-idf/components/lwip", "/home/qtoan/esp/project/esp_mavlink/main", "/home/qtoan/esp/project/esp_mavlink/components/mavlink", "/home/qtoan/esp/esp-idf/components/mbedtls", "/home/qtoan/esp/esp-idf/components/mqtt", "/home/qtoan/esp/esp-idf/components/newlib", "/home/qtoan/esp/esp-idf/components/nvs_flash", "/home/qtoan/esp/esp-idf/components/openthread", "/home/qtoan/esp/esp-idf/components/partition_table", "/home/qtoan/esp/esp-idf/examples/common_components/protocol_examples_common", "/home/qtoan/esp/esp-idf/components/pthread", "/home/qtoan/esp/esp-idf/components/sdmmc", "/home/qtoan/esp/esp-idf/components/soc", "/home/qtoan/esp/esp-idf/components/spi_flash", "/home/qtoan/esp/esp-idf/components/tcp_transport", "/home/qtoan/esp/esp-idf/components/vfs", "/home/qtoan/esp/esp-idf/components/wpa_supplicant", "/home/qtoan/esp/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "console", "control_pixhawk", "cxx", "driver", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_http_client", "esp_https_ota", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "global", "gpio_config", "hal", "heap", "http_parser", "ieee802154", "json", "log", "lwip", "main", "mavlink", "mbedtls", "mpu6050_config", "mqtt", "newlib", "nvs_flash", "openthread", "partition_table", "protocol_examples_common", "pthread", "sdmmc", "servo_config", "soc", "spi_flash", "tcp_transport", "vfs", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/qtoan/esp/esp-idf/components/app_update", "/home/qtoan/esp/esp-idf/components/bootloader", "/home/qtoan/esp/esp-idf/components/bootloader_support", "/home/qtoan/esp/esp-idf/components/console", "/home/qtoan/esp/project/esp_mavlink/components/control_pixhawk", "/home/qtoan/esp/esp-idf/components/cxx", "/home/qtoan/esp/esp-idf/components/driver", "/home/qtoan/esp/esp-idf/components/efuse", "/home/qtoan/esp/esp-idf/components/esp-tls", "/home/qtoan/esp/esp-idf/components/esp_app_format", "/home/qtoan/esp/esp-idf/components/esp_bootloader_format", "/home/qtoan/esp/esp-idf/components/esp_coex", "/home/qtoan/esp/esp-idf/components/esp_common", "/home/qtoan/esp/esp-idf/components/esp_driver_ana_cmpr", "/home/qtoan/esp/esp-idf/components/esp_driver_bitscrambler", "/home/qtoan/esp/esp-idf/components/esp_driver_dac", "/home/qtoan/esp/esp-idf/components/esp_driver_gpio", "/home/qtoan/esp/esp-idf/components/esp_driver_gptimer", "/home/qtoan/esp/esp-idf/components/esp_driver_i2c", "/home/qtoan/esp/esp-idf/components/esp_driver_i2s", "/home/qtoan/esp/esp-idf/components/esp_driver_ledc", "/home/qtoan/esp/esp-idf/components/esp_driver_mcpwm", "/home/qtoan/esp/esp-idf/components/esp_driver_parlio", "/home/qtoan/esp/esp-idf/components/esp_driver_pcnt", "/home/qtoan/esp/esp-idf/components/esp_driver_rmt", "/home/qtoan/esp/esp-idf/components/esp_driver_sdio", "/home/qtoan/esp/esp-idf/components/esp_driver_sdm", "/home/qtoan/esp/esp-idf/components/esp_driver_sdmmc", "/home/qtoan/esp/esp-idf/components/esp_driver_sdspi", "/home/qtoan/esp/esp-idf/components/esp_driver_spi", "/home/qtoan/esp/esp-idf/components/esp_driver_tsens", "/home/qtoan/esp/esp-idf/components/esp_driver_twai", "/home/qtoan/esp/esp-idf/components/esp_driver_uart", "/home/qtoan/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/home/qtoan/esp/esp-idf/components/esp_eth", "/home/qtoan/esp/esp-idf/components/esp_event", "/home/qtoan/esp/esp-idf/components/esp_http_client", "/home/qtoan/esp/esp-idf/components/esp_https_ota", "/home/qtoan/esp/esp-idf/components/esp_hw_support", "/home/qtoan/esp/esp-idf/components/esp_mm", "/home/qtoan/esp/esp-idf/components/esp_netif", "/home/qtoan/esp/esp-idf/components/esp_netif_stack", "/home/qtoan/esp/esp-idf/components/esp_partition", "/home/qtoan/esp/esp-idf/components/esp_phy", "/home/qtoan/esp/esp-idf/components/esp_pm", "/home/qtoan/esp/esp-idf/components/esp_ringbuf", "/home/qtoan/esp/esp-idf/components/esp_rom", "/home/qtoan/esp/esp-idf/components/esp_security", "/home/qtoan/esp/esp-idf/components/esp_system", "/home/qtoan/esp/esp-idf/components/esp_timer", "/home/qtoan/esp/esp-idf/components/esp_vfs_console", "/home/qtoan/esp/esp-idf/components/esp_wifi", "/home/qtoan/esp/esp-idf/components/esptool_py", "/home/qtoan/esp/esp-idf/components/freertos", "/home/qtoan/esp/project/esp_mavlink/components/global", "/home/qtoan/esp/project/esp_mavlink/components/gpio_config", "/home/qtoan/esp/esp-idf/components/hal", "/home/qtoan/esp/esp-idf/components/heap", "/home/qtoan/esp/esp-idf/components/http_parser", "/home/qtoan/esp/esp-idf/components/ieee802154", "/home/qtoan/esp/esp-idf/components/json", "/home/qtoan/esp/esp-idf/components/log", "/home/qtoan/esp/esp-idf/components/lwip", "/home/qtoan/esp/project/esp_mavlink/main", "/home/qtoan/esp/project/esp_mavlink/components/mavlink", "/home/qtoan/esp/esp-idf/components/mbedtls", "/home/qtoan/esp/project/esp_mavlink/components/mpu6050_config", "/home/qtoan/esp/esp-idf/components/mqtt", "/home/qtoan/esp/esp-idf/components/newlib", "/home/qtoan/esp/esp-idf/components/nvs_flash", "/home/qtoan/esp/esp-idf/components/openthread", "/home/qtoan/esp/esp-idf/components/partition_table", "/home/qtoan/esp/esp-idf/examples/common_components/protocol_examples_common", "/home/qtoan/esp/esp-idf/components/pthread", "/home/qtoan/esp/esp-idf/components/sdmmc", "/home/qtoan/esp/project/esp_mavlink/components/servo_config", "/home/qtoan/esp/esp-idf/components/soc", "/home/qtoan/esp/esp-idf/components/spi_flash", "/home/qtoan/esp/esp-idf/components/tcp_transport", "/home/qtoan/esp/esp-idf/components/vfs", "/home/qtoan/esp/esp-idf/components/wpa_supplicant", "/home/qtoan/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -853,6 +853,21 @@
             "sources": [ "/home/qtoan/esp/project/esp_mavlink/components/global/global.c" ],
             "include_dirs": [ "include" ]
         },
+        "gpio_config": {
+            "alias": "idf::gpio_config",
+            "target": "___idf_gpio_config",
+            "prefix": "idf",
+            "dir": "/home/qtoan/esp/project/esp_mavlink/components/gpio_config",
+            "type": "LIBRARY",
+            "lib": "__idf_gpio_config",
+            "reqs": [ "driver", "global", "control_pixhawk" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/qtoan/esp/project/esp_mavlink/build/esp-idf/gpio_config/libgpio_config.a",
+            "sources": [ "/home/qtoan/esp/project/esp_mavlink/components/gpio_config/gpio_config.c" ],
+            "include_dirs": [ "include" ]
+        },
         "hal": {
             "alias": "idf::hal",
             "target": "___idf_hal",
@@ -965,7 +980,7 @@
             "dir": "/home/qtoan/esp/project/esp_mavlink/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [ "global", "control_pixhawk", "mavlink", "driver", "esp_rom", "esp_common", "esp_system", "nvs_flash", "esp_event", "esp_http_client", "esp_https_ota", "lwip", "protocol_examples_common", "esp_netif", "json", "app_update", "mqtt" ],
+            "reqs": [ "global", "gpio_config", "servo_config", "mpu6050_config", "control_pixhawk", "mavlink", "driver", "esp_rom", "esp_common", "esp_system", "nvs_flash", "esp_event", "esp_http_client", "esp_https_ota", "lwip", "protocol_examples_common", "esp_netif", "json", "app_update", "mqtt" ],
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -1002,6 +1017,21 @@
             "file": "/home/qtoan/esp/project/esp_mavlink/build/esp-idf/mbedtls/libmbedtls.a",
             "sources": [ "/home/qtoan/esp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/qtoan/esp/project/esp_mavlink/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
+        },
+        "mpu6050_config": {
+            "alias": "idf::mpu6050_config",
+            "target": "___idf_mpu6050_config",
+            "prefix": "idf",
+            "dir": "/home/qtoan/esp/project/esp_mavlink/components/mpu6050_config",
+            "type": "LIBRARY",
+            "lib": "__idf_mpu6050_config",
+            "reqs": [ "driver", "global" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/qtoan/esp/project/esp_mavlink/build/esp-idf/mpu6050_config/libmpu6050_config.a",
+            "sources": [ "/home/qtoan/esp/project/esp_mavlink/components/mpu6050_config/mpu6050_config.c" ],
+            "include_dirs": [ "include" ]
         },
         "mqtt": {
             "alias": "idf::mqtt",
@@ -1121,6 +1151,21 @@
             "managed_priv_reqs": [],
             "file": "/home/qtoan/esp/project/esp_mavlink/build/esp-idf/sdmmc/libsdmmc.a",
             "sources": [ "/home/qtoan/esp/esp-idf/components/sdmmc/sdmmc_cmd.c", "/home/qtoan/esp/esp-idf/components/sdmmc/sdmmc_common.c", "/home/qtoan/esp/esp-idf/components/sdmmc/sdmmc_init.c", "/home/qtoan/esp/esp-idf/components/sdmmc/sdmmc_io.c", "/home/qtoan/esp/esp-idf/components/sdmmc/sdmmc_mmc.c", "/home/qtoan/esp/esp-idf/components/sdmmc/sdmmc_sd.c", "/home/qtoan/esp/esp-idf/components/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "servo_config": {
+            "alias": "idf::servo_config",
+            "target": "___idf_servo_config",
+            "prefix": "idf",
+            "dir": "/home/qtoan/esp/project/esp_mavlink/components/servo_config",
+            "type": "LIBRARY",
+            "lib": "__idf_servo_config",
+            "reqs": [ "driver", "global" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/qtoan/esp/project/esp_mavlink/build/esp-idf/servo_config/libservo_config.a",
+            "sources": [ "/home/qtoan/esp/project/esp_mavlink/components/servo_config/servo_config.c" ],
             "include_dirs": [ "include" ]
         },
         "soc": {
@@ -2517,7 +2562,7 @@
             "prefix": "idf",
             "dir": "/home/qtoan/esp/project/esp_mavlink/main",
             "lib": "__idf_main",
-            "reqs": [ "global", "control_pixhawk", "mavlink", "driver", "esp_rom", "esp_common", "esp_system", "nvs_flash", "esp_event", "esp_http_client", "esp_https_ota", "lwip", "protocol_examples_common", "esp_netif", "json", "app_update", "mqtt" ],
+            "reqs": [ "global", "gpio_config", "servo_config", "mpu6050_config", "control_pixhawk", "mavlink", "driver", "esp_rom", "esp_common", "esp_system", "nvs_flash", "esp_event", "esp_http_client", "esp_https_ota", "lwip", "protocol_examples_common", "esp_netif", "json", "app_update", "mqtt" ],
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -2559,6 +2604,18 @@
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
         },
+        "gpio_config": {
+            "alias": "idf::gpio_config",
+            "target": "___idf_gpio_config",
+            "prefix": "idf",
+            "dir": "/home/qtoan/esp/project/esp_mavlink/components/gpio_config",
+            "lib": "__idf_gpio_config",
+            "reqs": [ "driver", "global", "control_pixhawk" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
         "mavlink": {
             "alias": "idf::mavlink",
             "target": "___idf_mavlink",
@@ -2566,6 +2623,30 @@
             "dir": "/home/qtoan/esp/project/esp_mavlink/components/mavlink",
             "lib": "__idf_mavlink",
             "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "mpu6050_config": {
+            "alias": "idf::mpu6050_config",
+            "target": "___idf_mpu6050_config",
+            "prefix": "idf",
+            "dir": "/home/qtoan/esp/project/esp_mavlink/components/mpu6050_config",
+            "lib": "__idf_mpu6050_config",
+            "reqs": [ "driver", "global" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "servo_config": {
+            "alias": "idf::servo_config",
+            "target": "___idf_servo_config",
+            "prefix": "idf",
+            "dir": "/home/qtoan/esp/project/esp_mavlink/components/servo_config",
+            "lib": "__idf_servo_config",
+            "reqs": [ "driver", "global" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
