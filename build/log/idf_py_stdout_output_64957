@@ -1,0 +1,105 @@
+Command: /home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/qtoan/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/qtoan/esp/project/esp_mavlink/build/esp_mavlink.elf /home/qtoan/esp/project/esp_mavlink/build/bootloader/bootloader.elf -m '/home/qtoan/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/qtoan/esp/esp-idf/tools/idf.py'
+�xx8'������сets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  1 2025 21:58:03[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0cc38h ( 52280) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001cc60 vaddr=3ffb0000 size=024b8h (  9400) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001f120 vaddr=40080000 size=00ef8h (  3832) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1ac28h (109608) map[0m
+[0;32mI (155) esp_image: segment 4: paddr=0003ac50 vaddr=40080ef8 size=0d964h ( 55652) load[0m
+[0;32mI (177) esp_image: segment 5: paddr=000485bc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     esp_mavlink[0m
+[0;32mI (208) app_init: App version:      d0897e8-dirty[0m
+[0;32mI (212) app_init: Compile time:     Oct  4 2025 10:51:38[0m
+[0;32mI (217) app_init: ELF file SHA256:  9aa3837fb...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFB3298 len 0002CD68 (179 KiB): DRAM[0m
+[0;32mI (253) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (264) heap_init: At 4008E85C len 000117A4 (69 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (286) spi_flash: flash io: dio[0m
+[0;33mW (289) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;33mW (297) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (308) main_task: Started on CPU0[0m
+[0;32mI (318) main_task: Calling app_main()[0m
+Hello world!
+This is a test function from global component.
+This is a test function from control_pixhawk component.
+This is a test function from gpio_config component.
+This is a test function from servo_config component.
+This is a test function from mpu6050_config component.
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
+Button Released!
